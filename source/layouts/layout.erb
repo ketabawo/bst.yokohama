@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "B.S.T ボートシーバストーナメント公式サイト" %></title>
+    <meta name="description" content="<%= current_page.data.description %>"> 
+    <%= stylesheet_link_tag "all" %>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <%= javascript_include_tag  "all" %>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer>
+      {lang: 'ja'}
+    </script>
+    <!--[if lt IE 10]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= current_page.data.title || "B.S.T ボートシーバストーナメント公式サイト" %>">
+    <meta property="og:description" content="<%= current_page.data.description %>">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/images/favicon.ico">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-58076012-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  
+  <body class="<%= page_classes %>">
+    <%= partial "shared/header" %>
+    <%= yield %>
+    <%= partial "shared/footer" %>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id; js.async = true;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=516734618358765&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>

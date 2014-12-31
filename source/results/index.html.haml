@@ -1,0 +1,45 @@
+---
+title: B.S.T 大会結果
+description: B.S.T ボートシーバストーナメントの各大会結果を詳しく見ることができます。
+---
+= partial "shared/global_navigation", :locals => {:val => "results"}
+#topicpath
+  %ol
+    %li
+      = link_to "B.S.T公式TOP", "/"
+      %i.fa.fa-angle-right
+    %li 大会結果
+#imagepanel_low
+  #imagepanel_low_inner.results_header
+    .bg_layer
+      %h1 B.S.T 大会結果
+%article#content
+  #content_inner
+    #main_column.single
+      %section#result_list
+        %p.section_summary
+          各シリーズ各ラウンドの結果を見る事ができます。
+        #result_list_inner
+          %dl.s2015
+            %dt 2015年
+            %dd
+              %ul
+                %li
+                  = link_to "第1戦", "/results/2015/round1.html"
+          %dl.s2014
+            %dt 2014年
+            %dd
+              %ul
+                %li= link_to "第1戦", "/results/2014/round1.html"
+                %li= link_to "第2戦", "/results/2014/round2.html"
+                %li= link_to "第3戦", "/results/2014/round3.html"
+                %li= link_to "第4戦", "/results/2014/round4.html"
+                %li= link_to "第5戦", "/results/2014/round5.html"
+          %dl.s2013
+            %dt 2013年
+            %dd
+              %ul
+                %li= link_to "第1戦", "/results/2013/round1.html"
+                %li= link_to "第2戦", "/results/2013/round2.html"
+                %li= link_to "第3戦", "/results/2013/round3.html"
+                %li= link_to "第4戦", "/results/2013/round4.html"

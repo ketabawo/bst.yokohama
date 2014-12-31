@@ -1,0 +1,54 @@
+---
+title: B.S.T エントリー内容確認
+description: 東京湾で唯一のライブフィッシュ方式によるボートシーバストーナメント「B.S.T」に参戦するためのエントリーフォーム。
+---
+= partial "shared/global_navigation", locals: {val: "entry"}
+#topicpath
+  %ol
+    %li
+      = link_to "B.S.T公式TOP", "/"
+      %i.fa.fa-angle-right
+    %li
+      = link_to "大会エントリー", "/entry/"
+      %i.fa.fa-angle-right
+    %li 大会エントリー内容確認
+#imagepanel_low
+  #imagepanel_low_inner.entry_header
+    .bg_layer
+      %h1 B.S.T エントリー内容確認
+%article#content
+  #content_inner
+    #main_column.single
+      %section#entryform
+        %h1 エントリーフォーム
+        %p.section_summary
+          以下の内容をご確認のうえ、「送信する」ボタンを押してください。
+        %table
+          %tr
+            %th お名前
+            %td#name
+          %tr
+            %th お名前ふりがな
+            %td#ruby
+          %tr
+            %th 電話番号
+            %td#phone
+          %tr
+            %th メールアドレス
+            %td#email
+          %tr
+            %th ボート名
+            %td#boat
+          %tr
+            %th 住所
+            %td#addr
+          %tr
+            %th 参戦ラウンド
+            %td#round
+          %tr
+            %th 通信欄
+            %td#comment
+        .form-actions
+          %input{name: "commit", type: "submit", value: "送信する"}
+        %p.credit
+          %span#powered_by_me

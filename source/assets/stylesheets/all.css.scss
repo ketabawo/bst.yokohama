@@ -1,0 +1,67 @@
+@import "compass";
+@include global-reset;
+@import "settings";
+@import "header";
+@import "footer";
+@import "styles";
+@import "bx_styles";
+body{
+  color: #333;
+}
+#content{
+  width: 100%;
+  padding-bottom: 50px;
+  #content_inner{
+    width: $content_width;
+    margin: 0 auto;
+    overflow: hidden;
+    #main_column{
+      h1{
+        font-size: 18px;
+        color: #FFF;
+        background-color: $primary;
+        padding: 10px;
+        margin-bottom: 20px;
+        i{
+          font-size: 24px;
+        }
+      }
+      p.section_summary{
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 150%;
+      }
+      &.single{
+        width: 100%;
+      }
+      &.double{
+        width: 640px;
+        float: left;
+      }
+    }
+    #sub_column{
+      width: 300px;
+      float: right;
+      h1{
+        font-size: 18px;
+        color: #FFF;
+        background-color: $primary;
+        padding: 10px;
+        margin-bottom: 15px;
+        i{
+          font-size: 24px;
+        }
+      }
+      h2{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      p.section_summary{
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 140%;
+      }
+    }
+  }
+}

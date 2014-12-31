@@ -1,0 +1,36 @@
+---
+title: B.S.Tシリーズランキング
+description: B.S.T ボートシーバストーナメントの各シリーズ結果を見ることができます。
+---
+= partial "shared/global_navigation", :locals => {:val => "rankings"}
+#topicpath
+  %ol
+    %li
+      = link_to "B.S.T公式TOP", "/"
+      %i.fa.fa-angle-right
+    %li B.S.T シリーズランキング
+#imagepanel_low
+  #imagepanel_low_inner.rankings_header
+    .bg_layer
+      %h1 シリーズランキング
+%article#content
+  #content_inner
+    #main_column.single
+      %section#ranking_list
+        %p.section_summary
+          各シリーズの総合結果を見る事ができます。
+          %br
+          進行中のシーリーズは、最新ラウンド終了時点のランキングとなります。
+        %ul
+          %li.s2015
+            = link_to "/rankings/2015.html" do
+              %span
+                2015年
+          %li.s2014
+            = link_to "/rankings/2014.html" do
+              %span
+                2014年
+          %li.s2013
+            = link_to "/rankings/2013.html" do
+              %span
+                2013年

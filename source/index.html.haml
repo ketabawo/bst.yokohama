@@ -1,0 +1,338 @@
+---
+description: 東京湾で唯一のライブフィッシュ方式によるボートシーバストーナメント「B.S.T」の公式サイトです。
+---
+= partial "shared/global_navigation", locals: {val: "top"}
+#imagepanel_top
+  #imagepanel_top_inner
+    .slider.slider0
+      %p
+        東京湾
+        %span
+          No.1
+        ボートシーバストーナメンターを決める
+    .slider.slider1
+      %p
+        プロとアマによる
+        %span
+          ガチ
+        バトル！
+    .slider.slider2
+      %p
+        挑戦者随時
+        %span
+          募集中
+        ！！  
+%article#content
+  #content_inner
+    #main_column.double
+      %section#informations
+        %h1
+          %i.fa.fa-info-circle
+          公式ブログからのお知らせ
+        %ul#feed
+          - require 'rss'
+          - feedUrl = 'http://bst.naturum.ne.jp/index.xml'
+          - rss = RSS::Parser.parse(feedUrl)
+          - count = 1
+          - rss.items.each do |item|
+            %li
+              %i.fa.fa-caret-right
+              = link_to item.link, target: "_blank" do
+                = item.title
+            - count += 1
+            - if count > 3 then
+              - break
+        %p.more
+          =link_to "http://bst.naturum.ne.jp/", target: "_blank" do
+            %i.fa.fa-hand-o-right
+            もっと見る
+      %section#events
+        %h1
+          %i.fa.fa-calendar
+          B.S.T 年間競技日程
+        %p.section_summary
+          B.S.Tでは、プロ・アマ、男女問わず、参戦していただけるアングラーを随時募集しております。
+          %br
+          全てに参戦する必要はありませんので、我こそは！という方の挑戦をお待ちしております。
+        .element
+          .eye_catch
+            = image_tag("schedules/2015/img_thumb-round1.jpg", alt: "2015 第1戦", width: "160", height: "120")
+          .this_content
+            %span.warning 間もなく締切
+            %span.info フライOK
+            %h2 B.S.T 2015 第1戦
+            %dl
+              %dt 開催日：
+              %dd 2015年1月27日（火）
+            %p
+              検討中の方は、お早めにエントリー申請お願いいたします。
+              %br
+              = link_to "/entry/" do
+                %i.fa.fa-caret-right
+                エントリー
+        .element
+          .eye_catch
+            = image_tag("schedules/2015/img_thumb-round2.jpg", alt: "2015 第2戦", width: "160", height: "120")
+          .this_content
+            %span.success 絶賛募集中
+            %span.info フライOK
+            %h2 B.S.T 2015 第2戦
+            %dl
+              %dt 開催日：
+              %dd 2015年3月10日（火）
+            %p
+              ご不明な点などございましたら、大会事務局までお問い合せください。
+              %br
+              = link_to "/entry/" do
+                %i.fa.fa-caret-right
+                エントリー
+        .element
+          .eye_catch
+            = image_tag("schedules/2015/img_thumb-round3.jpg", alt: "2015 第3戦", width: "160", height: "120")
+          .this_content
+            %span.success 絶賛募集中
+            %span.info フライOK
+            %h2 B.S.T 2015 第3戦
+            %dl
+              %dt 開催日：
+              %dd 2015年5月12日（火）
+            %p
+              ご不明な点などございましたら、大会事務局までお問い合せください。
+              %br
+              = link_to "/entry/" do
+                %i.fa.fa-caret-right
+                エントリー
+        .element
+          .eye_catch
+            = image_tag("schedules/2015/img_thumb-round4.jpg", alt: "2015 第4戦", width: "160", height: "120")
+          .this_content
+            %span.success 絶賛募集中
+            %span.info フライOK
+            %h2 B.S.T 2015 第4戦
+            %dl
+              %dt 開催日：
+              %dd 2015年6月9日（火）
+            %p
+              ご不明な点などございましたら、大会事務局までお問い合せください。
+              %br
+              = link_to "/entry/" do
+                %i.fa.fa-caret-right
+                エントリー
+        .element
+          .eye_catch
+            = image_tag("schedules/2015/img_thumb-round5.jpg", alt: "2015 第5戦", width: "160", height: "120")
+          .this_content
+            %span.success 絶賛募集中
+            %span.info フライOK
+            %h2 B.S.T 2015 第5戦
+            %dl
+              %dt 開催日：
+              %dd 2015年7月14日（火）
+            %p
+              ご不明な点などございましたら、大会事務局までお問い合せください。
+              %br
+              = link_to "/entry/" do
+                %i.fa.fa-caret-right
+                エントリー
+      %section#timetable
+        %h1
+          %i.fa.fa-clock-o
+          タイムテーブル
+        %p.section_summary
+          各日程は基本的に以下のスケジュールで進行しますが
+          %br
+          気象状況等で変更となる場合は事前に告知・連絡致します。
+          %table
+            %thead
+              %tr
+                %th 時間軸
+                %th イベント
+            %tbody
+              %tr
+                %td 〜08:15
+                %td
+                  受付：参加費用5000円を納入してください。
+                  %br
+                  出船順抽選：くじ引きにより出船順を決めます。
+                  %br
+                  ライブウェルチェック：事務局スタッフが参加艇のライブウェル（生け簀）をチェックします。
+              %tr
+                %td 08:20〜
+                %td
+                  ミーティング：ルールや当日の流れ、注意点などを説明します。
+              %tr
+                %td 08:40〜
+                %td
+                  スタート：くじ引きで決定した順に出船します。禁止エリア離脱後、競技を開始してください。
+              %tr
+                %td 〜12:50
+                %td
+                  ストップフィッシング：競技を終了し帰着時間までに帰港してください。
+              %tr
+                %td 13:30〜
+                %td 検量：帰着順に検量を開始します。
+              %tr
+                %td 14:00〜
+                %td 表彰式：昼食後、表彰式を行います。
+    #sub_column
+      %section#top_ranking
+        %h1
+          %i.fa.fa-list-ol
+          ランキング
+        %h2
+          %i.fa.fa-chevron-right
+          2015シリーズ（第0戦終了）
+        %table
+          %caption
+            = link_to "/entry/" do
+              %i.fa.fa-caret-right
+              参加者募集中
+          %thead
+            %tr
+              %th Rank
+              %th Name
+              %th Boat
+              %th Pts
+          %tbody
+            %tr
+              %td
+                %i.fa.fa-trophy.rank1
+              %td --
+              %td --
+              %td 0
+            %tr
+              %td
+                %i.fa.fa-trophy.rank2
+              %td --
+              %td --
+              %td 0
+            %tr
+              %td
+                %i.fa.fa-trophy.rank3
+              %td --
+              %td --
+              %td 0
+        %h2
+          %i.fa.fa-chevron-right
+          2014シリーズ（全5戦）
+        %table
+          %caption
+            = link_to "/rankings/2014.html" do
+              %i.fa.fa-caret-right
+              詳しくはこちら
+          %thead
+            %tr
+              %th Rank
+              %th Name
+              %th Boat
+              %th Pts
+          %tbody
+            %tr
+              %td
+                %i.fa.fa-trophy.rank1
+              %td 大畠 拓
+              %td シークロ
+              %td 435
+            %tr
+              %td
+                %i.fa.fa-trophy.rank2
+              %td 柿澤 寛
+              %td ストライカー
+              %td 425
+            %tr
+              %td
+                %i.fa.fa-trophy.rank3
+              %td 福永 雄海
+              %td シーバスキャプテン
+              %td 385
+        %h2
+          %i.fa.fa-chevron-right
+          2013シリーズ（全4戦）
+        %table
+          %caption
+            = link_to "/rankings/2013.html" do
+              %i.fa.fa-caret-right
+              詳しくはこちら
+          %thead
+            %tr
+              %th Rank
+              %th Name
+              %th Boat
+              %th Pts
+          %tbody
+            %tr
+              %td
+                %i.fa.fa-trophy.rank1
+              %td 柿澤 寛
+              %td ストライカー
+              %td 360
+            %tr
+              %td
+                %i.fa.fa-trophy.rank2
+              %td 森田 英典
+              %td リアル
+              %td 355
+            %tr
+              %td
+                %i.fa.fa-trophy.rank3
+              %td 福永 雄海
+              %td シーバスキャプテン
+              %td 350
+      %section#other_tournament
+        %h1
+          %i.fa.fa-check
+          その他トーナメント情報
+        %p.section_summary
+          B.S.T以外の横浜周辺で開催されるボートシーバストーナメント情報です。
+        .element
+          %h2 第4回 G.O.M. ワーム限定ボートシーバストーナメント
+          %span.warning ワーム限定
+          %span.info チーム戦
+          %dl
+            %dt 開催日：
+            %dd 2015年2月予定
+          %dl
+            %dt 問い合せ先：
+            %dd ハマの海を想う会 濱
+        .element
+          %h2 第31回 東京ベイ・シーバスゲーム・フェスティバル
+          %span.warning JGFA会員限定
+          %span.info チーム戦
+          %dl
+            %dt 開催日：
+            %dd 2015年10月予定
+          %dl
+            %dt 問い合せ先：
+            %dd JGFA
+        .element
+          %h2 第9回 横浜ボートフィッシング大会シーバストーナメント
+          %span.warning JGFA会員限定
+          %span.info チーム戦
+          %dl
+            %dt 開催日：
+            %dd 2015年11月3日（火）
+          %dl
+            %dt 問い合せ先：
+            %dd アイランドクルーズ 遠藤
+        .element
+          %h2 第9回 ハマ海杯
+          %span.info フライOK
+          %span.info ショアOK
+          %dl
+            %dt 開催日：
+            %dd 2015年11月予定
+          %dl
+            %dt 問い合せ先：
+            %dd ハマの海を想う会 濱
+        .element
+          %h2 第18回 湾！GUN！シーバストーナメント
+          %span.warning JGFA会員限定
+          %span.warning ルアー制限有
+          %span.info チーム戦
+          %dl
+            %dt 開催日：
+            %dd 2015年12月予定
+          %dl
+            %dt 問い合せ先：
+            %dd シーバスキャプテン 福永
+            

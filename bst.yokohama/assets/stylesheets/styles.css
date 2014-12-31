@@ -1,0 +1,708 @@
+#topicpath {
+  width: 100%; }
+  #topicpath ol {
+    width: 960px;
+    padding-top: 20px;
+    margin: 0 auto 20px auto; }
+    #topicpath ol li {
+      font-size: 12px;
+      display: inline; }
+      #topicpath ol li a {
+        color: inherit;
+        text-decoration: none; }
+      #topicpath ol li i {
+        font-size: 16px;
+        margin: 0 5px; }
+
+#imagepanel_top {
+  width: 100%;
+  background-color: #000;
+  margin-bottom: 20px; }
+  #imagepanel_top .bx-wrapper {
+    width: 960px;
+    margin: 0 auto; }
+  #imagepanel_top #imagepanel_top_inner {
+    width: 960px;
+    height: 300px;
+    margin: 0 auto; }
+    #imagepanel_top #imagepanel_top_inner .slider {
+      width: 960px;
+      height: 300px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 auto; }
+      #imagepanel_top #imagepanel_top_inner .slider.slider0 {
+        background-image: url("/assets/images/bg_pic-slider0.jpg"); }
+      #imagepanel_top #imagepanel_top_inner .slider.slider1 {
+        background-image: url("/assets/images/bg_pic-slider1.jpg"); }
+      #imagepanel_top #imagepanel_top_inner .slider.slider2 {
+        background-image: url("/assets/images/bg_pic-slider2.jpg"); }
+      #imagepanel_top #imagepanel_top_inner .slider p {
+        font-size: 30px;
+        color: #FFF;
+        text-align: center;
+        text-shadow: 1px 1px #000;
+        padding-top: 40px; }
+        #imagepanel_top #imagepanel_top_inner .slider p span {
+          font-size: 40px;
+          color: #d9534f; }
+
+#imagepanel_low #imagepanel_low_inner {
+  width: 960px;
+  height: 150px;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto 20px auto;
+  position: relative; }
+  #imagepanel_low #imagepanel_low_inner .bg_layer {
+    width: 960px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 10; }
+    #imagepanel_low #imagepanel_low_inner .bg_layer h1 {
+      font-size: 40px;
+      color: #FFF;
+      text-shadow: 1px 1px #000;
+      padding: 50px 20px 0 20px; }
+      #imagepanel_low #imagepanel_low_inner .bg_layer h1:first-letter {
+        font-size: 50px;
+        color: #F00; }
+
+#imagepanel_result {
+  width: 100%; }
+  #imagepanel_result #imagepanel_result_inner {
+    width: 960px;
+    height: 350px;
+    background-color: #CCC;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px auto;
+    position: relative; }
+    #imagepanel_result #imagepanel_result_inner .layer {
+      width: 960px;
+      height: 350px;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      z-index: 10; }
+      #imagepanel_result #imagepanel_result_inner .layer h1 {
+        font-size: 30px;
+        color: #FFF;
+        text-shadow: 1px 1px #000;
+        position: absolute;
+        right: 20px;
+        bottom: 20px; }
+    #imagepanel_result #imagepanel_result_inner.result2013_01 {
+      background-image: url("/assets/images/results/2013/bg_pic-toppanel-2013_01.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2013_02 {
+      background-image: url("/assets/images/results/2013/bg_pic-toppanel-2013_02.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2013_03 {
+      background-image: url("/assets/images/results/2013/bg_pic-toppanel-2013_03.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2013_04 {
+      background-image: url("/assets/images/results/2013/bg_pic-toppanel-2013_04.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2014_01 {
+      background-image: url("/assets/images/results/2014/bg_pic-toppanel-2014_01.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2014_02 {
+      background-image: url("/assets/images/results/2014/bg_pic-toppanel-2014_02.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2014_03 {
+      background-image: url("/assets/images/results/2014/bg_pic-toppanel-2014_03.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2014_04 {
+      background-image: url("/assets/images/results/2014/bg_pic-toppanel-2014_04.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2014_05 {
+      background-image: url("/assets/images/results/2014/bg_pic-toppanel-2014_05.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2015_01 {
+      background-image: url("/assets/images/results/2015/bg_pic-toppanel-2015_01.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2015_02 {
+      background-image: url("/assets/images/results/2015/bg_pic-toppanel-2015_02.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2015_03 {
+      background-image: url("/assets/images/results/2015/bg_pic-toppanel-2015_03.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2015_04 {
+      background-image: url("/assets/images/results/2015/bg_pic-toppanel-2015_04.jpg"); }
+    #imagepanel_result #imagepanel_result_inner.result2015_05 {
+      background-image: url("/assets/images/results/2015/bg_pic-toppanel-2015_05.jpg"); }
+
+#events {
+  margin-bottom: 20px; }
+  #events .element {
+    display: table;
+    width: 100%;
+    margin-bottom: 10px; }
+    #events .element .eye_catch {
+      display: table-cell;
+      width: 170px;
+      vertical-align: top; }
+    #events .element .this_content {
+      display: table-cell;
+      vertical-align: top; }
+      #events .element .this_content span {
+        display: inline-block;
+        font-size: 12px;
+        color: #FFF;
+        text-align: center;
+        border-radius: 5px;
+        padding: 4px 10px 3px 12px;
+        margin-bottom: 5px; }
+        #events .element .this_content span.primary {
+          background-color: #337ab7; }
+        #events .element .this_content span.info {
+          background-color: #46b8da; }
+        #events .element .this_content span.success {
+          background-color: #4cae4c; }
+        #events .element .this_content span.warning {
+          background-color: #f0ad4e; }
+        #events .element .this_content span.danger {
+          background-color: #d9534f; }
+      #events .element .this_content h2 {
+        font-size: 16px;
+        font-weight: bold;
+        border-bottom: 1px dotted #333;
+        padding-bottom: 5px;
+        margin-bottom: 5px; }
+      #events .element .this_content dl {
+        font-size: 12px;
+        color: #999;
+        margin-bottom: 10px; }
+        #events .element .this_content dl dt, #events .element .this_content dl dd {
+          display: inline; }
+      #events .element .this_content p {
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 10px; }
+
+#informations {
+  margin-bottom: 20px; }
+  #informations ul li {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 10px; }
+    #informations ul li i {
+      font-size: 20px;
+      color: #f0ad4e;
+      margin-right: 10px; }
+    #informations ul li span {
+      font-size: 12px; }
+  #informations p.more {
+    font-size: 16px;
+    text-align: right; }
+
+#timetable {
+  margin-bottom: 20px; }
+  #timetable table {
+    width: 100%;
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD; }
+    #timetable table thead tr th {
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #F9F9F9;
+      border-right: 1px solid #DDD;
+      border-bottom: 1px solid #DDD;
+      padding: 8px 12px; }
+    #timetable table tbody tr td {
+      font-size: 14px;
+      line-height: 140%;
+      border-right: 1px solid #DDD;
+      border-bottom: 1px solid #DDD;
+      padding: 12px 20px; }
+
+#top_ranking {
+  margin-bottom: 20px; }
+  #top_ranking table {
+    width: 100%;
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    margin-bottom: 15px; }
+    #top_ranking table caption {
+      caption-side: bottom;
+      font-size: 14px;
+      text-align: right;
+      padding-top: 5px; }
+    #top_ranking table thead tr th {
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #F9F9F9;
+      border-right: 1px solid #DDD;
+      border-bottom: 1px solid #DDD;
+      padding: 5px; }
+    #top_ranking table tbody tr td {
+      font-size: 14px;
+      border-right: 1px solid #DDD;
+      border-bottom: 1px solid #DDD;
+      padding: 5px; }
+      #top_ranking table tbody tr td:first-child, #top_ranking table tbody tr td:last-child {
+        text-align: center; }
+      #top_ranking table tbody tr td i {
+        font-size: 20px; }
+        #top_ranking table tbody tr td i.rank1 {
+          color: gold; }
+        #top_ranking table tbody tr td i.rank2 {
+          color: silver; }
+        #top_ranking table tbody tr td i.rank3 {
+          color: brown; }
+
+#ranking_list {
+  margin-bottom: 100px; }
+  #ranking_list ul {
+    width: 100%;
+    overflow: hidden; }
+    #ranking_list ul li {
+      width: 300px;
+      height: 120px;
+      background-color: #CCC;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 30px 20px 0;
+      float: left; }
+      #ranking_list ul li.on_sub {
+        margin: 0 0 20px 0;
+        float: none; }
+      #ranking_list ul li.s2013 {
+        background-image: url("/assets/images/rankings/bg_btn-rankings2013.jpg"); }
+      #ranking_list ul li.s2014 {
+        background-image: url("/assets/images/rankings/bg_btn-rankings2014.jpg"); }
+      #ranking_list ul li.s2015 {
+        background-image: url("/assets/images/rankings/bg_btn-rankings2015.jpg"); }
+      #ranking_list ul li:last-child {
+        margin-right: 0; }
+      #ranking_list ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: relative; }
+        #ranking_list ul li a span {
+          font-size: 30px;
+          color: #FFF;
+          position: absolute;
+          right: 10px;
+          bottom: 10px; }
+
+#result_list {
+  margin-bottom: 100px; }
+  #result_list #result_list_inner {
+    width: 100%;
+    overflow: hidden; }
+    #result_list #result_list_inner dl {
+      width: 300px;
+      height: 120px;
+      background-color: #CCC;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 30px 20px 0;
+      float: left;
+      position: relative; }
+      #result_list #result_list_inner dl.s2013 {
+        background-image: url("/assets/images/rankings/bg_btn-rankings2013.jpg"); }
+      #result_list #result_list_inner dl.s2014 {
+        background-image: url("/assets/images/rankings/bg_btn-rankings2014.jpg"); }
+      #result_list #result_list_inner dl.s2015 {
+        background-image: url("/assets/images/rankings/bg_btn-rankings2015.jpg"); }
+      #result_list #result_list_inner dl.on_sub {
+        margin-right: 0;
+        float: none; }
+      #result_list #result_list_inner dl:last-child {
+        margin-right: 0; }
+      #result_list #result_list_inner dl dt {
+        font-size: 30px;
+        color: #FFF;
+        position: absolute;
+        bottom: 10px;
+        right: 10px; }
+      #result_list #result_list_inner dl dd {
+        width: 300px;
+        height: 120px;
+        background-color: rgba(0, 0, 0, 0.5); }
+        #result_list #result_list_inner dl dd ul {
+          display: table;
+          width: 100%;
+          table-layout: fixed; }
+          #result_list #result_list_inner dl dd ul li {
+            display: table-cell;
+            text-align: center;
+            padding-top: 10px; }
+            #result_list #result_list_inner dl dd ul li a {
+              color: #FFF; }
+
+#ranking_table {
+  margin-bottom: 20px; }
+  #ranking_table .chairmans_comment {
+    background-color: #dff0d8;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px; }
+    #ranking_table .chairmans_comment dl {
+      font-size: 16px;
+      line-height: 140%; }
+      #ranking_table .chairmans_comment dl dt {
+        font-weight: bold;
+        margin-bottom: 5px; }
+        #ranking_table .chairmans_comment dl dt i {
+          font-size: 20px; }
+      #ranking_table .chairmans_comment dl dd p.comment {
+        margin-bottom: 5px; }
+      #ranking_table .chairmans_comment dl dd p.writer {
+        text-align: right; }
+  #ranking_table table {
+    width: 100%;
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD; }
+    #ranking_table table caption {
+      font-size: 14px;
+      caption-side: bottom;
+      text-align: right;
+      padding-top: 10px; }
+    #ranking_table table thead tr th, #ranking_table table thead tr td, #ranking_table table tbody tr th, #ranking_table table tbody tr td, #ranking_table table tfoot tr th, #ranking_table table tfoot tr td {
+      font-size: 14px;
+      border-right: 1px solid #DDD;
+      border-bottom: 1px solid #DDD;
+      padding: 15px 10px; }
+    #ranking_table table thead tr th, #ranking_table table tfoot tr th {
+      font-weight: bold;
+      background-color: #F9F9F9; }
+    #ranking_table table tbody tr:nth-child(even) {
+      background-color: #d9edf7; }
+    #ranking_table table tbody tr td span.ruby {
+      display: block;
+      font-size: 10px; }
+    #ranking_table table tbody tr td strong {
+      font-weight: bold;
+      color: #d9534f; }
+    #ranking_table table tbody tr td i {
+      font-size: 20px; }
+      #ranking_table table tbody tr td i.rank1 {
+        color: gold; }
+      #ranking_table table tbody tr td i.rank2 {
+        color: silver; }
+      #ranking_table table tbody tr td i.rank3 {
+        color: brown; }
+    #ranking_table table tbody tr td:nth-child(1) {
+      text-align: center; }
+    #ranking_table table tbody tr td:nth-child(n+4) {
+      text-align: right; }
+
+#rules h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+#rules h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+#rules p {
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 30px; }
+#rules img {
+  display: block;
+  margin-bottom: 30px; }
+#rules table {
+  border-top: 1px solid #DDD;
+  border-left: 1px solid #DDD;
+  margin-bottom: 30px; }
+  #rules table tr td {
+    font-size: 14px;
+    border-right: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    padding: 10px; }
+
+#interviews {
+  margin-bottom: 20px; }
+  #interviews .interview {
+    margin-bottom: 20px; }
+    #interviews .interview h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    #interviews .interview nav ul {
+      display: table;
+      width: 100%;
+      box-sizing: border-box;
+      border-top: 1px solid #DDD;
+      border-right: 1px solid #DDD;
+      border-left: 1px solid #DDD;
+      table-layout: fixed; }
+      #interviews .interview nav ul li {
+        display: table-cell;
+        font-size: 16px;
+        text-align: center;
+        background-color: #F9F9F9;
+        border-right: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
+        padding: 10px 0;
+        cursor: pointer; }
+        #interviews .interview nav ul li:last-child {
+          border-right: none; }
+        #interviews .interview nav ul li.active {
+          background-color: #FFF;
+          border-bottom-color: #FFF; }
+    #interviews .interview .screen {
+      border-right: 1px solid #DDD;
+      border-bottom: 1px solid #DDD;
+      border-left: 1px solid #DDD;
+      padding: 10px; }
+      #interviews .interview .screen.comment_area, #interviews .interview .screen.tackles_area, #interviews .interview .screen.lures_area {
+        display: none; }
+        #interviews .interview .screen.comment_area.active, #interviews .interview .screen.tackles_area.active, #interviews .interview .screen.lures_area.active {
+          display: block; }
+      #interviews .interview .screen table {
+        width: 100%;
+        border-top: 1px solid #DDD;
+        border-left: 1px solid #DDD; }
+        #interviews .interview .screen table thead tr th {
+          font-size: 14px;
+          font-weight: bold;
+          background-color: #F9F9F9;
+          border-right: 1px solid #DDD;
+          border-bottom: 1px solid #DDD;
+          padding: 5px; }
+        #interviews .interview .screen table tbody tr th {
+          font-size: 14px;
+          font-weight: bold;
+          text-align: center;
+          background-color: #F9F9F9;
+          border-right: 1px solid #DDD;
+          border-bottom: 1px solid #DDD;
+          padding: 5px; }
+        #interviews .interview .screen table tbody tr td {
+          font-size: 14px;
+          line-height: 130%;
+          border-right: 1px solid #DDD;
+          border-bottom: 1px solid #DDD;
+          padding: 5px; }
+      #interviews .interview .screen img {
+        display: block;
+        width: 600px;
+        border: 9px solid #CCC;
+        margin-bottom: 10px; }
+      #interviews .interview .screen p {
+        font-size: 14px;
+        line-height: 150%; }
+      #interviews .interview .screen ul {
+        font-size: 14px;
+        line-height: 150%; }
+
+#ranking_summary {
+  margin-bottom: 20px; }
+  #ranking_summary table {
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    margin-bottom: 15px; }
+    #ranking_summary table caption {
+      caption-side: bottom;
+      font-size: 14px;
+      text-align: right;
+      padding-top: 5px; }
+    #ranking_summary table tr th, #ranking_summary table tr td {
+      font-size: 14px;
+      text-align: center;
+      border-right: 1px solid #DDD;
+      border-bottom: 1px solid #DDD;
+      padding: 10px 8px; }
+    #ranking_summary table tr th {
+      font-weight: bold;
+      text-align: left;
+      vertical-align: top;
+      background-color: #F9F9F9; }
+
+#other_tournament {
+  margin-bottom: 20px; }
+  #other_tournament .element {
+    border-bottom: 1px dotted #DDD;
+    padding-bottom: 10px;
+    margin-bottom: 10px; }
+    #other_tournament .element h2 {
+      font-size: 14px;
+      line-height: 140%;
+      font-weight: bold;
+      margin-bottom: 5px; }
+    #other_tournament .element span {
+      display: inline-block;
+      font-size: 12px;
+      color: #FFF;
+      text-align: center;
+      border-radius: 5px;
+      padding: 4px 10px 3px 12px;
+      margin-bottom: 5px; }
+      #other_tournament .element span.info {
+        background-color: #46b8da; }
+      #other_tournament .element span.warning {
+        background-color: #f0ad4e; }
+    #other_tournament .element dl {
+      margin-bottom: 5px; }
+      #other_tournament .element dl dt, #other_tournament .element dl dd {
+        display: inline;
+        font-size: 14px; }
+
+#image_gallery {
+  margin-bottom: 20px; }
+  #image_gallery ul li {
+    width: 300px;
+    height: 225px;
+    margin-bottom: 10px;
+    position: relative; }
+    #image_gallery ul li img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #image_gallery ul li span {
+      display: block;
+      width: 300px;
+      box-sizing: border-box;
+      font-size: 12px;
+      color: #FFF;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 1em;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10; }
+
+#error_message {
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFF;
+  border-radius: 5px;
+  background-color: #d9534f;
+  padding: 15px;
+  margin-bottom: 20px; }
+  #error_message i {
+    font-size: 30px; }
+
+.credit {
+  font-size: 12px;
+  text-align: right; }
+
+#howtoentry {
+  margin-bottom: 20px; }
+  #howtoentry h2 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 10px; }
+  #howtoentry p {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 10px; }
+  #howtoentry ul {
+    margin-bottom: 10px; }
+    #howtoentry ul li {
+      font-size: 14px;
+      line-height: 150%; }
+
+#entryform {
+  margin-bottom: 30px; }
+  #entryform table {
+    width: 100%;
+    margin-bottom: 20px; }
+    #entryform table tr {
+      border-bottom: 1px solid #DDD; }
+      #entryform table tr th {
+        width: 200px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        vertical-align: top;
+        padding: 20px 0; }
+        #entryform table tr th span {
+          display: inline-block;
+          font-size: 12px;
+          color: #FFF;
+          text-align: center;
+          background-color: #d9534f;
+          border-radius: 3px;
+          padding: 4px 3px 2px 3px;
+          margin-left: 5px; }
+      #entryform table tr td {
+        padding: 20px 0; }
+        #entryform table tr td input, #entryform table tr td textarea {
+          font-size: 16px;
+          display: block;
+          box-sizing: border-box;
+          border: 1px solid #DDD;
+          border-radius: 3px;
+          padding: 10px;
+          resize: none; }
+          #entryform table tr td input.name, #entryform table tr td input.ruby, #entryform table tr td inputboat, #entryform table tr td textarea.name, #entryform table tr td textarea.ruby, #entryform table tr td textareaboat {
+            width: 300px; }
+          #entryform table tr td input.phone, #entryform table tr td input.email, #entryform table tr td textarea.phone, #entryform table tr td textarea.email {
+            width: 300px; }
+          #entryform table tr td input.email, #entryform table tr td textarea.email {
+            width: 500px; }
+          #entryform table tr td input.zipcode, #entryform table tr td textarea.zipcode {
+            width: 130px;
+            margin-bottom: 10px; }
+          #entryform table tr td input.addr, #entryform table tr td textarea.addr {
+            width: 500px; }
+        #entryform table tr td textarea {
+          width: 500px; }
+        #entryform table tr td label {
+          font-size: 16px;
+          color: #FFF;
+          text-align: center;
+          display: inline-block;
+          background-color: #4cae4c;
+          border-radius: 3px;
+          padding: 5px;
+          margin-right: 10px; }
+          #entryform table tr td label input[type="checkbox"] {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            margin-right: 5px; }
+        #entryform table tr td #name_error, #entryform table tr td #ruby_error, #entryform table tr td #phone_error, #entryform table tr td #email_error, #entryform table tr td #boat_error, #entryform table tr td #zipcode_error, #entryform table tr td #addr_error, #entryform table tr td #round_error, #entryform table tr td #comment_error {
+          font-size: 14px;
+          font-weight: bold;
+          color: #d9534f;
+          margin: 10px 0; }
+        #entryform table tr td .hint {
+          display: block;
+          font-size: 14px;
+          line-height: 140%;
+          padding-top: 10px; }
+
+.form-actions input[type="submit"], .form-actions input[type="button"] {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #d9534f;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 30px;
+  cursor: pointer; }
+.form-actions input[type="button"] {
+  background-color: #46b8da;
+  margin-right: 20px; }
+
+#chairman #chairman_inner {
+  min-height: 400px;
+  background: url("/assets/images/about/bg_pic-chairman.jpg") no-repeat right top;
+  padding-right: 320px; }
+  #chairman #chairman_inner .element {
+    margin-bottom: 40px; }
+    #chairman #chairman_inner .element h2 {
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 2px solid #DDD;
+      padding-bottom: 20px;
+      margin-bottom: 20px; }
+    #chairman #chairman_inner .element p {
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 10px; }
+
+#piechart {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px; }

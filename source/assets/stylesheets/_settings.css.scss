@@ -1,0 +1,20 @@
+$content_width: 960px;
+$theme_color01: #0C3966;
+$theme_color02: rgba(12, 57, 102, 0.9);
+$theme_color03: #0c6bce;
+$primary: #337ab7;
+$success: #4cae4c;
+$info: #46b8da;
+$warning: #f0ad4e;
+$danger: #d9534f;
+$color_set: "primary", "success", "info", "warning", "danger";
+
+@mixin gradation01{
+  background-image: -ms-linear-gradient(top, #0C3966 0%, #337AB7 100%);
+  background-image: -moz-linear-gradient(top, #0C3966 0%, #337AB7 100%);
+  background-image: -o-linear-gradient(top, #0C3966 0%, #337AB7 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0C3966), color-stop(1, #337AB7));
+  background-image: -webkit-linear-gradient(top, #0C3966 0%, #337AB7 100%);
+  background-image: linear-gradient(to bottom, #0C3966 0%, #337AB7 100%);
+}
+

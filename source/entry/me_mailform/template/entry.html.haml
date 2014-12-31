@@ -1,0 +1,207 @@
+---
+title: B.S.T エントリー
+description: 東京湾で唯一のライブフィッシュ方式によるボートシーバストーナメント「B.S.T」に参戦するためのエントリーフォーム。
+---
+= partial "shared/global_navigation", locals: {val: "entry"}
+#topicpath
+  %ol
+    %li
+      = link_to "B.S.T公式TOP", "/"
+      %i.fa.fa-angle-right
+    %li エントリー
+%article#content
+  #content_inner
+    #main_column.single
+      %form{name: "me_mailform", action: "index.php", method: "post"}
+        #error_message
+          %i.fa.fa-exclamation-triangle
+          入力内容に不備があるため申し込みは完了していません。
+        %section#howtoentry
+          %h1 エントリー方法
+          %p
+            以下のフォームにて申し込みいただけます。
+            %br
+            事前に必ず
+            %a{href: "/regulations", target: "_blank"}
+              競技方法
+            と以下をよくお読みください。
+          %h2
+            %i.fa.fa-chevron-right
+            参戦費用
+          %p
+            各ラウンド毎にエントリーフィーとして5000円かかります。
+            %br
+            ※エントリーフィーが変更になる場合は事前に連絡・告知いたします。
+          %p
+            上記以外にボートのチャーター費用が必要です。
+            %br
+            チャーター費用はフィッシングガイドによって異なるため、チャーターを予定しているフィッシングガイドへお問い合せください。
+          %h2
+            %i.fa.fa-chevron-right
+            乗船ボート
+          %p
+            大会参加にあたって、乗船ボートは基本的に参加者ご自身で手配していただきます。
+            %br
+            決まっていない場合は、以下のフィッシングガイドに相談してみてはいかがでしょうか。
+          %ul
+            %li
+              = link_to "http://www.boatseabass.jp/reservation/reservation.html", target: "_blank" do
+                %i.fa.fa-caret-right
+                アイランドクルーズ
+            %li
+              = link_to "http://www.ocean-master.jp/tel.html", target: "_blank" do
+                %i.fa.fa-caret-right
+                オーシャンマスター
+            %li
+              = link_to "https://sites.google.com/site/seabasscaptain/home/reservation", target: "_blank" do
+                %i.fa.fa-caret-right
+                シーバスキャプテン
+            %li
+              = link_to "http://www.seakuro.com/reserve.html", target: "_blank" do
+                %i.fa.fa-caret-right
+                シークロ
+            %li
+              = link_to "http://schedule.jaws-guideservice.com/?eid=4", target: "_blank" do
+                %i.fa.fa-caret-right
+                ジョーズ
+            %li
+              = link_to "http://salt-striker.com/?page_id=4", target: "_blank" do
+                %i.fa.fa-caret-right
+                ストライカー
+            %li
+              = link_to "http://www.daruma-marine.com/charter/index.html", target: "_blank" do
+                %i.fa.fa-caret-right
+                D-marina
+            %li
+              = link_to "http://www.bassmate.co.jp/original6.html", target: "_blank" do
+                %i.fa.fa-caret-right
+                バスメイト
+            %li
+              = link_to "http://www.f-real.com/yq.html", target: "_blank" do
+                %i.fa.fa-caret-right
+                リアル
+            %li
+              = link_to "http://www.geocities.jp/hayasiyusen/index.html", target: "_blank" do
+                %i.fa.fa-caret-right
+                林遊船
+            %li
+              = link_to "http://www.ksp-jack.com/", target: "_blank" do
+                %i.fa.fa-caret-right
+                木更津シーパラダイスJACK
+          %p
+            %span
+              ※上記フィッシングガイド以外でも出場可能です。
+              %br
+              ※どうしても手配が出来ないという場合は、確約できませんが大会事務局で手配代行いたします。
+          %h2
+            %i.fa.fa-chevron-right
+            集合場所
+          %p
+            大会開催日に以下の場所へ集合してください。
+            %br
+            駐車場はマリーナ隣にコインパーキングがありますので、そちらへお願いいたします。
+          %p
+            神奈川県横浜市神奈川区東神奈川2-49-11
+            %br
+            D-marina
+            %br
+            TEL : 045-451-3187
+            %br
+            Mail: d-marina@daruma-marine.com
+          %h2
+            %i.fa.fa-chevron-right
+            その他
+          %p
+            メールフォームが正しく動作しない場合は、お手数ですが上記の電話番号、もしくはメールアドレスへ参加の旨をご連絡ください。
+        %section#entryform
+          %h1 エントリーフォーム
+          %table
+            %tr
+              %th
+                お名前
+                %span 必須
+              %td
+                %input.name{type: "text", name: "name", placeholder: "例）出井 麻里奈", value:""}
+                #name_error
+                  エラーメッセージ
+            %tr
+              %th
+                お名前ふりがな
+                %span 必須
+              %td
+                %input.ruby{type: "text", name: "ruby", placeholder: "例）でい まりな", value:""}
+                #ruby_error
+                  エラーメッセージ
+            %tr
+              %th
+                電話番号
+                %span 必須
+              %td
+                %input.phone{type: "text", name: "phone", placeholder: "例）045-461-1062", value:""}
+                #phone_error
+                  エラーメッセージ
+                %span.hint
+                  携帯電話などの常に連絡が取れる電話番号をご入力ください。
+            %tr
+              %th
+                メールアドレス
+                %span 必須
+              %td
+                %input.email{type: "email", name: "email", placeholder: "例）d-marina@daruma-marine.com", value:""}
+                #email_error
+                  エラーメッセージ
+                %span.hint
+                  常に確認ができるメールアドレスを入力してください。
+                  %br
+                  携帯の場合は迷惑フィルターで「daruma-marine.com」を必ず受信許可に設定お願いいたします。
+            %tr
+              %th
+                ボート名
+              %td
+                %input.boat{type: "text", name: "boat", placeholder: "例）D-marina", value:""}
+                #boat_error
+                  エラーメッセージ
+                %span.hint
+                  手配が困難な方は「手配希望」と入力ください。
+            %tr
+              %th
+                住所
+              %td
+                %input.addr{type: "text", name: "addr", value: "", placeholder: "例）神奈川県横浜市神奈川区東神奈川2-49-11"}
+            %tr
+              %th
+                参戦ラウンド
+                %span 必須
+              %td
+                %label
+                  %input.round{type: "checkbox", name: "round[]", value: "第1戦"} 第1戦
+                %label
+                  %input.round{type: "checkbox", name: "round[]", value: "第2戦"} 第2戦
+                %label
+                  %input.round{type: "checkbox", name: "round[]", value: "第3戦"} 第3戦
+                %label
+                  %input.round{type: "checkbox", name: "round[]", value: "第4戦"} 第4戦
+                %label
+                  %input.round{type: "checkbox", name: "round[]", value: "第5戦"} 第5戦
+                #round_error
+                  エラーメッセージ
+                %span.hint
+                  参加したい未開催ラウンド全てにチェックを入れてください。
+                  %br
+                  第1戦：1月27日、第2戦：3月10日、第3戦：5月12日、第4戦：6月9日、第5戦：7月14日
+                  %br
+                  各ラウンド開催前に参加意思を確認するメールが事務局から再度送信されますことを予めご了承ください。
+            %tr
+              %th
+                通信欄
+              %td
+                %textarea{name: "comment", rows: "10"}
+                #comment_error
+                  エラーメッセージ
+                %span.hint
+                  参加するにあたって疑問や質問、コメント等ございましたら入力してください。
+        .form-actions
+          %input{type: "submit", value: "参戦申し込みする"}
+      %p.credit
+        %span#powered_by_me
+

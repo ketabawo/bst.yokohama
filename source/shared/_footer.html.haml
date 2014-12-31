@@ -1,0 +1,24 @@
+%footer#footer
+  #footer_inner
+    #footer_contents
+      #fb_widget
+        .fb-like-box{"data-href" => "https://www.facebook.com/boatseabasstournament", "data-width" => "500", "data-colorscheme" => "light", "data-show-faces" => "true", "data-header" => "false", "data-stream" => "false", "data-show-border" => "false"}
+      #pro_guides
+        %ul
+          %li= link_to image_tag("bnr_island-cruise.gif", alt: "アイランドクルーズ", width: "200", height: "50"), "http://www.boatseabass.jp/", target: "_blank"
+          %li= link_to image_tag("bnr_ocean-master.gif", alt: "オーシャンマスター", width: "200", height: "50"), "http://www.ocean-master.jp/", target: "_blank"
+          %li= link_to image_tag("bnr_seakuro.gif", alt: "シークロ", width: "200", height: "50"), "http://www.seakuro.com/", target: "_blank"
+          %li= link_to image_tag("bnr_seabass-captain.gif", alt: "シーバスキャプテン", width: "200", height: "50"), "https://sites.google.com/site/seabasscaptain/home", target: "_blank"
+          %li= link_to image_tag("bnr_jaws.gif", alt: "ジョーズ", width: "200", height: "50"), "http://jaws-guideservice.com/", target: "_blank"
+          %li= link_to image_tag("bnr_striker.gif", alt: "ストライカー", width: "200", height: "50"), "http://salt-striker.com/", target: "_blank"
+          %li= link_to image_tag("bnr_d-marina.gif", alt: "D-marina", width: "200", height: "50"), "http://www.daruma-marine.com/", target: "_blank"
+          %li= link_to image_tag("bnr_bassmate.gif", alt: "バスメイト", width: "200", height: "50"), "http://www.bassmate.co.jp/original6.html", target: "_blank"
+          %li= link_to image_tag("bnr_hayashi-yusen.gif", alt: "林遊船", width: "200", height: "50"), "http://www.geocities.jp/hayasiyusen/", target: "_blank"
+          %li= link_to image_tag("bnr_yokohama-marina.gif", alt: "平野ボート", width: "200", height: "50"), "http://www.yokohama-marina.co.jp/", target: "_blank"
+          %li= link_to image_tag("bnr_real.gif", alt: "Real", width: "200", height: "50"), "http://www.f-real.com/", target: "_blank"
+  #copyright
+    %address
+      Copyright(C) 2013 - #{Time.now.year}
+      %abbr{title: "Boat Seabass Tournament"}
+        B.S.T
+      All Rights Reserved.

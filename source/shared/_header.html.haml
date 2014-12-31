@@ -1,0 +1,29 @@
+%header#header
+  .header_upper
+    .header_upper_inner
+      .tagline 集まれ！横浜ボートシーバストーナメンター
+      - if false
+        %ul
+          %li= link_to "メディア掲載事例", "/media/"
+          %li= link_to "めざすもの", ""
+          %li= link_to "大会事務局", ""
+  .header_inner
+    #logo
+      = link_to image_tag("toplogo.png", alt: "ボートシーバストーナメント", width: "226", height: "57"),"/"
+      %h1
+    .site_summary
+      %p
+        %abbr{title: "Boat Seabass Tournament"}
+          B.S.T.
+        ボートシーバストーナメントは
+        %br
+        東京湾唯一のライブフィッシュ方式によるトーナメントです。
+    #header_utility
+      .socials
+        .fb-like{"data-href" => "http://bst.yokohama/", "data-layout" => "box_count", "data-action" => "like", "data-show-faces" => "false", "data-share" => "false"}
+        .tweet
+          :plain
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="vertical">ツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        .g-plusone{"data-size" => "tall"}
+

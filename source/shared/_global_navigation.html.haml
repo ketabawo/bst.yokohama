@@ -1,0 +1,44 @@
+%nav#navigation
+  %ul
+    %li(class="#{val == 'top' ? 'active' : ''}")
+      = link_to '/index.html' do
+        トップページ
+        %br
+        %span
+          TOP
+    %li(class="#{val == 'about' ? 'active' : ''}")
+      = link_to "/about/index.html" do
+        B.S.Tとは
+        %br
+        %span
+          ABOUT B.S.T
+    %li(class="#{val == 'regulations' ? 'active' : ''}")
+      = link_to "/regulations/index.html" do
+        競技方法
+        %br
+        %span
+          REGULATIONS
+    %li(class="#{val == 'achedules' ? 'active' : ''}")
+      = link_to "/schedules/index.html" do
+        日程
+        %br
+        %span
+          SCHEDULES
+    %li(class="#{val == 'results' ? 'active' : ''}")
+      = link_to "/results/index.html" do
+        大会結果
+        %br
+        %span
+          RESULTS
+    %li(class="#{val == 'rankings' ? 'active' : ''}")
+      = link_to "/rankings/index.html" do
+        ランキング
+        %br
+        %span
+          SERIES RANKINGS
+    %li(class="#{val == 'entry' ? 'active' : ''}")
+      = link_to "/entry/" do
+        エントリー
+        %br
+        %span
+          ENTRY
