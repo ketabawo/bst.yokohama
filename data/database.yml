@@ -1,0 +1,13 @@
+round1:
+  - rank: 1
+    angler: [名前1, ヨミガナ1, ボート名]
+    result: [50, 41]
+  - rank: 2
+    angler: [名前2, ヨミガナ2, ボート名]
+    result: [50, 41, 70]
+  - rank: 3
+    angler: [名前2, ヨミガナ2, ボート名]
+    result: [50]
+  - rank: 4
+    angler: [名前2, ヨミガナ2, ボート名]
+    result: []

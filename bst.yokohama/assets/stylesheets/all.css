@@ -126,7 +126,7 @@ header#header {
         text-shadow: 1px 1px #333;
         text-align: center;
         text-decoration: none;
-        padding: 10px 0 5px 0; }
+        padding: 14px 0 9px 0; }
         #navigation ul li a:hover {
           background-color: #0C6BCE; }
         #navigation ul li a span {
@@ -362,20 +362,20 @@ header#header {
         line-height: 150%;
         margin-bottom: 10px; }
 
-#informations {
+#informations, #blog_info {
   margin-bottom: 20px; }
-  #informations ul li {
-    font-size: 16px;
+  #informations ul li, #blog_info ul li {
+    font-size: 14px;
     line-height: 150%;
     margin-bottom: 10px; }
-    #informations ul li i {
+    #informations ul li i, #blog_info ul li i {
       font-size: 20px;
       color: #f0ad4e;
       margin-right: 10px; }
-    #informations ul li span {
+    #informations ul li span, #blog_info ul li span {
       font-size: 12px; }
-  #informations p.more {
-    font-size: 16px;
+  #informations p.more, #blog_info p.more {
+    font-size: 14px;
     text-align: right; }
 
 #timetable {

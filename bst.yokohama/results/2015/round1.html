@@ -44,13 +44,13 @@
   </div>
   <div class='header_inner'>
     <div id='logo'>
-      <a href="/"><img alt="ボートシーバストーナメント" width="226" height="57" src="/assets/images/toplogo.png" /></a>
+      <a href="/"><img alt="B.S.T ボートシーバストーナメント" width="226" height="57" src="/assets/images/toplogo.png" /></a>
       <h1></h1>
     </div>
     <div class='site_summary'>
       <p>
         <abbr title='Boat Seabass Tournament'>
-          B.S.T.
+          B.S.T
         </abbr>
         ボートシーバストーナメントは
         <br>
@@ -185,57 +185,51 @@
           </thead>
           <tbody>
             <tr>
+              <td>1</td>
               <td>
-                <i class='fa fa-trophy rank1'></i>
-              </td>
-              <td>
-                <span class='ruby'>セイ メイ</span>
-                姓 名
+                <span class='ruby'>ヨミガナ1</span>
+                名前1
               </td>
               <td>ボート名</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>50</td>
+              <td>41</td>
+              <td></td>
+              <td>91</td>
             </tr>
             <tr>
+              <td>2</td>
               <td>
-                <i class='fa fa-trophy rank2'></i>
-              </td>
-              <td>
-                <span class='ruby'>セイ メイ</span>
-                姓 名
+                <span class='ruby'>ヨミガナ2</span>
+                名前2
               </td>
               <td>ボート名</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>50</td>
+              <td>41</td>
+              <td>70</td>
+              <td>161</td>
             </tr>
             <tr>
+              <td>3</td>
               <td>
-                <i class='fa fa-trophy rank3'></i>
-              </td>
-              <td>
-                <span class='ruby'>セイ メイ</span>
-                姓 名
+                <span class='ruby'>ヨミガナ2</span>
+                名前2
               </td>
               <td>ボート名</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>50</td>
+              <td></td>
+              <td></td>
+              <td>50</td>
             </tr>
             <tr>
               <td>4</td>
               <td>
-                <span class='ruby'>セイ メイ</span>
-                姓 名
+                <span class='ruby'>ヨミガナ2</span>
+                名前2
               </td>
               <td>ボート名</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td></td>
+              <td></td>
+              <td></td>
               <td>0</td>
             </tr>
           </tbody>
@@ -424,27 +418,45 @@
           </tr>
           <tr>
             <th>参加者数</th>
-            <td>0人</td>
+            <td>
+              4
+              人
+            </td>
           </tr>
           <tr>
             <th>ウェイイン総数</th>
-            <td>0本</td>
+            <td>
+              6
+              本
+            </td>
           </tr>
           <tr>
             <th>リミットメイク率</th>
-            <td>0％</td>
+            <td>
+              25.0
+              ％
+            </td>
           </tr>
           <tr>
             <th>最大叉長</th>
-            <td>0cm</td>
+            <td>
+              70
+              cm
+            </td>
           </tr>
           <tr>
             <th>最小叉長</th>
-            <td>0cm</td>
+            <td>
+              41
+              cm
+            </td>
           </tr>
           <tr>
             <th>平均叉長</th>
-            <td>40cm</td>
+            <td>
+              50.3
+              cm
+            </td>
           </tr>
         </table>
       </section>
@@ -452,25 +464,21 @@
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-      
       var data = google.visualization.arrayToDataTable([
-      ['ウェイイン数', 'ウェイイン数/人数'],
-      ['3本',     11],
-      ['2本',      2],
-      ['1本',  2],
-      ['0本', 2],
+      ['ウェイイン数', '人数'],
+      ['リミットメイク',     1],
+      ['2本',      1],
+      ['1本',  1],
+      ['ノーフィッシュ', 1],
       ]);
-      
       var options = {
       title: 'ウェイイン数内訳',
       titleTextStyle:{fontSize: 16},
       legend: 'none',
-      
-      chartArea: {left:0,top:35,width:'90%',height:'90%'}
+      chartArea: {left:0,top:35,width:'90%',height:'90%'},
+      colors: ['#4cae4c', '#46b8da', '#f0ad4e', '#d9534f']
       };
-      
       var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-      
       chart.draw(data, options);
       }
       </script>
@@ -573,7 +581,7 @@
   </div>
   <div id='copyright'>
     <address>
-      Copyright(C) 2013 - 2014
+      Copyright(C) 2013 - 2015
       <abbr title='Boat Seabass Tournament'>
         B.S.T
       </abbr>

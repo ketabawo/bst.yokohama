@@ -18,7 +18,7 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
         バトル！
     .slider.slider2
       %p
-        挑戦者随時
+        エントリー随時
         %span
           募集中
         ！！  
@@ -28,30 +28,29 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
       %section#informations
         %h1
           %i.fa.fa-info-circle
-          公式ブログからのお知らせ
-        %ul#feed
-          - require 'rss'
-          - feedUrl = 'http://bst.naturum.ne.jp/index.xml'
-          - rss = RSS::Parser.parse(feedUrl)
-          - count = 1
-          - rss.items.each do |item|
-            %li
-              %i.fa.fa-caret-right
-              = link_to item.link, target: "_blank" do
-                = item.title
-            - count += 1
-            - if count > 3 then
-              - break
-        %p.more
-          =link_to "http://bst.naturum.ne.jp/", target: "_blank" do
-            %i.fa.fa-hand-o-right
-            もっと見る
+          事務局からのお知らせ
+        %ul
+          %li
+            %i.fa.fa-caret-right
+            早くも新規エントリー3名！！ありがとうございます！！
+            %span
+              (2015/01/02）
+          %li
+            %i.fa.fa-caret-right
+            あけましておめでとうございます。今年も
+            %abbr{title: "Boat Seabass Tournament"}
+              B.S.T
+            を宜しくお願い致します。
+            %span
+              (2015/01/01）
       %section#events
         %h1
           %i.fa.fa-calendar
           B.S.T 年間競技日程
         %p.section_summary
-          B.S.Tでは、プロ・アマ、男女問わず、参戦していただけるアングラーを随時募集しております。
+          %abbr{title: "Boat Seabass Tournament"}
+            B.S.T
+          では、プロ・アマ、男女問わず、参戦していただけるアングラーを随時募集しております。
           %br
           全てに参戦する必要はありませんので、我こそは！という方の挑戦をお待ちしております。
         .element
@@ -278,6 +277,29 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
               %td 福永 雄海
               %td シーバスキャプテン
               %td 350
+      %section#blog_info
+        %h1
+          %i.fa.fa-info
+          公式ブログからのお知らせ
+        %ul#feed
+          - require 'rss'
+          - feedUrl = 'http://bst.naturum.ne.jp/index.xml'
+          - rss = RSS::Parser.parse(feedUrl)
+          - count = 1
+          - rss.items.each do |item|
+            %li
+              %i.fa.fa-caret-right
+              = link_to item.link, target: "_blank" do
+                = item.title
+              %span
+                = item.pubDate.strftime("(%Y/%m/%d)")
+            - count += 1
+            - if count > 3 then
+              - break
+        %p.more
+          =link_to "http://bst.naturum.ne.jp/", target: "_blank" do
+            %i.fa.fa-hand-o-right
+            もっと見る
       %section#other_tournament
         %h1
           %i.fa.fa-check

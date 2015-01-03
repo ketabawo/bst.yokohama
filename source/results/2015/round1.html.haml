@@ -2,6 +2,16 @@
 title: B.S.T 2015 第1戦 大会結果
 description: 2015年1月27日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「B.T.S 2015」第1戦の大会結果です。
 ---
+- weiin = []
+- fish_size = [] 
+- data.database.round1.each do |f|
+  - f.result.each do |size|
+    - fish_size.push(size)
+  - weiin.push(f.result.length)
+- limitmake = weiin.count(3)
+- double = weiin.count(2)
+- single = weiin.count(1)
+- nofish = weiin.count(0)
 = partial "shared/global_navigation", :locals => {:val => "results"}
 #topicpath
   %ol
@@ -42,49 +52,61 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
               %th 3rd
               %th Total
           %tbody
-            %tr
-              %td
-                %i.fa.fa-trophy.rank1
-              %td
-                %span.ruby セイ メイ
-                姓 名
-              %td ボート名
-              %td 0
-              %td 0
-              %td 0
-              %td 0
-            %tr
-              %td
-                %i.fa.fa-trophy.rank2
-              %td
-                %span.ruby セイ メイ
-                姓 名
-              %td ボート名
-              %td 0
-              %td 0
-              %td 0
-              %td 0
-            %tr
-              %td
-                %i.fa.fa-trophy.rank3
-              %td
-                %span.ruby セイ メイ
-                姓 名
-              %td ボート名
-              %td 0
-              %td 0
-              %td 0
-              %td 0
-            %tr
-              %td 4
-              %td
-                %span.ruby セイ メイ
-                姓 名
-              %td ボート名
-              %td 0
-              %td 0
-              %td 0
-              %td 0
+            - data.database.round1.each do |f|
+              %tr
+                %td= f.rank
+                %td
+                  %span.ruby= f.angler[1]
+                  = f.angler[0]
+                %td= f.angler[2]
+                %td= f.result[0]
+                %td= f.result[1]
+                %td= f.result[2]
+                %td= f.result[0].to_i + f.result[1].to_i + f.result[2].to_i
+            -if false
+              %tr
+                %td
+                  %i.fa.fa-trophy.rank1
+                %td
+                  %span.ruby セイ メイ
+                  姓 名
+                %td ボート名
+                %td 0
+                %td 0
+                %td 0
+                %td 0
+              %tr
+                %td
+                  %i.fa.fa-trophy.rank2
+                %td
+                  %span.ruby セイ メイ
+                  姓 名
+                %td ボート名
+                %td 0
+                %td 0
+                %td 0
+                %td 0
+              %tr
+                %td
+                  %i.fa.fa-trophy.rank3
+                %td
+                  %span.ruby セイ メイ
+                  姓 名
+                %td ボート名
+                %td 0
+                %td 0
+                %td 0
+                %td 0
+              %tr
+                %td 4
+                %td
+                  %span.ruby セイ メイ
+                  姓 名
+                %td ボート名
+                %td 0
+                %td 0
+                %td 0
+                %td 0
           %tfoot
             %tr
               %th Rank
@@ -211,53 +233,79 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
             %td 2015/1/27
           %tr
             %th 天気
-            %td #{$weather}
+            %td 
           %tr
             %th 潮
             %td 
           %tr
             %th 参加者数
-            %td 0人
+            %td
+              - if data.database.round1.present? then
+                = weiin.length
+              - else
+                0
+              人
           %tr
             %th ウェイイン総数
-            %td 0本
+            %td
+              - if data.database.round1.present? then
+                = fish_size.length
+              - else
+                0
+              本
           %tr
             %th リミットメイク率
-            %td 0％
+            %td
+              - if data.database.round1.present? then
+                = (limitmake.to_f / weiin.length.to_f * 100).round(2)
+              - else
+                0
+              ％
           %tr
             %th 最大叉長
-            %td 0cm
+            %td 
+              - if data.database.round1.present? then
+                = fish_size.sort.last
+              - else
+                0
+              cm
           %tr
             %th 最小叉長
-            %td 0cm
+            %td 
+              - if data.database.round1.present? then
+                = fish_size.sort.first
+              - else
+                40
+              cm
           %tr
             %th 平均叉長
-            %td 40cm
-      - fish3 = 11
+            %td
+              - if data.database.round1.present? then
+                - total_size = fish_size.inject{|sum, n| sum + n }
+                = (total_size.to_f / fish_size.length.to_f).round(1)
+              - else
+                0
+              cm
       :plain
         <script type="text/javascript">
         google.load("visualization", "1", {packages:["corechart"]});
         google.setOnLoadCallback(drawChart);
         function drawChart() {
-        
         var data = google.visualization.arrayToDataTable([
-        ['ウェイイン数', 'ウェイイン数/人数'],
-        ['3本',     #{fish3}],
-        ['2本',      2],
-        ['1本',  2],
-        ['0本', 2],
+        ['ウェイイン数', '人数'],
+        ['リミットメイク',     #{limitmake}],
+        ['2本',      #{double}],
+        ['1本',  #{single}],
+        ['ノーフィッシュ', #{nofish}],
         ]);
-        
         var options = {
         title: 'ウェイイン数内訳',
         titleTextStyle:{fontSize: 16},
         legend: 'none',
-        
-        chartArea: {left:0,top:35,width:'90%',height:'90%'}
+        chartArea: {left:0,top:35,width:'90%',height:'90%'},
+        colors: ['#4cae4c', '#46b8da', '#f0ad4e', '#d9534f']
         };
-        
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        
         chart.draw(data, options);
         }
         </script>
