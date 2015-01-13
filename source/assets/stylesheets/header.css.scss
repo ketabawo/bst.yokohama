@@ -41,6 +41,7 @@ header#header{
       vertical-align: middle;
       img{
         display: block;
+        margin: 5px 0;
       }
     }
     .site_summary{
@@ -58,16 +59,23 @@ header#header{
       .socials{
         display: table;
         margin: 0 0 0 auto;
-        .fb-like{
-          display: table-cell;
-          vertical-align: top;
+        #facebook, #twitter, #google{
+          display: inline-block;
+          margin-left: 10px;
+          i{
+            font-size: 40px;
+            color: #3a5795;
+          }
         }
-        .tweet{
-          @extend .fb-like;
-          padding: 0 10px;
+        #twitter{
+          i{
+            color: #3b88c3;
+          }
         }
-        g-plusone{
-          @extend .fb-like;
+        #google{
+          i{
+            color: #DD4B39;
+          }
         }
       }
     }
@@ -78,7 +86,6 @@ header#header{
   @include gradation01;
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
-  //margin-bottom: 20px;
   ul{
     display: table;
     table-layout: fixed;

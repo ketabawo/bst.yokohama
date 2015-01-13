@@ -3,12 +3,14 @@ title: 2014年 シリーズランキング
 ---
 = partial "shared/global_navigation", :locals => {:val => "rankings"}
 #topicpath
-  %ol
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
     %li
-      = link_to "B.S.T公式TOP", "/"
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} B.S.T公式TOP
       %i.fa.fa-angle-right
     %li
-      = link_to "シリーズランキング", "/rankings/"
+      = link_to "/rankings/", itemprop: "url" do
+        %span{itemprop: "title"} シリーズランキング
       %i.fa.fa-angle-right
     %li 2014年 シリーズランキング
 #imagepanel_low
@@ -46,7 +48,7 @@ title: 2014年 シリーズランキング
           %tbody
             %tr
               %td
-                %i.fa.fa-trophy.rank1
+                %i.fa.fa-trophy
               %td 
                 %span.ruby オオバタケ タク
                 大畠 拓
@@ -59,7 +61,7 @@ title: 2014年 シリーズランキング
               %td 435
             %tr
               %td
-                %i.fa.fa-trophy.rank2
+                %i.fa.fa-trophy
               %td
                 %span.ruby カギザワ ヒロシ
                 柿澤 寛
@@ -72,7 +74,7 @@ title: 2014年 シリーズランキング
               %td 425
             %tr
               %td
-                %i.fa.fa-trophy.rank3
+                %i.fa.fa-trophy
               %td
                 %span.ruby フクナガ ユウミ
                 福永 雄海
@@ -311,6 +313,8 @@ title: 2014年 シリーズランキング
               %th R 5
               %th Total
     #sub_column
+      %aside#ads
+        = partial "shared/adsense_side"
       %section#ranking_summary
         %h1
           %i.fa.fa-file-text-o

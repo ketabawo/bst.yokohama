@@ -4,12 +4,14 @@ description: 2014年3月11日（火）に開催された東京湾No.1ボート�
 ---
 = partial "shared/global_navigation", :locals => {:val => "results"}
 #topicpath
-  %ol
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
     %li
-      = link_to "B.S.T公式TOP", "/"
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} B.S.T公式TOP
       %i.fa.fa-angle-right
     %li
-      = link_to "大会結果", "/results/"
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
       %i.fa.fa-angle-right
     %li B.S.T 2014 第2戦 大会結果
 #imagepanel_result
@@ -45,7 +47,7 @@ description: 2014年3月11日（火）に開催された東京湾No.1ボート�
           %tbody
             %tr
               %td
-                %i.fa.fa-trophy.rank1
+                %i.fa.fa-trophy
               %td
                 %span.ruby フクナガ ユウミ
                 福永 雄海
@@ -59,7 +61,7 @@ description: 2014年3月11日（火）に開催された東京湾No.1ボート�
               %td 198.0
             %tr
               %td
-                %i.fa.fa-trophy.rank2
+                %i.fa.fa-trophy
               %td
                 %span.ruby カキザワ ヒロシ
                 柿澤 寛
@@ -70,7 +72,7 @@ description: 2014年3月11日（火）に開催された東京湾No.1ボート�
               %td 186.5
             %tr
               %td
-                %i.fa.fa-trophy.rank3
+                %i.fa.fa-trophy
               %td
                 %span.ruby モリタ ヒデノリ
                 森田 英典
@@ -265,6 +267,8 @@ description: 2014年3月11日（火）に開催された東京湾No.1ボート�
                 %i.fa.fa-caret-right
                 がまかつ レンジスイマー ＋ エコギア ４インチ
     #sub_column
+      %aside#ads
+        = partial "shared/adsense_side"
       %section#ranking_summary
         %h1
           %i.fa.fa-file-text-o

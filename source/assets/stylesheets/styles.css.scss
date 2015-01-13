@@ -23,8 +23,11 @@
   width: 100%;
   background-color: #000;
   margin-bottom: 20px;
-  .bx-wrapper{
+  .bx-wrapper, .bx-viewport{
     width: $content_width;
+    border: none;
+    left: 0;
+    box-shadow: none;
     margin: 0 auto;
   }
   #imagepanel_top_inner{
@@ -34,14 +37,17 @@
     .slider{
       width: $content_width;
       height: 300px;
-      background-position: center center;
+      background-image: image_url("bg_pic-sliders.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      margin: 0 auto;
-      @for $i from 0 through 2{
-        &.slider#{$i}{
-          background-image: image_url("bg_pic-slider#{$i}.jpg");
-        }
+      &.slider0{
+        background-position: 0 0;
+      }
+      &.slider1{
+        background-position: 0 -300px;
+      }
+      &.slider2{
+        background-position: 0 -600px;
       }
       p{
         font-size: 30px;
@@ -231,26 +237,25 @@
     width: 100%;
     border-top: 1px solid #DDD;
     border-left: 1px solid #DDD;
-    thead{
+    thead, tbody{
       tr{
-        th{
+        th, td{
           font-size: 14px;
           font-weight: bold;
+          line-height: 140%;
+          vertical-align: top;
           background-color: #F9F9F9;
           border-right: 1px solid #DDD;
           border-bottom: 1px solid #DDD;
-          padding: 8px 12px;
+          padding: 12px;
         }
       }
     }
     tbody{
       tr{
         td{
-          font-size: 14px;
-          line-height: 140%;
-          border-right: 1px solid #DDD;
-          border-bottom: 1px solid #DDD;
-          padding: 12px 20px;
+          font-weight: normal;
+          background-color: #FFF;
         }
       }
     }
@@ -269,9 +274,9 @@
       text-align: right;
       padding-top: 5px;
     }
-    thead{
+    thead, tbody{
       tr{
-        th{
+        th, td{
           font-size: 14px;
           font-weight: bold;
           background-color: #F9F9F9;
@@ -284,24 +289,28 @@
     tbody{
       tr{
         td{
-          font-size: 14px;
-          border-right: 1px solid #DDD;
-          border-bottom: 1px solid #DDD;
-          padding: 5px;
+          font-weight: normal;
+          background-color: #FFF;
           &:first-child, &:last-child{
             text-align: center;
           }
           i{
             font-size: 20px;
-            &.rank1{
-              color: gold;
-            }
-            &.rank2{
-              color: silver;
-            }
-            &.rank3{
-              color: brown;
-            }
+          }
+        }
+        &:nth-child(1) td{
+          i{
+            color: #FFD700;
+          }
+        }
+        &:nth-child(2) td{
+          i{
+            color: #C0C0C0;
+          }
+        }
+        &:nth-child(3) td{
+          i{
+            color: #C47222;
           }
         }
       }
@@ -479,21 +488,27 @@
           }
           i{
             font-size: 20px;
-            &.rank1{
-              color: gold;
-            }
-            &.rank2{
-              color: silver;
-            }
-            &.rank3{
-              color: brown;
-            }
           }
           &:nth-child(1){
             text-align: center;
           }
           &:nth-child(n+4){
             text-align: right;
+          }
+        }
+        &:nth-child(1) td{
+          i{
+            color: #FFD700;
+          }
+        }
+        &:nth-child(2) td{
+          i{
+            color: #C0C0C0;
+          }
+        }
+        &:nth-child(3) td{
+          i{
+            color: #C47222;
           }
         }
       }
@@ -586,11 +601,12 @@
         width: 100%;
         border-top: 1px solid #DDD;
         border-left: 1px solid #DDD;
-        thead{
+        thead, tbody{
           tr{
-            th{
+            th, td{
               font-size: 14px;
               font-weight: bold;
+              line-height: 130%;
               background-color: #F9F9F9;
               border-right: 1px solid #DDD;
               border-bottom: 1px solid #DDD;
@@ -601,20 +617,11 @@
         tbody{
           tr{
             th{
-              font-size: 14px;
-              font-weight: bold;
               text-align: center;
-              background-color: #F9F9F9;
-              border-right: 1px solid #DDD;
-              border-bottom: 1px solid #DDD;
-              padding: 5px;
             }
             td{
-              font-size: 14px;
-              line-height: 130%;
-              border-right: 1px solid #DDD;
-              border-bottom: 1px solid #DDD;
-              padding: 5px;
+              font-weight: normal;
+              background-color: #FFF;
             }
           }
         }
@@ -899,5 +906,8 @@
 #piechart{
   width: 100%;
   height: 300px;
+  margin-bottom: 20px;
+}
+#ads{
   margin-bottom: 20px;
 }

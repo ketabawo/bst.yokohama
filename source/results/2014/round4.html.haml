@@ -4,12 +4,14 @@ description: 2014年7月8日（火）に開催された東京湾No.1ボートシ
 ---
 = partial "shared/global_navigation", :locals => {:val => "results"}
 #topicpath
-  %ol
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
     %li
-      = link_to "B.S.T公式TOP", "/"
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} B.S.T公式TOP
       %i.fa.fa-angle-right
     %li
-      = link_to "大会結果", "/results/"
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
       %i.fa.fa-angle-right
     %li B.S.T 2014 第4戦 大会結果
 #imagepanel_result
@@ -45,7 +47,7 @@ description: 2014年7月8日（火）に開催された東京湾No.1ボートシ
           %tbody
             %tr
               %td
-                %i.fa.fa-trophy.rank1
+                %i.fa.fa-trophy
               %td
                 %span.ruby タケ
                 Take
@@ -56,7 +58,7 @@ description: 2014年7月8日（火）に開催された東京湾No.1ボートシ
               %td 168.5
             %tr
               %td
-                %i.fa.fa-trophy.rank2
+                %i.fa.fa-trophy
               %td
                 %span.ruby カズノ タツヤ
                 数野 達也
@@ -67,7 +69,7 @@ description: 2014年7月8日（火）に開催された東京湾No.1ボートシ
               %td 164.0
             %tr
               %td
-                %i.fa.fa-trophy.rank3
+                %i.fa.fa-trophy
               %td
                 %span.ruby モリタ ヒデノリ
                 森田 英典
@@ -293,6 +295,8 @@ description: 2014年7月8日（火）に開催された東京湾No.1ボートシ
                 %i.fa.fa-caret-right
                 バイブレーション
     #sub_column
+      %aside#ads
+        = partial "shared/adsense_side"
       %section#ranking_summary
         %h1
           %i.fa.fa-file-text-o

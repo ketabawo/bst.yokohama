@@ -13,37 +13,75 @@
       overflow: hidden;
       margin-bottom: 20px;
       #fb_widget{
-        width: 500px;
-        height: 260px;
-        background-color: #FFF;
+        width: 468px;
         float: left;
+        .fb-like-box{
+          background-color: #FFF;
+          margin-bottom: 10px;
+        }
+        .banner46860{
+          height: 60px;
+          margin-bottom: 10px;
+        }
       }
       #pro_guides{
         width: 420px;
         float: right;
+        p{
+          font-size: 14px;
+          color: #FFF;
+        }
         ul{
           width: 100%;
           overflow: hidden;
           li{
             width: 200px;
             height: 50px;
-            background-color: #CCC;
+            background-image: image_url('bg_bnr-guides.gif');
+            background-repeat: no-repeat;
             margin: 0 20px 10px 0;
             float: left;
             &:nth-child(even){
               margin-right: 0;
             }
+            &:nth-child(1){
+              background-position: 0 0;
+            }
+            &:nth-child(2){
+              background-position: 0 -50px;
+            }
+            &:nth-child(3){
+              background-position: 0 -100px;
+            }
+            &:nth-child(4){
+              background-position: 0 -150px;
+            }
+            &:nth-child(5){
+              background-position: 0 -200px;
+            }
+            &:nth-child(6){
+              background-position: 0 -250px;
+            }
+            &:nth-child(7){
+              background-position: 0 -300px;
+            }
+            &:nth-child(8){
+              background-position: 0 -350px;
+            }
+            &:nth-child(9){
+              background-position: 0 -400px;
+            }
+            &:nth-child(10){
+              background-position: 0 -450px;
+            }
+            &:nth-child(11){
+              background-position: 0 -500px;
+            }
             a{
+              opacity: 0;
               display: block;
               width: 100%;
               height: 100%;
-              font-size: 16px;
-              position: relative;
-              span{
-                position: absolute;
-                top: 10px;
-                left: 10px;
-              }
             }
           }
         }

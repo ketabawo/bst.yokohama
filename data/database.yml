@@ -1,13 +1,22 @@
 round1:
   - rank: 1
-    angler: [名前1, ヨミガナ1, ボート名]
-    result: [50, 41]
+    angler:
+      - 横溝 浩
+      - ヨコミゾ ヒロシ
+      - シーマン
+    result: []
   - rank: 2
-    angler: [名前2, ヨミガナ2, ボート名]
-    result: [50, 41, 70]
+    angler: [熊膳 英大, クマゼン ヒデヒロ, 不明]
+    result: []
   - rank: 3
-    angler: [名前2, ヨミガナ2, ボート名]
-    result: [50]
+    angler: [松木 邦彰, マツキ クニアキ, 不明]
+    result: []
   - rank: 4
-    angler: [名前2, ヨミガナ2, ボート名]
+    angler: [一迫 敏洋, イチハザマ トシヒロ, リアル]
+    result: []
+  - rank: 5
+    angler: [大畠 拓, オオバタケ タク, シークロ]
+    result: []
+  - rank: 6
+    angler: [藤田 正明, フジタ マサアキ, レンタル]
     result: []

@@ -4,9 +4,10 @@ description: B.S.T ボートシーバストーナメントの各シリーズ結�
 ---
 = partial "shared/global_navigation", :locals => {:val => "rankings"}
 #topicpath
-  %ol
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
     %li
-      = link_to "B.S.T公式TOP", "/"
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} B.S.T公式TOP
       %i.fa.fa-angle-right
     %li B.S.T シリーズランキング
 #imagepanel_low

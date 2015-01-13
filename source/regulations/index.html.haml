@@ -3,9 +3,10 @@ title: 競技方法
 ---
 = partial "shared/global_navigation", :locals => {:val => "regulations"}
 #topicpath
-  %ol
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
     %li
-      = link_to "B.S.T公式TOP", "/"
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} B.S.T公式TOP
       %i.fa.fa-angle-right
     %li 競技方法
 #imagepanel_low

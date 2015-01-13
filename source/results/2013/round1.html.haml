@@ -4,12 +4,14 @@ description: 2013年3月26日（火）に開催された東京湾No.1ボート�
 ---
 = partial "shared/global_navigation", :locals => {:val => "results"}
 #topicpath
-  %ol
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
     %li
-      = link_to "B.S.T公式TOP", "/"
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} B.S.T公式TOP
       %i.fa.fa-angle-right
     %li
-      = link_to "大会結果", "/results/"
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
       %i.fa.fa-angle-right
     %li B.S.T 2013 第1戦 大会結果
 #imagepanel_result
@@ -53,7 +55,7 @@ description: 2013年3月26日（火）に開催された東京湾No.1ボート�
           %tbody
             %tr
               %td
-                %i.fa.fa-trophy.rank1
+                %i.fa.fa-trophy
               %td
                 %span.ruby フクナガ ユウミ
                 福永 雄海
@@ -67,7 +69,7 @@ description: 2013年3月26日（火）に開催された東京湾No.1ボート�
               %td 182.0
             %tr
               %td
-                %i.fa.fa-trophy.rank2
+                %i.fa.fa-trophy
               %td
                 %span.ruby ハナノ オサム
                 花野 修
@@ -78,7 +80,7 @@ description: 2013年3月26日（火）に開催された東京湾No.1ボート�
               %td 176.5
             %tr
               %td
-                %i.fa.fa-trophy.rank3
+                %i.fa.fa-trophy
               %td
                 %span.ruby スズキ マサト
                 鈴木 雅登
@@ -253,6 +255,8 @@ description: 2013年3月26日（火）に開催された東京湾No.1ボート�
           .screen.lures_area
             %p 情報なし
     #sub_column
+      %aside#ads
+        = partial "shared/adsense_side"
       %section#ranking_summary
         %h1
           %i.fa.fa-file-text-o

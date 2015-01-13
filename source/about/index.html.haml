@@ -4,9 +4,10 @@ description: B.S.T ボートシーバストーナメントの開催趣旨、ビ�
 ---
 = partial "shared/global_navigation", :locals => {:val => "about"}
 #topicpath
-  %ol
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
     %li
-      = link_to "B.S.T公式TOP", "/"
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} B.S.T公式TOP
       %i.fa.fa-angle-right
     %li B.S.T ボートシーバストーナメントについて
 #imagepanel_low

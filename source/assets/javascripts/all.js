@@ -3,8 +3,11 @@
 $(function(){
   $('#imagepanel_top_inner').bxSlider({
     auto: true,
-    pause: 5000,
-    controls: false
+    pause: 7000,
+    controls: false,
+    pager: false,
+    mode: "fade",
+    speed: 1000
   });
 });
 
@@ -17,11 +20,4 @@ $(function(){
     $(this).parents(".interview").find("."+target).addClass("active");
   });
 });
-/*
-$(function(){
-  $("#image_gallery li img").each(function(){
-    $(this).next("span").html($(this).attr("alt"));
-  })
-});
-*/
 
