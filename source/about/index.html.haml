@@ -1,26 +1,26 @@
 ---
-title: B.S.T ボートシーバストーナメントについて
-description: B.S.T ボートシーバストーナメントの開催趣旨、ビジョンなどをご説明しています。
+title: BST ボートシーバストーナメントについて
+description: BST ボートシーバストーナメントの開催趣旨、ビジョンなどをご説明しています。
 ---
 = partial "shared/global_navigation", :locals => {:val => "about"}
 #topicpath
   %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
     %li
       = link_to "/", itemprop: "url" do
-        %span{itemprop: "title"} B.S.T公式TOP
+        %span{itemprop: "title"} BST公式TOP
       %i.fa.fa-angle-right
-    %li B.S.T ボートシーバストーナメントについて
+    %li BST ボートシーバストーナメントについて
 #imagepanel_low
   #imagepanel_low_inner.about_header
     .bg_layer
-      %h1 B.S.T ボートシーバストーナメントについて
+      %h1 BST ボートシーバストーナメントについて
 %article#content
   #content_inner
     #main_column.single
       %section#chairman
         %h1
           %i.fa.fa-user
-          B.S.T 代表 齋藤 剛宏
+          BST 代表 齋藤 剛宏
         #chairman_inner
           .element
             %h2
@@ -34,3 +34,41 @@ description: B.S.T ボートシーバストーナメントの開催趣旨、ビ�
               展望・ビジョン
             %p
               現在作成中です。
+      %section#ex_committee
+        %h1
+          %i.fa.fa-building
+          BST実行委員会
+        %p.section_summary
+          横浜市神奈川区東神奈川2-49-11
+          = link_to "D-marina", "http://www.daruma-marine.com/", target: "_blank"
+          内
+          %br
+          TEL:045-461-1062
+          %br
+          FAX:045-451-3187
+        :plain
+          <script>
+          function initialize() {
+            var bst = new google.maps.LatLng(35.4763234, 139.63713280000002)
+            var mapOptions = {
+              zoom: 18,
+              center: bst
+            };
+            var map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
+            var marker = new google.maps.Marker({
+                  position: bst,
+                  map: map,
+                  title:"Hello World!"
+            });
+          }
+          function loadScript() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
+                'callback=initialize';
+            document.body.appendChild(script);
+          }
+          window.onload = loadScript;
+          </script>
+        #map-canvas

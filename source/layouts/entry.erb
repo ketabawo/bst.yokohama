@@ -5,7 +5,7 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "B.S.T ボートシーバストーナメント公式サイト" %></title>
+    <title><%= current_page.data.title || "BST ボートシーバストーナメント公式サイト" %></title>
     <meta name="description" content="<%= current_page.data.description %>"> 
     <%= stylesheet_link_tag "all" %>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="<%= current_page.data.title || "B.S.T ボートシーバストーナメント公式サイト" %>">
+    <meta property="og:title" content="<%= current_page.data.title || "BST ボートシーバストーナメント公式サイト" %>">
     <meta property="og:description" content="<%= current_page.data.description %>">
     <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/images/favicon.ico">
     <script>
@@ -33,7 +33,7 @@
   </head>
   
   <body class="<%= page_classes %>">
-    <%= partial "shared/header" %>
+    <%= partial "shared/header", locals: {val: page_classes}%>
     <%= yield %>
     <%= partial "shared/footer" %>
     <div id="fb-root"></div>

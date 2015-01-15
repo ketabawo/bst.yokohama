@@ -3,28 +3,24 @@
   <head>
     <meta charset="utf-8">
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <!--[if IE]>
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <![endif]-->
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "B.S.T ボートシーバストーナメント公式サイト" %></title>
+    <title><%= current_page.data.title || "BST ボートシーバストーナメント公式サイト" %></title>
     <meta name="description" content="<%= current_page.data.description %>"> 
     <meta name="keywords" content="<%= current_page.data.keywords || "BST, ボートシーバストーナメント, 東京湾, 横浜, ベイエリア, ボートシーバス" %>"> 
-    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
-    <link rel="dns-prefetch" href="//googleads.g.doubleclick.net">
-    <link rel="dns-prefetch" href="//www.gstatic.com">
-    <link rel="dns-prefetch" href="//code.jquery.com">
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
     <link rel="dns-prefetch" href="//connect.facebook.net/">
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
     <%= stylesheet_link_tag "all" %>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer>
-      {lang: 'ja'}
-    </script>
     <!--[if lt IE 10]>
-    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="<%= current_page.data.title || "B.S.T ボートシーバストーナメント公式サイト" %>">
+    <meta property="og:title" content="<%= current_page.data.title || "BST ボートシーバストーナメント公式サイト" %>">
     <meta property="og:description" content="<%= current_page.data.description %>">
     <meta property="og:image" content="http://bst.yokohama/assets/images/ogp.jpg">
     <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/images/favicon.ico">
@@ -38,7 +34,7 @@
     </script>
   </head>
   <body class="<%= page_classes %>">
-    <%= partial "shared/header" %>
+    <%= partial "shared/header", locals: {val: page_classes}%>
     <%= yield %>
     <%= partial "shared/footer" %>
     <div id="fb-root"></div>
@@ -49,6 +45,19 @@
       js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=516734618358765&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//www.google.com/jsapi"></script>
     <%= javascript_include_tag  "all" %>
+    <script>
+    (function($){$(document).ready(function(){
+      setTimeout(function(){
+        $('.fb-like-box-custom').each(function(){
+          $(this).addClass('fb-like-box');
+          $(this).removeClass('fb-like-box-custom');
+        });
+        FB.XFBML.parse();
+      }, 4000);
+    })})(jQuery)
+    </script>
   </body>
 </html>
