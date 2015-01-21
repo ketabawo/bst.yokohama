@@ -1,9 +1,6 @@
 round1:
   - rank: 1
-    angler:
-      - 横溝 浩
-      - ヨコミゾ ヒロシ
-      - シーマン
+    angler: [横溝 浩, ヨコミゾ ヒロシ, シーマン]
     result: []
   - rank: 2
     angler: [熊膳 英大, クマゼン ヒデヒロ, 不明]

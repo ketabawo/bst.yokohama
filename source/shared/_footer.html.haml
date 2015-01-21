@@ -1,24 +1,32 @@
 %footer#footer
   #footer_inner
     #footer_contents
-      #fb_widget
-        .fb-like-box-custom{"data-href" => "https://www.facebook.com/boatseabasstournament", "data-width" => "468", "data-colorscheme" => "light", "data-show-faces" => "true", "data-header" => "false", "data-stream" => "false", "data-show-border" => "false"}
-      #pro_guides
-        %ul
-          %li= link_to "アイランドクルーズ", "//www.boatseabass.jp/", target: "_blank"
-          %li= link_to "オーシャンマスター", "//www.ocean-master.jp/", target: "_blank"
-          %li= link_to "シークロ", "//www.seakuro.com/", target: "_blank"
-          %li= link_to "シーバスキャプテン", "//sites.google.com/site/seabasscaptain/home", target: "_blank"
-          %li= link_to "ジョーズ", "//jaws-guideservice.com/", target: "_blank"
-          %li= link_to "ストライカー", "//salt-striker.com/", target: "_blank"
-          %li= link_to "D-marina", "//www.daruma-marine.com/", target: "_blank"
-          %li= link_to "バスメイト", "//www.bassmate.co.jp/original6.html", target: "_blank"
-          %li= link_to "林遊船", "//www.geocities.jp/hayasiyusen/", target: "_blank"
-          %li= link_to "平野ボート", "//www.yokohama-marina.co.jp/", target: "_blank"
-          %li= link_to "リアル", "//www.f-real.com/", target: "_blank"
-        %p
-          %i.fa.fa-exclamation
-          参加して頂けるフィッシングガイドさん随時募集中
+      .content_column
+        #pro_guides
+          %ul
+            %li= link_to "", "//www.boatseabass.jp/", target: "_blank", title: "アイランドクルーズ"
+            %li= link_to "", "//www.ocean-master.jp/", target: "_blank", title: "オーシャンマスター"
+            %li= link_to "", "//www.seakuro.com/", target: "_blank", title: "シークロ"
+            %li= link_to "", "//sites.google.com/site/seabasscaptain/home", target: "_blank", title: "シーバスキャプテン"
+            %li= link_to "", "//jaws-guideservice.com/", target: "_blank", title: "ジョーズ"
+            %li= link_to "", "//salt-striker.com/", target: "_blank", title: "ストライカー"
+            %li= link_to "", "//www.daruma-marine.com/", target: "_blank", title: "D-marina"
+            %li= link_to "", "//www.bassmate.co.jp/original6.html", target: "_blank", title: "バスメイト"
+            %li= link_to "", "//www.geocities.jp/hayasiyusen/", target: "_blank", title: "林遊船"
+            %li= link_to "", "//www.yokohama-marina.co.jp/", target: "_blank", title: "平野ボート"
+            %li= link_to "", "//www.f-real.com/", target: "_blank", title: "リアル"
+          %p
+            %i.fa.fa-exclamation
+            参加して頂けるフィッシングガイドさん随時募集中
+      .content_column
+        #fb_widget
+          .fb-like-box-custom{"data-href" => "https://www.facebook.com/boatseabasstournament", "data-width" => "520", "data-colorscheme" => "light", "data-show-faces" => "true", "data-header" => "false", "data-stream" => "false", "data-show-border" => "false"}
+        #comittee_info
+          %dl
+            %dt BST実行委員会事務局(D-marina)
+            %dd 横浜市神奈川区東神奈川2-49-11
+            %dd TEL : 045-461-1062
+            %dd FAX : 045-451-3187
   #copyright
     %address
       Copyright(C) 2013 - #{Time.now.year}

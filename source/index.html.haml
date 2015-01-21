@@ -32,17 +32,18 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
         %ul
           %li
             %i.fa.fa-caret-right
-            新規エントリー1名様追加！！ありがとうございます！！
+            エントリー済みの方を
+            = link_to "こちら", "/results/2015/round1.html"
+            に表示しました。（現在20名）
             %span
-              (2015/01/15）
-          %li
-            %i.fa.fa-caret-right
-            新規エントリー1名様追加！！ありがとうございます！！
-            %span
-              (2015/01/12）
+              (2015/01/20）
           %li
             %i.fa.fa-caret-right
             2015各戦上位3名は、コメント・タックルデータ・使用ルアーの情報共有をお願い致します。
+        .message
+          %p
+            %i.fa.fa-exclamation-triangle
+            表示がおかしい時は「CTRL+SHIFT+Rキー(win IE以外)」or「command+shift+Rキー（mac）」を押してブラウザのキャッシュをクリアしてください。
       %section#events
         %h1
           %i.fa.fa-calendar
@@ -53,88 +54,88 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           では、プロ・アマ、男女問わず、参戦していただけるアングラーを随時募集しております。
           %br
           全てに参戦する必要はありませんので、我こそは！という方の挑戦をお待ちしております。
-        .element
+        .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
           .eye_catch
-            = image_tag("schedules/2015/img_thumb-round1.jpg", alt: "2015 第1戦", width: "160", height: "120")
+            .pic2015.round1
           .this_content
             %span.warning 間もなく締切
             %span.info フライOK
             %span.primary 協賛募集中
-            %h2 BST 2015 第1戦
+            %h2{itemprop: "name"} BST 2015 第1戦
             %dl
               %dt 開催日:
-              %dd 2015/1/27
+              %dd{itemprop: "startDate", content: "2015-01-27"} 2015/1/27
               %dt 受付〆:
               %dd 2015/1/25
-            %p
-              検討中の方は、お早めにエントリー申請お願いいたします。
+            %p{itemprop: "description"}
+              %strong 〆前でも参加艇上限に達した時点で受付終了いたします。
               %br
               = link_to "/entry/" do
                 %i.fa.fa-caret-right
                 エントリー
-        .element
+        .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
           .eye_catch
-            = image_tag("schedules/2015/img_thumb-round2.jpg", alt: "2015 第2戦", width: "160", height: "120")
+            .pic2015.round2
           .this_content
             %span.success 絶賛募集中
             %span.info フライOK
             %span.primary 協賛募集中
-            %h2 BST 2015 第2戦
+            %h2{itemprop: "name"} BST 2015 第2戦
             %dl
               %dt 開催日:
-              %dd 2015/3/10
-            %p
+              %dd{itemprop: "startDate", content: "2015-03-10"} 2015/3/10
+            %p{itemprop: "description"}
               ご不明な点などございましたら、大会事務局までお問い合せください。
               %br
               = link_to "/entry/" do
                 %i.fa.fa-caret-right
                 エントリー
-        .element
+        .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
           .eye_catch
-            = image_tag("schedules/2015/img_thumb-round3.jpg", alt: "2015 第3戦", width: "160", height: "120")
+            .pic2015.round3
           .this_content
             %span.success 絶賛募集中
             %span.info フライOK
             %span.primary 協賛募集中
-            %h2 BST 2015 第3戦
+            %h2{itemprop: "name"} BST 2015 第3戦
             %dl
               %dt 開催日:
-              %dd 2015/5/12
-            %p
+              %dd{itemprop: "startDate", content: "2015-05-12"} 2015/5/12
+            %p{itemprop: "description"}
               ご不明な点などございましたら、大会事務局までお問い合せください。
               %br
               = link_to "/entry/" do
                 %i.fa.fa-caret-right
                 エントリー
-        .element
+        .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
           .eye_catch
-            = image_tag("schedules/2015/img_thumb-round4.jpg", alt: "2015 第4戦", width: "160", height: "120")
+            .pic2015.round4
           .this_content
             %span.success 絶賛募集中
             %span.info フライOK
             %span.primary 協賛募集中
-            %h2 BST 2015 第4戦
+            %h2{itemprop: "name"} BST 2015 第4戦
             %dl
               %dt 開催日:
-              %dd 2015/6/9
-            %p
+              %dd{itemprop: "startDate", content: "2015-06-09"} 2015/6/9
+            %p{itemprop: "description"}
               ご不明な点などございましたら、大会事務局までお問い合せください。
               %br
               = link_to "/entry/" do
                 %i.fa.fa-caret-right
                 エントリー
-        .element
+        .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
           .eye_catch
-            = image_tag("schedules/2015/img_thumb-round5.jpg", alt: "2015 第5戦", width: "160", height: "120")
+            .pic2015.round5
           .this_content
             %span.success 絶賛募集中
             %span.info フライOK
             %span.primary 協賛募集中
-            %h2 BST 2015 第5戦
+            %h2{itemprop: "name"} BST 2015 第5戦
             %dl
               %dt 開催日:
-              %dd 2015/7/14
-            %p
+              %dd{itemprop: "startDate", content: "2015-07-14"} 2015/7/14
+            %p{itemprop: "description"}
               ご不明な点などございましたら、大会事務局までお問い合せください。
               %br
               = link_to "/entry/" do
@@ -169,7 +170,8 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
             %tr
               %td 08:40〜
               %td
-                スタート：くじ引きで決定した順に出船します。禁止エリア離脱後、競技を開始してください。
+                スタート：くじ引きで決定した順に出船します。デッドスローエリア離脱後、競技を開始してください。
+                = image_tag "regulations/img_pic-deadslowarea.gif", alt: "デッドスローエリア", width: "300", height: "224"
             %tr
               %td 〜12:50
               %td

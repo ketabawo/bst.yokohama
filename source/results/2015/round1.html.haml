@@ -4,7 +4,7 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
 ---
 - weiin = []
 - fish_size = [] 
-- data.database.round1.each do |f|
+- data.result2015.round1.each do |f|
   - f.result.each do |size|
     - fish_size.push(size)
   - weiin.push(f.result.length)
@@ -39,7 +39,7 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
               総評
             %dd
               %p.comment
-                まだ開催されておりません。以下の表はエントリー順に表示しています。
+                まだ開催されておりません。以下の表は五十音順に表示しています。
                 %br
                 参戦される方はお手数ですが
                 = link_to "こちら", "/entry/"
@@ -47,18 +47,18 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
               %p.writer
                 （実行委員：サイト管理人）
         %table
-          %caption 敬称略
+          %caption 敬称略。CP名無しは自操船参加者です。
           %thead
             %tr
-              %th Rank
+              %th No.
               %th Name
-              %th boat
+              %th boat/cap
               %th 1st
               %th 2nd
               %th 3rd
               %th Total
           %tbody
-            - data.database.round1.each do |f|
+            - data.result2015.round1.each do |f|
               %tr
                 %td= f.rank
                 %td
@@ -69,53 +69,9 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
                 %td= f.result[1]
                 %td= f.result[2]
                 %td= f.result[0].to_i + f.result[1].to_i + f.result[2].to_i
-            -if false
-              %tr
-                %td
-                  %i.fa.fa-trophy
-                %td
-                  %span.ruby セイ メイ
-                  姓 名
-                %td ボート名
-                %td 0
-                %td 0
-                %td 0
-                %td 0
-              %tr
-                %td
-                  %i.fa.fa-trophy
-                %td
-                  %span.ruby セイ メイ
-                  姓 名
-                %td ボート名
-                %td 0
-                %td 0
-                %td 0
-                %td 0
-              %tr
-                %td
-                  %i.fa.fa-trophy
-                %td
-                  %span.ruby セイ メイ
-                  姓 名
-                %td ボート名
-                %td 0
-                %td 0
-                %td 0
-                %td 0
-              %tr
-                %td 4
-                %td
-                  %span.ruby セイ メイ
-                  姓 名
-                %td ボート名
-                %td 0
-                %td 0
-                %td 0
-                %td 0
           %tfoot
             %tr
-              %th Rank
+              %th No.
               %th Name
               %th boat
               %th 1st
@@ -134,11 +90,15 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
               %li#tackles タックル
               %li#lures ルアー
           .screen.comment_area.active
-            = image_tag("results/2015/img_pic-round1-rank1-angler.jpg", alt: "", width: "600", height: "400")
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank1-angler.jpg", alt: "", width: "600", height: "400")
             %p
               コメント原稿
           .screen.tackles_area
-            = image_tag("results/2015/img_pic-round1-rank1-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank1-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
             %table
               %thead
                 %tr
@@ -155,7 +115,9 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
                   %td
                   %td
           .screen.lures_area
-            = image_tag("results/2015/img_pic-round1-rank1-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank1-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
             %ul
               %li
                 %i.fa.fa-caret-right
@@ -168,11 +130,15 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
               %li#tackles タックル
               %li#lures ルアー
           .screen.comment_area.active
-            = image_tag("results/2015/img_pic-round1-rank2-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank2-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
             %p
               コメント原稿
           .screen.tackles_area
-            = image_tag("results/2015/img_pic-round1-rank2-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank2-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
             %table
               %thead
                 %tr
@@ -189,7 +155,9 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
                   %td
                   %td
           .screen.lures_area
-            = image_tag("results/2015/img_pic-round1-rank2-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank2-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
             %ul
               %li
                 %i.fa.fa-caret-right
@@ -202,11 +170,15 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
               %li#tackles タックル
               %li#lures ルアー
           .screen.comment_area.active
-            = image_tag("results/2015/img_pic-round1-rank3-angler.jpg", alt: "", width: "600", height: "400")
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank3-angler.jpg", alt: "", width: "600", height: "400")
             %p
               コメント原稿
           .screen.tackles_area
-            = image_tag("results/2015/img_pic-round1-rank3-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank3-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
             %table
               %thead
                 %tr
@@ -223,7 +195,9 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
                   %td
                   %td
           .screen.lures_area
-            = image_tag("results/2015/img_pic-round1-rank3-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank3-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
             %ul
               %li
                 %i.fa.fa-caret-right
@@ -246,7 +220,7 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
           %tr
             %th 参加者数
             %td
-              - if data.database.round1.present? then
+              - if data.result2015.round1.present? then
                 = weiin.length
               - else
                 0
@@ -254,7 +228,7 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
           %tr
             %th ウェイイン総数
             %td
-              - if data.database.round1.present? then
+              - if data.result2015.round1.present? then
                 = fish_size.length
               - else
                 0
@@ -262,7 +236,7 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
           %tr
             %th リミットメイク率
             %td
-              - if data.database.round1.present? then
+              - if data.result2015.round1.present? then
                 = (limitmake.to_f / weiin.length.to_f * 100).round(2)
               - else
                 0
@@ -270,7 +244,7 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
           %tr
             %th 最大叉長
             %td 
-              - if data.database.round1.present? then
+              - if data.result2015.round1.present? then
                 = fish_size.sort.last
               - else
                 0
@@ -278,7 +252,7 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
           %tr
             %th 最小叉長
             %td 
-              - if data.database.round1.present? then
+              - if data.result2015.round1.present? then
                 = fish_size.sort.first
               - else
                 40
@@ -286,7 +260,7 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
           %tr
             %th 平均叉長
             %td
-              - if data.database.round1.present? then
+              - if data.result2015.round1.present? then
                 - total_size = fish_size.inject{|sum, n| sum + n }
                 = (total_size.to_f / fish_size.length.to_f).round(1)
               - else
@@ -321,8 +295,10 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
           %i.fa.fa-picture-o
           イメージギャラリー
         %ul
-          - for i in 1..5
+          - for i in 1..1
             %li
-              = image_tag("results/2015/img_pic-gallery#{i}.jpg", width: "300", height: "225")
-              %span alt
+              = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "300", height: "225"
+              - if false
+                = image_tag "results/2015/img_pic-gallery#{i}.jpg", width: "300", height: "225" 
+                %span alt
       = partial "shared/result_list"

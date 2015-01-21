@@ -1,11 +1,11 @@
 @import "settings";
 
 header#header{
-  width: 100%;
+  width: $content_width_full;
   .header_upper{
     background-color: #0C3966;
     .header_upper_inner{
-      width: 960px;
+      width: $content_width;
       padding: 8px 0 5px 0;
       margin: 0 auto;
       overflow: hidden;
@@ -32,7 +32,7 @@ header#header{
   }
   .header_inner{
     display: table;
-    width: 960px;
+    width: $content_width;
     padding: 15px 0;
     margin: 0 auto;
     #logo{
@@ -82,14 +82,14 @@ header#header{
   }
 }
 #navigation{
-  width: 100%;
+  width: $content_width_full;
   @include gradation01;
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
   ul{
     display: table;
     table-layout: fixed;
-    width: 960px;
+    width: $content_width;
     margin: 0 auto;
     border-right: 1px solid #FFF;
     li{

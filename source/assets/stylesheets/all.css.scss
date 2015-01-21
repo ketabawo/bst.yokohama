@@ -4,9 +4,31 @@
 @import "header";
 @import "footer";
 @import "styles";
+@import "about";
+@import "entry";
 @import "jquery.bxslider";
 body{
   color: #333;
+}
+#topicpath{
+  width: 100%;
+  ol{
+    width: $content_width;
+    padding-top: 20px;
+    margin: 0 auto 20px auto;
+    li{
+      font-size: 12px;
+      display: inline;
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
+      i{
+        font-size: 16px;
+        margin: 0 5px;
+      }
+    }
+  }
 }
 #content{
   width: 100%;
@@ -15,20 +37,22 @@ body{
     width: $content_width;
     margin: 0 auto;
     overflow: hidden;
-    #main_column{
+    #main_column, #sub_column{
       h1{
         font-size: 18px;
         color: #FFF;
+        text-shadow: 1px 1px #000;
         background-color: $primary;
         padding: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         i{
           font-size: 24px;
+          color: #D4B572;
         }
       }
       p.section_summary{
         font-size: 14px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         line-height: 150%;
       }
       &.single{
@@ -42,25 +66,10 @@ body{
     #sub_column{
       width: 300px;
       float: right;
-      h1{
-        font-size: 18px;
-        color: #FFF;
-        background-color: $primary;
-        padding: 10px;
-        margin-bottom: 15px;
-        i{
-          font-size: 24px;
-        }
-      }
       h2{
         font-size: 16px;
         font-weight: bold;
         margin-bottom: 10px;
-      }
-      p.section_summary{
-        font-size: 14px;
-        margin-bottom: 10px;
-        line-height: 140%;
       }
     }
   }

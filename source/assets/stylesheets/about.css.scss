@@ -1,0 +1,132 @@
+@import "settings";
+#chairman{
+  #chairman_inner{
+    min-height: 400px;
+    background: image_url("about/bg_pic-chairman.jpg") no-repeat right top;
+    padding-right: 320px;
+    .element{
+      margin-bottom: 40px;
+      h2{
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 2px solid #DDD;
+        padding: 20px 0;
+        margin-bottom: 20px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+#members, #other_members{
+  margin-bottom: 30px;
+  .element{
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 10px;
+    .column{
+      display: table-cell;
+      vertical-align: top;
+      padding: 10px 0;
+      &.left{
+        width: 180px;
+        img{
+          display: block;
+          border: 1px solid #DDD;
+          margin-bottom: 10px;
+        }
+        dl{
+          font-size: 12px;
+          color: #999;
+          line-height: 150%;
+          dt, dd{
+            display: inline;
+          }
+          dd{
+          }
+        }
+      }
+      &.right{
+        h2{
+          font-size: 20px;
+          font-weight: bold;
+          color: #333;
+          border-bottom: 1px dotted #DDD;
+          padding-bottom: 8px;
+          margin-bottom: 8px;
+          span{
+            font-size: 12px;
+            color: #555;
+            vertical-align: middle;
+          }
+        }
+        p.works{
+          font-size: 12px;
+          color: #999;
+          margin-bottom: 10px;
+        }
+        p.introduction{
+          font-size: 14px;
+          color: #555;
+          line-height: 130%;
+          margin-bottom: 10px;
+        }
+        a{
+          text-decoration: none;
+          i{
+            font-size: 24px;
+            &.fa-facebook-square{
+              color: #3a5795;
+            }
+            &.fa-twitter-square{
+              color: #3b88c3;
+            }
+            &.fa-google-plus-square{
+              color: #dd4b39;
+            }
+            &.fa-globe{
+              color: #008fde;
+            }
+            &.fa-github-alt{
+              color: #333;
+            }
+            &.fa-vk{
+              color: #6383a8;
+            }
+            &.fa-youtube-square{
+              color: #e62117;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#info{
+  #map-canvas-side{
+    width: 300px;
+    height: 225px;
+    margin-bottom: 15px;
+  }
+  address{
+    font-size: 14px;
+    color: #555;
+    line-height: 150%;
+    background-color: #dff0d8;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px;
+    i{
+      display: inline-block;
+      width: 1em;
+      font-size: 18px;
+      color: #999;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+}
