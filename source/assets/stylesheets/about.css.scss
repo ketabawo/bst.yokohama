@@ -1,22 +1,28 @@
 @import "settings";
 #chairman{
   #chairman_inner{
-    min-height: 400px;
-    background: image_url("about/bg_pic-chairman.jpg") no-repeat right top;
-    padding-right: 320px;
     .element{
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       h2{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
-        border-bottom: 2px solid #DDD;
-        padding: 20px 0;
-        margin-bottom: 20px;
+        border-bottom: 1px dotted #DDD;
+        padding: 10px;
+        margin-bottom: 10px;
       }
       p{
-        font-size: 16px;
-        line-height: 150%;
+        font-size: 14px;
+        line-height: 180%;
+        text-indent: 1em;
         margin-bottom: 10px;
+        a{
+          font-weight: bold;
+        }
+      }
+      &.writer{
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
       }
     }
   }

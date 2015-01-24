@@ -4,9 +4,10 @@
       .tagline 横浜を拠点とする東京湾No1アングラーを決めるボートシーバスルアートーナメント
       - if false
         %ul
-          %li= link_to "メディア掲載事例", "/media/"
-          %li= link_to "めざすもの", ""
-          %li= link_to "大会事務局", ""
+          %li
+            = link_to "/about/committee.html" do
+              %i.fa.fa-caret-right
+              大会事務局
   .header_inner
     - if val == "index"
       %h1#logo

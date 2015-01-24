@@ -1,0 +1,37 @@
+%section#info
+  %h1
+    %i.fa.fa-home
+    大会事務局(D-marina内)
+  :plain
+    <script>
+    function initialize() {
+      var bst = new google.maps.LatLng(35.4763234, 139.63713280000002)
+      var mapOptions = {
+        zoom: 16,
+        center: bst
+      };
+      var map = new google.maps.Map(document.getElementById('map-canvas-side'),
+          mapOptions);
+      var marker = new google.maps.Marker({
+            position: bst,
+            map: map,
+            title:"Hello World!"
+      });
+    }
+    function loadScript() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
+          'callback=initialize';
+      document.body.appendChild(script);
+    }
+    window.onload = loadScript;
+    </script>
+  #map-canvas-side
+  %address
+    %i.fa.fa-map-marker
+    横浜市神奈川区東神奈川2-49-11<br>
+    %i.fa.fa-phone
+    045-461-1062<br>
+    %i.fa.fa-fax
+    045-451-3187

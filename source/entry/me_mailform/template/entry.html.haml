@@ -45,11 +45,11 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
             決まっていない場合は、以下のフィッシングガイドに相談してみてはいかがでしょうか。
           %ul
             %li
-              = link_to "http://www.boatseabass.jp/reservation/reservation.html", target: "_blank" do
+              = link_to "//www.boatseabass.jp/reservation/reservation.html", target: "_blank" do
                 %i.fa.fa-caret-right
                 アイランドクルーズ
             %li
-              = link_to "http://www.ocean-master.jp/tel.html", target: "_blank" do
+              = link_to "//www.ocean-master.jp/tel.html", target: "_blank" do
                 %i.fa.fa-caret-right
                 オーシャンマスター
             %li
@@ -57,37 +57,41 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
                 %i.fa.fa-caret-right
                 シーバスキャプテン
             %li
-              = link_to "http://www.seakuro.com/reserve.html", target: "_blank" do
+              = link_to "//www.seakuro.com/reserve.html", target: "_blank" do
                 %i.fa.fa-caret-right
                 シークロ
             %li
-              = link_to "http://schedule.jaws-guideservice.com/?eid=4", target: "_blank" do
+              = link_to "//schedule.jaws-guideservice.com/?eid=4", target: "_blank" do
                 %i.fa.fa-caret-right
                 ジョーズ
             %li
-              = link_to "http://salt-striker.com/?page_id=4", target: "_blank" do
+              = link_to "//salt-striker.com/?page_id=4", target: "_blank" do
                 %i.fa.fa-caret-right
                 ストライカー
             %li
-              = link_to "http://www.daruma-marine.com/charter/index.html", target: "_blank" do
+              = link_to "//www.daruma-marine.com/charter/index.html", target: "_blank" do
                 %i.fa.fa-caret-right
                 D-marina
             %li
-              = link_to "http://www.bassmate.co.jp/original6.html", target: "_blank" do
+              = link_to "//www.bassmate.co.jp/original6.html", target: "_blank" do
                 %i.fa.fa-caret-right
                 バスメイト
             %li
-              = link_to "http://www.f-real.com/yq.html", target: "_blank" do
+              = link_to "//www.f-real.com/yq.html", target: "_blank" do
                 %i.fa.fa-caret-right
                 リアル
             %li
-              = link_to "http://www.geocities.jp/hayasiyusen/index.html", target: "_blank" do
+              = link_to "//www.geocities.jp/hayasiyusen/index.html", target: "_blank" do
                 %i.fa.fa-caret-right
                 林遊船
             %li
-              = link_to "http://www.ksp-jack.com/", target: "_blank" do
+              = link_to "//www.ksp-jack.com/", target: "_blank" do
                 %i.fa.fa-caret-right
                 木更津シーパラダイスJACK
+            %li
+              = link_to "//homepage3.nifty.com/theseaman/yoyaku1.html", target: "_blank" do
+                %i.fa.fa-caret-right
+                ザ シーマン
           %p
             %span
               ※上記フィッシングガイド以外でも出場可能です。
@@ -99,7 +103,8 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
           %p
             大会開催日に以下の場所へ集合してください。
             %br
-            駐車場はマリーナ隣にコインパーキングがありますので、そちらへお願いいたします。
+            駐車場には限りがございます。<br>
+            満車の場合は、マリーナ隣のコインパーキングに実費で駐車してください。
           %p
             神奈川県横浜市神奈川区東神奈川2-49-11
             %br
@@ -126,12 +131,14 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
                   エラーメッセージ
             %tr
               %th
-                お名前ふりがな
+                お名前フリガナ
                 %span 必須
               %td
-                %input.ruby{type: "text", name: "ruby", placeholder: "例）でい まりな", value:""}
+                %input.ruby{type: "text", name: "ruby", placeholder: "例）デイ マリナ", value:""}
                 #ruby_error
                   エラーメッセージ
+                %span.hint
+                  全角カタカナでご入力ください。
             %tr
               %th
                 電話番号
@@ -157,12 +164,13 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
             %tr
               %th
                 ボート名
+                %span 必須
               %td
                 %input.boat{type: "text", name: "boat", placeholder: "例）D-marina", value:""}
                 #boat_error
                   エラーメッセージ
                 %span.hint
-                  手配が困難な方は「手配希望」と入力ください。
+                  ボートの手配は完了してますか？手配が困難な場合は「手配希望」と入力ください。
             %tr
               %th
                 住所
@@ -173,7 +181,7 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
                 参戦ラウンド
                 %span 必須
               %td
-                %label
+                %label.warning
                   %input.round{type: "checkbox", name: "round[]", value: "第1戦"} 第1戦
                 %label
                   %input.round{type: "checkbox", name: "round[]", value: "第2戦"} 第2戦
@@ -186,7 +194,7 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
                 #round_error
                   エラーメッセージ
                 %span.hint
-                  参加したい未開催ラウンド全てにチェックを入れてください。
+                  参加したいラウンド全てにチェックを入れてください。
                   %br
                   第1戦：1月27日、第2戦：3月10日、第3戦：5月12日、第4戦：6月9日、第5戦：7月14日
                   %br

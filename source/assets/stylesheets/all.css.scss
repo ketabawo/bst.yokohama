@@ -5,6 +5,7 @@
 @import "footer";
 @import "styles";
 @import "about";
+@import "regulations";
 @import "entry";
 @import "jquery.bxslider";
 body{
@@ -43,10 +44,11 @@ body{
         color: #FFF;
         text-shadow: 1px 1px #000;
         background-color: $primary;
+        border-radius: 3px;
         padding: 10px;
         margin-bottom: 10px;
         i{
-          font-size: 24px;
+          font-size: 20px;
           color: #D4B572;
         }
       }

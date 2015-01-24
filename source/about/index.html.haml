@@ -10,17 +10,13 @@ description: BST ボートシーバストーナメントの開催趣旨、ビジ
         %span{itemprop: "title"} BST公式TOP
       %i.fa.fa-angle-right
     %li BST ボートシーバストーナメントについて
-#imagepanel_low
-  #imagepanel_low_inner.about_header
-    .bg_layer
-      %h1 BST ボートシーバストーナメントについて
 %article#content
   #content_inner
-    #main_column.single
+    #main_column.double
       %section#chairman
         %h1
-          %i.fa.fa-user
-          BST 代表 齋藤 剛宏
+          %i.fa.fa-bullhorn
+          BST ボートシーバストーナメントについて
         #chairman_inner
           .element
             %h2
@@ -64,41 +60,9 @@ description: BST ボートシーバストーナメントの開催趣旨、ビジ
               きっとそこには間違いなく良循環が発生し、ボートシーバス業界に大きな影響を与えるはずです。
               %br
               しかし、我々だけでは達成する事は不可能ですので、賛同していただける皆様のご協力をお願いいたします。
-      %section#ex_committee
-        %h1
-          %i.fa.fa-building
-          BST実行委員会
-        %p.section_summary
-          横浜市神奈川区東神奈川2-49-11
-          = link_to "D-marina", "http://www.daruma-marine.com/", target: "_blank"
-          内
-          %br
-          TEL:045-461-1062
-          %br
-          FAX:045-451-3187
-        :plain
-          <script>
-          function initialize() {
-            var bst = new google.maps.LatLng(35.4763234, 139.63713280000002)
-            var mapOptions = {
-              zoom: 18,
-              center: bst
-            };
-            var map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
-            var marker = new google.maps.Marker({
-                  position: bst,
-                  map: map,
-                  title:"Hello World!"
-            });
-          }
-          function loadScript() {
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
-                'callback=initialize';
-            document.body.appendChild(script);
-          }
-          window.onload = loadScript;
-          </script>
-        #map-canvas
+          .element.writer
+            %p
+              BST ボートシーバストーナメント 代表 齋藤 剛宏
+    #sub_column
+      = partial "shared/blog_info"
+      = partial "shared/committee_info"

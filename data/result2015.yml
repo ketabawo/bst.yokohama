@@ -12,50 +12,59 @@ round1:
     angler: [伊藤 一石, イトウ カズイシ, バスター]
     result: []
   - rank: 5
-    angler: [大坂 善郎, オオサカ ヨシロウ, K.S.P.ジャック/安井]
+    angler: [遠藤 正明, エンドウ マサアキ, アイランドクルーズ]
     result: []
   - rank: 6
-    angler: [大島 道雄, オオシマ ミチオ, レンタル]
+    angler: [大坂 善郎, オオサカ ヨシロウ, K.S.P.ジャック/安井]
     result: []
   - rank: 7
-    angler: [大畠 拓, オオバタケ タク, シークロ/岡本]
+    angler: [大島 道雄, オオシマ ミチオ, レンタル]
     result: []
   - rank: 8
-    angler: [岡村 真司, オカムラ シンジ, レンタル]
+    angler: [大畠 拓, オオバタケ タク, シークロ/岡本]
     result: []
   - rank: 9
-    angler: [奥野 忠弘, オクノ タダヒロ, 林遊船/林]
+    angler: [岡村 真司, オカムラ シンジ, レンタル]
     result: []
   - rank: 10
-    angler: [柿澤 寛, カキザワ ヒロシ, ストライカー]
+    angler: [奥野 忠弘, オクノ タダヒロ, 林遊船/林]
     result: []
   - rank: 11
-    angler: [熊膳 英大, クマゼン ヒデヒロ, ストライカー/水谷]
+    angler: [柿澤 寛, カキザワ ヒロシ, ストライカー]
     result: []
   - rank: 12
-    angler: [齋藤 剛宏, サイトウ タカヒロ, D-marina]
+    angler: [数野 達也, カズノ タツヤ, インパクト]
     result: []
   - rank: 13
-    angler: [Take, タケ, ストライカー/早川]
+    angler: [熊膳 英大, クマゼン ヒデヒロ, ストライカー/水谷]
     result: []
   - rank: 14
-    angler: [長谷 里奈, ハセ リナ, ザ シーマン/金子]
+    angler: [齋藤 剛宏, サイトウ タカヒロ, D-marina]
     result: []
   - rank: 15
-    angler: [早川 昌和, ハヤカワ マサカズ, ストライカー]
+    angler: [Take, タケ, ストライカー/早川]
     result: []
   - rank: 16
-    angler: [藤田 正明, フジタ マサアキ, レンタル]
+    angler: [長谷 里奈, ハセ リナ, ザ シーマン/金子]
     result: []
   - rank: 17
-    angler: [松木 邦彰, マツキ クニアキ, ストライカー/早川]
+    angler: [早川 昌和, ハヤカワ マサカズ, ストライカー]
     result: []
   - rank: 18
-    angler: [森田 英典, モリタ ヒデノリ, リアル]
+    angler: [福永 雄海, フクナガ ユウミ, シーバスキャプテン]
     result: []
   - rank: 19
-    angler: [安井 雄二, ヤスイ ユウジ, K.S.P.ジャック]
+    angler: [藤田 正明, フジタ マサアキ, レンタル]
     result: []
   - rank: 20
+    angler: [松木 邦彰, マツキ クニアキ, ストライカー/水谷]
+    result: []
+  - rank: 21
+    angler: [森田 英典, モリタ ヒデノリ, リアル]
+    result: []
+  - rank: 22
+    angler: [安井 雄二, ヤスイ ユウジ, K.S.P.ジャック]
+    result: []
+  - rank: 23
     angler: [横溝 浩, ヨコミゾ ヒロシ, ザ シーマン/金子]
     result: []

@@ -6,6 +6,7 @@ deny from .blackhatworth.com
 deny from .darodar.com
 deny from .priceg.com
 deny from .hulfingtonpost.com
+deny from .cenoval.ru
 
 AddType application/x-httpd-php .html .htm
 

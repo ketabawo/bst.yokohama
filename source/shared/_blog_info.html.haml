@@ -1,0 +1,43 @@
+%section#blog_info
+  %h1
+    %i.fa.fa-info
+    大会事務局からのお知らせ
+  %ul#feed
+    :plain
+      <?php
+      $i = 0;
+        $limit = 3;
+        $rss_path = 'http://bst.naturum.ne.jp/index.xml';
+        $xml = simplexml_load_file ($rss_path);
+        foreach($xml->channel->item as $entry){
+          if($i >= $limit){
+            break;
+          }else{
+            $title = $entry->title;
+            $date = date('Y/m/d', strtotime($entry->pubDate));
+            $link = $entry->link;
+            echo "<li><a href='$link' target='_blank'><i class='fa fa-chevron-right'></i>
+       $title<span> ($date)</span></a></li>";
+            $i++;
+          }
+        }
+      ?>
+    - if false
+      - require 'rss'
+      - feedUrl = 'http://bst.naturum.ne.jp/index.xml'
+      - rss = RSS::Parser.parse(feedUrl)
+      - count = 1
+      - rss.items.each do |item|
+        %li
+          %i.fa.fa-caret-right
+          = link_to item.link, target: "_blank" do
+            = item.title
+          %span
+            = item.pubDate.strftime("(%Y/%m/%d)")
+        - count += 1
+        - if count > 3 then
+          - break
+  %p.more
+    =link_to "//bst.naturum.ne.jp/", target: "_blank" do
+      %i.fa.fa-hand-o-right
+      もっと見る

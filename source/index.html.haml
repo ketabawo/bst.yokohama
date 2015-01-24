@@ -1,5 +1,5 @@
 ---
-description: 横浜ベイエリアを拠点とし東京湾唯一無二のライブフィッシュ制ボートシーバスゲームルアートーナメント「BST」公式サイト。プロ・アマが年間5ラウンドを本気で戦う本格トーナメントです。参戦して頂けるアングラー・フィッシングガイド、協賛を随時募集しています。
+description: 横浜ベイエリアを拠点とし東京湾唯一無二のライブフィッシュ制ボートシーバスゲームルアートーナメント「BST」公式サイト。プロ・アマが年間5ラウンドを本気で戦う本格トーナメントです。参戦して頂けるアングラー・フィッシングガイド、協賛や後援していただけるメーカー様を随時募集しています。
 ---
 = partial "shared/global_navigation", locals: {val: "top"}
 #imagepanel_top
@@ -28,15 +28,15 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
       %section#informations
         %h1
           %i.fa.fa-info-circle
-          BST事務局からのお知らせ
+          サイト管理者からのお知らせ
         %ul
           %li
             %i.fa.fa-caret-right
             エントリー済みの方を
             = link_to "こちら", "/results/2015/round1.html"
-            に表示しました。（現在20名）
+            に表示しました。（現在23名）
             %span
-              (2015/01/20）
+              (2015-01-23）
           %li
             %i.fa.fa-caret-right
             2015各戦上位3名は、コメント・タックルデータ・使用ルアーの情報共有をお願い致します。
@@ -64,9 +64,9 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
             %h2{itemprop: "name"} BST 2015 第1戦
             %dl
               %dt 開催日:
-              %dd{itemprop: "startDate", content: "2015-01-27"} 2015/1/27
+              %dd{itemprop: "startDate", content: "2015-01-27"} 2015-01-27
               %dt 受付〆:
-              %dd 2015/1/25
+              %dd 2015-01-25
             %p{itemprop: "description"}
               %strong 〆前でも参加艇上限に達した時点で受付終了いたします。
               %br
@@ -79,11 +79,11 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           .this_content
             %span.success 絶賛募集中
             %span.info フライOK
-            %span.primary 協賛募集中
+            %span.primary 後援募集中
             %h2{itemprop: "name"} BST 2015 第2戦
             %dl
               %dt 開催日:
-              %dd{itemprop: "startDate", content: "2015-03-10"} 2015/3/10
+              %dd{itemprop: "startDate", content: "2015-03-10"} 2015-03-10
             %p{itemprop: "description"}
               ご不明な点などございましたら、大会事務局までお問い合せください。
               %br
@@ -96,11 +96,11 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           .this_content
             %span.success 絶賛募集中
             %span.info フライOK
-            %span.primary 協賛募集中
+            %span.primary 後援募集中
             %h2{itemprop: "name"} BST 2015 第3戦
             %dl
               %dt 開催日:
-              %dd{itemprop: "startDate", content: "2015-05-12"} 2015/5/12
+              %dd{itemprop: "startDate", content: "2015-05-12"} 2015-05-12
             %p{itemprop: "description"}
               ご不明な点などございましたら、大会事務局までお問い合せください。
               %br
@@ -113,11 +113,11 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           .this_content
             %span.success 絶賛募集中
             %span.info フライOK
-            %span.primary 協賛募集中
+            %span.primary 後援募集中
             %h2{itemprop: "name"} BST 2015 第4戦
             %dl
               %dt 開催日:
-              %dd{itemprop: "startDate", content: "2015-06-09"} 2015/6/9
+              %dd{itemprop: "startDate", content: "2015-06-09"} 2015-06-09
             %p{itemprop: "description"}
               ご不明な点などございましたら、大会事務局までお問い合せください。
               %br
@@ -130,11 +130,11 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           .this_content
             %span.success 絶賛募集中
             %span.info フライOK
-            %span.primary 協賛募集中
+            %span.primary 後援募集中
             %h2{itemprop: "name"} BST 2015 第5戦
             %dl
               %dt 開催日:
-              %dd{itemprop: "startDate", content: "2015-07-14"} 2015/7/14
+              %dd{itemprop: "startDate", content: "2015-07-14"} 2015-07-14
             %p{itemprop: "description"}
               ご不明な点などございましたら、大会事務局までお問い合せください。
               %br
@@ -286,49 +286,7 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
               %td 福永 雄海
               %td シーバスキャプテン
               %td 350
-      %section#blog_info
-        %h1
-          %i.fa.fa-info
-          BST公式ブログからのお知らせ
-        %ul#feed
-          :plain
-            <?php
-            $i = 0;
-              $limit = 3;
-              $rss_path = 'http://bst.naturum.ne.jp/index.xml';
-              $xml = simplexml_load_file ($rss_path);
-              foreach($xml->channel->item as $entry){
-                if($i >= $limit){
-                  break;
-                }else{
-                  $title = $entry->title;
-                  $date = date('Y/m/d', strtotime($entry->pubDate));
-                  $link = $entry->link;
-                  echo "<li><a href='$link' target='_blank'><i class='fa fa-chevron-right'></i>
-             $title<span> ($date)</span></a></li>";
-                  $i++;
-                }
-              }
-            ?>
-          - if false
-            - require 'rss'
-            - feedUrl = 'http://bst.naturum.ne.jp/index.xml'
-            - rss = RSS::Parser.parse(feedUrl)
-            - count = 1
-            - rss.items.each do |item|
-              %li
-                %i.fa.fa-caret-right
-                = link_to item.link, target: "_blank" do
-                  = item.title
-                %span
-                  = item.pubDate.strftime("(%Y/%m/%d)")
-              - count += 1
-              - if count > 3 then
-                - break
-        %p.more
-          =link_to "//bst.naturum.ne.jp/", target: "_blank" do
-            %i.fa.fa-hand-o-right
-            もっと見る
+      = partial "shared/blog_info"
       %section#other_tournament
         %h1
           %i.fa.fa-check
@@ -341,7 +299,7 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           %span.info チーム戦
           %dl
             %dt 開催日:
-            %dd 2015/2/22
+            %dd 2015-02-22
           %dl
             %dt 問い合せ先：
             %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/", target: "_blank"
@@ -351,7 +309,7 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           %span.info チーム戦
           %dl
             %dt 開催日:
-            %dd 2015/10予定
+            %dd 2015-10予定
           %dl
             %dt 問い合せ先：
             %dd= link_to "JGFA", "//www.jgfa.or.jp/", target: "_blank"
@@ -361,7 +319,7 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           %span.info チーム戦
           %dl
             %dt 開催日:
-            %dd 2015/11/3
+            %dd 2015-11-03
           %dl
             %dt 問い合せ先：
             %dd アイランドクルーズ 遠藤
@@ -371,7 +329,7 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           %span.info ショアOK
           %dl
             %dt 開催日:
-            %dd 2015/11予定
+            %dd 2015-11予定
           %dl
             %dt 問い合せ先：
             %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/", target: "_blank"
@@ -382,7 +340,7 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           %span.info チーム戦
           %dl
             %dt 開催日:
-            %dd 2015/12予定
+            %dd 2015-12予定
           %dl
             %dt 問い合せ先：
             %dd シーバスキャプテン 福永
