@@ -1,6 +1,6 @@
 ---
 title: BST 2015 第1戦 大会結果
-description: 2015年1月27日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「B.T.S 2015」第1戦の大会結果です。
+description: 2015年1月27日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「BTS 2015」第1戦の大会結果です。
 ---
 - weiin = []
 - fish_size = [] 
@@ -39,20 +39,26 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
               総評
             %dd
               %p.comment
-                まだ開催されておりません。以下の表は五十音順に表示しています。
+                朝方まで悪かった天候も回復し、初の女性エントリーを含む過去最大エントリー数でスタートした第1戦。
                 %br
-                参戦される方はお手数ですが
-                = link_to "こちら", "/entry/"
-                からエントリー手続きをお願い致します。
+                叉長216cm（トーナメントレコード）でシーバスキャプテン福永氏の圧勝で幕を閉じました。
+                %br
+                平均叉長からサイズが今ひとつな群れが多かったのかと推測します。
+              %p.comment
+                今回、実力を発揮出来ずに思うような結果を出せなかった方々、残り4戦で巻き返せる可能性は十二分にあるので諦めずに頑張りましょう！
+                %br
+                僕も頑張ります（謎）
+              %p.comment
+                上述したように、第1戦に参戦されてない方でも年間チャンピオンは全然狙えますので、第2戦からのエントリーを実行委員一同、心よりお待ちしております！
               %p.writer
-                （実行委員：サイト管理人）
+                （謎のサイト管理人）
         %table
-          %caption 敬称略。CP名無しは自操船参加者です。
+          %caption 敬称略。
           %thead
             %tr
               %th No.
               %th Name
-              %th boat/cap
+              %th boat
               %th 1st
               %th 2nd
               %th 3rd
@@ -68,7 +74,7 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
                 %td= f.result[0]
                 %td= f.result[1]
                 %td= f.result[2]
-                %td= f.result[0].to_i + f.result[1].to_i + f.result[2].to_i
+                %td= f.result[0].to_f + f.result[1].to_f + f.result[2].to_f
           %tfoot
             %tr
               %th No.
@@ -83,22 +89,18 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
           %i.fa.fa-trophy
           上位3名の紹介
         .interview
-          %h2 優勝：さん
+          %h2 優勝：福永 雄海さん（シーバスキャプテン）
           %nav
             %ul
               %li#comment.active コメント
               %li#tackles タックル
               %li#lures ルアー
           .screen.comment_area.active
-            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
-            - if false
-              = image_tag("results/2015/img_pic-round1-rank1-angler.jpg", alt: "", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-round1-rank1-angler.jpg", alt: "福永 雄海さん", width: "600", height: "400")
             %p
-              コメント原稿
+              鋭意執筆中（謎）
           .screen.tackles_area
-            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
-            - if false
-              = image_tag("results/2015/img_pic-round1-rank1-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-round1-rank1-tackle.jpg", alt: "福永 雄海さん使用タックル", width: "600", height: "400")
             %table
               %thead
                 %tr
@@ -110,35 +112,71 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
               %tbody
                 %tr
                   %th 1
-                  %td
-                  %td
-                  %td
-                  %td
+                  %td SHIMANO WORLD SHAULA 1701FF-2
+                  %td DAIWA ZILLION 100SHSLA
+                  %td VARIVAS PE 1.0
+                  %td ナイロン20lb
+                %tr
+                  %th 2
+                  %td SHIMANO WORLD SHAULA 1652R-2
+                  %td SHIMANO EXSENCE DC
+                  %td VARIVAS PE 1.0
+                  %td ナイロン20lb
           .screen.lures_area
-            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
-            - if false
-              = image_tag("results/2015/img_pic-round1-rank1-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-round1-rank1-lures.jpg", alt: "福永 雄海さん使用ルアー", width: "600", height: "400")
             %ul
               %li
                 %i.fa.fa-caret-right
-                ルアー名
+                = link_to "BASSDAY RANGE VIB 90ES", "//www.bassday.co.jp/a_products/saltplug/range_vib/rangevib.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "DUEL HARDCORE SPIN 32g", "//www.duel.co.jp/products/saltwater/d_lure/slspintail/hc_spin/", target: "_blank"
         .interview
-          %h2 準優勝：さん
+          %h2 準優勝：遠藤 正明さん（アイランドクルーズ）
           %nav
             %ul
               %li#comment.active コメント
               %li#tackles タックル
               %li#lures ルアー
           .screen.comment_area.active
-            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
-            - if false
-              = image_tag("results/2015/img_pic-round1-rank2-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-round1-rank2-angler.jpg", alt: "遠藤 正明さん", width: "600", height: "400")
             %p
-              コメント原稿
+              今日のプランは、潮に合わせてエリアと釣り方を変えて大型を狙っていく感じ。
+              %br
+              8時40分の出港から上げ止りまで1時間、沖のジギングポイントを狙う。ベイトは多く魚探反応も濃い。
+              %br
+              ジグは、エンチャーンジグ80g 開始2投目のフォールでまずヒット！
+              %br
+              その後50センチクラスが好調にヒットしてきてリミットメイク。
+              %br
+              4色試すが限定カラーのcotton candyがダントツにあたりが出てました。
+              %br
+            %p
+              潮止りになると反応も無くなり大きく千葉方面へ移動。
+              %br
+              最近の感じでは、キャスティングでコンスタントに60〜65センチが出ているエリア。
+              %br
+              水深は6〜8m、反応は、ボトムに映る。ポイントに着くとすでに下げ方向に船が流れる。鳥も時折騒ぐのでベイトもいる感じ。
+              %br
+              27gの鉄板バイブをキャストしてボトムに着けリトリーブ。バイトはすぐに出てヒット！ しかしサイズが上がらない。
+              %br
+              ボイルも出てイワシが逃げまとう場面もありすぐにルドラ130sをキャストするとヒット！ヒット！
+              %br
+              しかし水面でベイトをおっているのもやはり50センチクラスばかり。
+            %p
+              オープンエリアなのでサイズのいい魚がどこで出るかわからないので、マメに船を入れ替え尚且つデットスローに反応してきたので、リトリーブ＆カーブフォールで狙う。
+              %br
+              すると良型ヒット！
+              %br
+              このパターンがあたり連発！60クラスがキャッチ出きました。
+            %p
+              自分的には、65センチ3本の195センチで上位入賞と狙っていましたが、61.60.57センチの178センチでなんとか2位となれました。
+              %br
+              次回も頑張ります。
+            %p
+              大会運営及び関係者の皆様、ありがとうございました。
           .screen.tackles_area
-            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
-            - if false
-              = image_tag("results/2015/img_pic-round1-rank2-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-round1-rank2-tackle.jpg", alt: "遠藤 正明さん使用タックル", width: "600", height: "400")
             %table
               %thead
                 %tr
@@ -150,35 +188,92 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
               %tbody
                 %tr
                   %th 1
-                  %td
-                  %td
-                  %td
-                  %td
+                  %td VALLEYHILL RESPECT RSS610M
+                  %td DAIWA CERTATE 3012 <span><abbr title="Studio Ocean Mark">S.O.M</abbr> CUSTOM</span>
+                  %td YGK G-SOUL X8 UPGRADE 1.2
+                  %td ナイロン25lb
+              %tbody
+                %tr
+                  %th 2
+                  %td VALLEYHILL RESPECT RSS68ML
+                  %td DAIWA LUVIAS 3012 <span><abbr title="Studio Ocean Mark">S.O.M</abbr> CUSTOM</span>
+                  %td YGK G-SOUL X8 UPGRADE 1.2
+                  %td ナイロン25lb
+              %tbody
+                %tr
+                  %th 3
+                  %td VALLEYHILL RESPECT REB600R7J
+                  %td DAIWA ZILLION 100SH <span><abbr title="Studio Ocean Mark">S.O.M</abbr> CUSTOM</span>
+                  %td YGK G-SOUL X8 UPGRADE 1.2
+                  %td ナイロン25lb
           .screen.lures_area
-            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
-            - if false
-              = image_tag("results/2015/img_pic-round1-rank2-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-round1-rank2-lures.jpg", alt: "遠藤 正明さん使用ルアー", width: "600", height: "400")
             %ul
               %li
                 %i.fa.fa-caret-right
-                ルアー名
+                = link_to "O.S.P RUDRA 130 S", "//www.o-s-p.net/products/asura-o-s-p-rudra-130-s/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "JACKALL BIG BACKER107", "//www.jackall.co.jp/saltwater/products/lure/sea_bass/big-backer107/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "TAILWALK ENCHAAAN JIG 80g", "//tailwalk.jp/lure/enchaaanjig/", target: "_blank"
+                
         .interview
-          %h2 3位：さん
+          %h2 3位：大畠 拓さん（シークロ）
           %nav
             %ul
               %li#comment.active コメント
               %li#tackles タックル
               %li#lures ルアー
           .screen.comment_area.active
-            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
-            - if false
-              = image_tag("results/2015/img_pic-round1-rank3-angler.jpg", alt: "", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-round1-rank3-angler.jpg", alt: "大畠 拓さん", width: "600", height: "400")
             %p
-              コメント原稿
+              直近日曜日に恒例のプラクティスを実施。
+              %br
+              シーズナルパターンである深場にとどまっているシーバスを狙い撃ちする。
+              %br
+              信頼のTide Vib SCOREとROUGH TRAIL BLAZIN、そしてSMELT DAX 60gで叉長190cm半ばをあっさりクリアしてしまった。
+              %br
+              シークロ岡本船長に80UPが出るなど、この調子が本番まで続けば200cm越えもあっさり達成できそう。
+              %br
+              そんなプラクティスでした。
+            %p
+              当然、本番はプラクティスで回ったポイントへ直行！というプランでしたが、向かう途中、バースからタンカーが出て行った直後だったので、寄り道して軽く流す作戦を急遽組み込んでみた。
+              %br
+              これが大正解！
+              %br
+              アベレージこそ低かったが、キッカーを含めてサクっとリミットメイク達成。
+              %br
+              キッカーサイズがもう一本欲しくて暫く粘ってみたが、まぁ40後半〜50cm程度のサイズしか釣れない。
+              %br
+              プラポイントでキッカー以外は入れ替えできると自信満々で移動（笑）
+            %p
+              しかし、大誤算でした（汗）
+              %br
+              プラで調子よかったポイントは壊滅状態。
+              %br
+              1時間ほど粘ってみたが入れ替え出来ないサイズが1本釣れただけに終わる。
+              %br
+              慌てて某バースへ戻るが時既に遅しという感じ・・・。
+              %br
+              ネチネチ攻めて待望のキッカークラスをヒットさせるも、慎重になりすぎてフックアウトさせてしまい意気消沈。
+              %br
+              もうこの時点で気持ちがキレてました（笑）
+              %br
+              そんな精神状態の自分に奇跡は起きること無くストップフィッシング。
+            %p
+              やれること（生け簀管理やタモ入れ等）は自分でやろうと課題を設けた2015シリーズ。
+              終わってみれば3位入賞と結果オーライ感満載でしたが、及第点であることには間違いない1戦でした。
+              %br
+              もし、某バースをスルーしてプラで調子が良かったポイントに直行していたら？？と考えるとゾッとします（謎）
+            %p
+              参加された皆様や実行委員の皆様、お疲れさまでした！
+              %br
+              次戦は打倒！福永さん＆遠藤さんで挑みます（謎）
+              
           .screen.tackles_area
-            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
-            - if false
-              = image_tag("results/2015/img_pic-round1-rank3-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-round1-rank3-tackle.jpg", alt: "大畠 拓さん使用タックル", width: "600", height: "400")
             %table
               %thead
                 %tr
@@ -190,18 +285,37 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
               %tbody
                 %tr
                   %th 1
-                  %td
-                  %td
-                  %td
-                  %td
+                  %td MEGABASS RAMPAGE 海狼 RXGti-63MLC
+                  %td DAIWA MORETHAN PE SV 8.1 TW
+                  %td DUEL HARDCORE X4 1.5
+                  %td GOSEN LEADER FC 17lb
+                %tr
+                  %th 2
+                  %td MEGABASS SILVER SHADOW SSXX-63LCJ
+                  %td DAIWA RYOGA BJ C1012PE-SHL
+                  %td DUEL HARDCORE X8 1.0
+                  %td GOSEN LEADER FC 20lb
+                %tr
+                  %th 3
+                  %td DAIKO DEXTER DXTC-PSX64
+                  %td SHIMANO EXSENCE DC
+                  %td DUEL HARDCORE X4 1.5
+                  %td GOSEN LEADER FC 20lb
+                %tr
+                  %th 4
+                  %td DAIKO DEXTER DXTB-TJX63
+                  %td SHIMANO CURADO 201 TYPE-J
+                  %td DUEL HARDCORE X8 1.0
+                  %td GOSEN LEADER FC 20lb
           .screen.lures_area
-            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
-            - if false
-              = image_tag("results/2015/img_pic-round1-rank3-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-round1-rank3-lures.jpg", alt: "大畠 拓さん使用ルアー", width: "600", height: "400")
             %ul
               %li
                 %i.fa.fa-caret-right
-                ルアー名
+                = link_to "ANGLER'S REPUBLIC SMELT DAX 60g", "//www.palms.co.jp/lure/zetz/smelt-dax/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "DUO Tide Vib SCORE", "//www.duo-inc.co.jp/saltwater/tide-vib/tide-vib-score/", target: "_blank"
     #sub_column
       %section#ranking_summary
         %h1
@@ -210,13 +324,13 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
         %table
           %tr
             %th 開催日
-            %td 2015/1/27
+            %td 2015-01-27
           %tr
             %th 天気
-            %td 
+            %td 曇りのち晴れ
           %tr
             %th 潮
-            %td 
+            %td 小潮
           %tr
             %th 参加者数
             %td
@@ -294,11 +408,9 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
         %h1
           %i.fa.fa-picture-o
           イメージギャラリー
+        %p.section_summary 4位から10位までの方々です。
         %ul
-          - for i in 1..1
+          - for i in 1..7
             %li
-              = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "300", height: "225"
-              - if false
-                = image_tag "results/2015/img_pic-gallery#{i}.jpg", width: "300", height: "225" 
-                %span alt
+              = image_tag "results/2015/round1/img_pic-gallery#{i}.jpg", width: "300", height: "225" 
       = partial "shared/result_list"

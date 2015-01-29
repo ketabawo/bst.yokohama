@@ -1,0 +1,308 @@
+---
+title: BST 2015 第2戦 大会結果
+description: 2015年3月10日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「BTS 2015」第2戦の大会結果です。
+---
+- weiin = []
+- fish_size = [] 
+- data.result2015.round2.each do |f|
+  - f.result.each do |size|
+    - fish_size.push(size)
+  - weiin.push(f.result.length)
+- limitmake = weiin.count(3)
+- double = weiin.count(2)
+- single = weiin.count(1)
+- nofish = weiin.count(0)
+= partial "shared/global_navigation", :locals => {:val => "results"}
+#topicpath
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
+    %li
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} BST公式TOP
+      %i.fa.fa-angle-right
+    %li
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
+      %i.fa.fa-angle-right
+    %li BST 2015 第2戦 大会結果
+#imagepanel_result
+  #imagepanel_result_inner.result2015_02
+    .layer
+      %h1 BST 2015 第2戦 大会結果
+%article#content
+  #content_inner
+    #main_column.double
+      %section#ranking_table
+        .chairmans_comment
+          %dl
+            %dt
+              %i.fa.fa-comment
+              総評
+            %dd
+              %p.comment
+                まだ開催されておりません。エントリーの際に第2戦も参戦と意思表明されていた方、新規エントリーの方を表示しています。
+                %br
+                以下の表に名前が表示されている方で、欠場したい場合はお手数ですが大会事務局へ電話かメールでご連絡ください。
+                %br
+                また、エントリーの際に、第1戦のみチェックされた方で、第2戦も参戦したいという方は、お手数ですが以下のフォームより再度申請してください。
+                %br
+                新規エントリー、再申請は
+                = link_to "こちら", "/entry/"
+                から手続きをお願い致します。
+              %p.writer
+                （実行委員：サイト管理人）
+        %table
+          %caption 敬称略。CP名無しは自操船参加者です。
+          %thead
+            %tr
+              %th No.
+              %th Name
+              %th boat/cap
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th Total
+          %tbody
+            - data.result2015.round2.each do |f|
+              %tr
+                %td= f.rank
+                %td
+                  %span.ruby= f.angler[1]
+                  = f.angler[0]
+                %td= f.angler[2]
+                %td= f.result[0]
+                %td= f.result[1]
+                %td= f.result[2]
+                %td= f.result[0].to_f + f.result[1].to_f + f.result[2].to_f
+          %tfoot
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th Total
+      %section#interviews
+        %h1
+          %i.fa.fa-trophy
+          上位3名の紹介
+        .interview
+          %h2 優勝：さん
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+              %li#lures ルアー
+          .screen.comment_area.active
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank1-angler.jpg", alt: "", width: "600", height: "400")
+            %p
+              コメント原稿
+          .screen.tackles_area
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank1-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td
+                  %td
+                  %td
+                  %td
+          .screen.lures_area
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank1-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                ルアー名
+        .interview
+          %h2 準優勝：さん
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+              %li#lures ルアー
+          .screen.comment_area.active
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank2-angler.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            %p
+              コメント原稿
+          .screen.tackles_area
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank2-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td
+                  %td
+                  %td
+                  %td
+          .screen.lures_area
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank2-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                ルアー名
+        .interview
+          %h2 3位：さん
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+              %li#lures ルアー
+          .screen.comment_area.active
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank3-angler.jpg", alt: "", width: "600", height: "400")
+            %p
+              コメント原稿
+          .screen.tackles_area
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank3-tackle.jpg", alt: "さん使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td
+                  %td
+                  %td
+                  %td
+          .screen.lures_area
+            = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "600", height: "400"
+            - if false
+              = image_tag("results/2015/img_pic-round1-rank3-lures.jpg", alt: "さん使用ルアー", width: "600", height: "400")
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                ルアー名
+    #sub_column
+      %section#ranking_summary
+        %h1
+          %i.fa.fa-file-text-o
+          ラウンドサマリー
+        %table
+          %tr
+            %th 開催日
+            %td 2015-03-10
+          %tr
+            %th 天気
+            %td 
+          %tr
+            %th 潮
+            %td 
+          %tr
+            %th 参加者数
+            %td
+              - if data.result2015.round2.present? then
+                = weiin.length
+              - else
+                0
+              人
+          %tr
+            %th ウェイイン総数
+            %td
+              - if data.result2015.round2.present? then
+                = fish_size.length
+              - else
+                0
+              本
+          %tr
+            %th リミットメイク率
+            %td
+              - if data.result2015.round2.present? then
+                = (limitmake.to_f / weiin.length.to_f * 100).round(2)
+              - else
+                0
+              ％
+          %tr
+            %th 最大叉長
+            %td 
+              - if data.result2015.round2.present? then
+                = fish_size.sort.last
+              - else
+                0
+              cm
+          %tr
+            %th 最小叉長
+            %td 
+              - if data.result2015.round2.present? then
+                = fish_size.sort.first
+              - else
+                40
+              cm
+          %tr
+            %th 平均叉長
+            %td
+              - if data.result2015.round2.present? then
+                - total_size = fish_size.inject{|sum, n| sum + n }
+                = (total_size.to_f / fish_size.length.to_f).round(1)
+              - else
+                0
+              cm
+      :plain
+        <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['ウェイイン数', '人数'],
+        ['リミットメイク',     #{limitmake}],
+        ['2本',      #{double}],
+        ['1本',  #{single}],
+        ['ノーフィッシュ', #{nofish}],
+        ]);
+        var options = {
+        title: 'ウェイイン数内訳',
+        titleTextStyle:{fontSize: 16},
+        legend: 'none',
+        chartArea: {left:0,top:35,width:'90%',height:'90%'},
+        colors: ['#4cae4c', '#46b8da', '#f0ad4e', '#d9534f']
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+        }
+        </script>
+      #piechart
+      %section#image_gallery
+        %h1
+          %i.fa.fa-picture-o
+          イメージギャラリー
+        %ul
+          - for i in 1..1
+            %li
+              = image_tag "NOIMAGE.gif", alt: "NO IMAGE", width: "300", height: "225"
+              - if false
+                = image_tag "results/2015/img_pic-gallery#{i}.jpg", width: "300", height: "225" 
+                %span alt
+      = partial "shared/result_list"

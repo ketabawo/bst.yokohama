@@ -32,11 +32,15 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
         %ul
           %li
             %i.fa.fa-caret-right
-            エントリー済みの方を
-            = link_to "こちら", "/results/2015/round1.html"
-            に表示しました。（現在23名）
+            =link_to "第1戦大会結果", "/results/2015/round1.html"
+            を公開しました。
             %span
-              (2015-01-23）
+              (2015-01-28）
+          %li
+            %i.fa.fa-caret-right
+            第4回 G.O.M. ワーム限定ボートシーバストーナメント<a href="//sites.google.com/site/hamaumi/g-o-m" target="_blank">エントリー</a>受付開始！
+            %span
+              (2015-01-27）
           %li
             %i.fa.fa-caret-right
             2015各戦上位3名は、コメント・タックルデータ・使用ルアーの情報共有をお願い致します。
@@ -44,103 +48,7 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           %p
             %i.fa.fa-exclamation-triangle
             表示がおかしい時は「CTRL+SHIFT+Rキー(win IE以外)」or「command+shift+Rキー（mac）」を押してブラウザのキャッシュをクリアしてください。
-      %section#events
-        %h1
-          %i.fa.fa-calendar
-          BST 年間競技日程
-        %p.section_summary
-          %abbr{title: "Boat Seabass Tournament"}
-            BST
-          では、プロ・アマ、男女問わず、参戦していただけるアングラーを随時募集しております。
-          %br
-          全てに参戦する必要はありませんので、我こそは！という方の挑戦をお待ちしております。
-        .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
-          .eye_catch
-            .pic2015.round1
-          .this_content
-            %span.warning 間もなく締切
-            %span.info フライOK
-            %span.primary 協賛募集中
-            %h2{itemprop: "name"} BST 2015 第1戦
-            %dl
-              %dt 開催日:
-              %dd{itemprop: "startDate", content: "2015-01-27"} 2015-01-27
-              %dt 受付〆:
-              %dd 2015-01-25
-            %p{itemprop: "description"}
-              %strong 〆前でも参加艇上限に達した時点で受付終了いたします。
-              %br
-              = link_to "/entry/" do
-                %i.fa.fa-caret-right
-                エントリー
-        .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
-          .eye_catch
-            .pic2015.round2
-          .this_content
-            %span.success 絶賛募集中
-            %span.info フライOK
-            %span.primary 後援募集中
-            %h2{itemprop: "name"} BST 2015 第2戦
-            %dl
-              %dt 開催日:
-              %dd{itemprop: "startDate", content: "2015-03-10"} 2015-03-10
-            %p{itemprop: "description"}
-              ご不明な点などございましたら、大会事務局までお問い合せください。
-              %br
-              = link_to "/entry/" do
-                %i.fa.fa-caret-right
-                エントリー
-        .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
-          .eye_catch
-            .pic2015.round3
-          .this_content
-            %span.success 絶賛募集中
-            %span.info フライOK
-            %span.primary 後援募集中
-            %h2{itemprop: "name"} BST 2015 第3戦
-            %dl
-              %dt 開催日:
-              %dd{itemprop: "startDate", content: "2015-05-12"} 2015-05-12
-            %p{itemprop: "description"}
-              ご不明な点などございましたら、大会事務局までお問い合せください。
-              %br
-              = link_to "/entry/" do
-                %i.fa.fa-caret-right
-                エントリー
-        .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
-          .eye_catch
-            .pic2015.round4
-          .this_content
-            %span.success 絶賛募集中
-            %span.info フライOK
-            %span.primary 後援募集中
-            %h2{itemprop: "name"} BST 2015 第4戦
-            %dl
-              %dt 開催日:
-              %dd{itemprop: "startDate", content: "2015-06-09"} 2015-06-09
-            %p{itemprop: "description"}
-              ご不明な点などございましたら、大会事務局までお問い合せください。
-              %br
-              = link_to "/entry/" do
-                %i.fa.fa-caret-right
-                エントリー
-        .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
-          .eye_catch
-            .pic2015.round5
-          .this_content
-            %span.success 絶賛募集中
-            %span.info フライOK
-            %span.primary 後援募集中
-            %h2{itemprop: "name"} BST 2015 第5戦
-            %dl
-              %dt 開催日:
-              %dd{itemprop: "startDate", content: "2015-07-14"} 2015-07-14
-            %p{itemprop: "description"}
-              ご不明な点などございましたら、大会事務局までお問い合せください。
-              %br
-              = link_to "/entry/" do
-                %i.fa.fa-caret-right
-                エントリー
+      = partial "shared/events2015"
       %section#timetable
         %h1
           %i.fa.fa-clock-o
@@ -156,21 +64,22 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
               %th イベント
           %tbody
             %tr
-              %td 〜08:15
+              %td 〜08:10
               %td
-                受付：参加費用5000円を納入してください。
-                %br
-                出船順抽選：くじ引きにより出船順を決めます。
-                %br
-                ライブウェルチェック：事務局スタッフが参加艇のライブウェル（生け簀）をチェックします。
+                参加費用5000円を納入し受付を完了させてください。
+            %tr
+              %td 08:15〜
+              %td
+                ライブウェルチェック：スタッフが参加艇のライブウェル（生け簀）をチェックします。
             %tr
               %td 08:20〜
               %td
-                ミーティング：ルールや当日の流れ、注意点などを説明します。
+                出船順抽選：くじ引きにより出船順を決めます。<br>
+                キャプテンミーティング：ルールについての説明や当日の流れなどを説明します。
             %tr
-              %td 08:40〜
+              %td 08:40〜45
               %td
-                スタート：くじ引きで決定した順に出船します。デッドスローエリア離脱後、競技を開始してください。
+                スタート：くじ引きで決定した順に出船します。スローエリア離脱後、競技を開始してください。
                 = image_tag "regulations/img_pic-deadslowarea.gif", alt: "デッドスローエリア", width: "300", height: "224"
             %tr
               %td 〜12:50
@@ -189,7 +98,7 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           ランキング
         %h2
           %i.fa.fa-chevron-right
-          2015シリーズ（第0戦終了）
+          2015シリーズ（第1戦終了）
         %table
           %caption
             = link_to "/entry/" do
@@ -205,21 +114,21 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
             %tr
               %td
                 1
-              %td --
-              %td --
-              %td 0
+              %td 福永 雄海
+              %td シーバスキャプテン
+              %td 100
             %tr
               %td
                 2
-              %td --
-              %td --
-              %td 0
+              %td 遠藤 正明
+              %td アイランドクルーズ
+              %td 90
             %tr
               %td
                 3
-              %td --
-              %td --
-              %td 0
+              %td 大畠 拓
+              %td シークロ
+              %td 85
         %h2
           %i.fa.fa-chevron-right
           2014シリーズ（全5戦）
@@ -297,12 +206,13 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           %h2 第4回 G.O.M. ワーム限定ボートシーバストーナメント
           %span.warning ワーム限定
           %span.info チーム戦
+          %span.success 受付中
           %dl
             %dt 開催日:
             %dd 2015-02-22
           %dl
-            %dt 問い合せ先：
-            %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/", target: "_blank"
+            %dt 詳細・エントリー：
+            %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/g-o-m", target: "_blank"
         .element
           %h2 第31回 東京ベイ・シーバスゲーム・フェスティバル
           %span.warning JGFA会員限定

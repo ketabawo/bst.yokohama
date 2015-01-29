@@ -103,6 +103,9 @@
           &.warning{
             background-color: $warning;
           }
+          &.danger{
+            background-color: $danger;
+          }
           input[type="checkbox"]{
             display: inline-block;
             width: 1em;
