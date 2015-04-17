@@ -98,7 +98,27 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
           .screen.comment_area.active
             = image_tag("results/2015/img_pic-round1-rank1-angler.jpg", alt: "福永 雄海さん", width: "600", height: "400")
             %p
-              鋭意執筆中（謎）
+              当日は事前にプラもできずの、全くのノープラン・・・情報だとあまり良い話は聞かなかったが、今までのシーズナルパターンを考慮して根岸方面へとまっしぐら。
+            %p
+              ストラクチャーを中心に攻めてみることにしてみました。
+              %br
+              レンジバイブ90ESと、ハードコアスピンをセットし、まずはボトムからゆっくりとリトリーブ・・・しばらくするといきなりの70cmUpをキャッチ♪
+              %br
+              潮流を利用しうまくストラクチャーの際に落とし込むと同じパターンで連続ヒットが続き、サイズも60cm後半から70cmUpと両型サイズを連発!釣り開始1時間で70cmUpのリミットメイク!
+            %p
+              ジグを落とし込むと、サイズダウンが続いたので、縦の動きよりも、斜めの動きが◎♪
+              %br
+              見事にはまり、コンスタントに同じようなサイズを入れ替えていきました。ポイント移動は考えず、ポイントを荒らさないように、ライブウェルの状態を確認しながらののんびり釣行。
+              %br
+              釣行開始3時間後、気づけば70cmUpは10本、60cm後半を5本のこの時期にでは最高の釣果♪
+              %br
+              その後は、魚のことを考え1時間早くに帰港。無事に検量に持ち込むことができました。
+            %p
+              結果は1位ということで、今シーズン最高のスタートを切ることができました。
+              %br
+              残り4戦も上位にとどまりたいと思います。
+            %p
+              参加者の皆さん&実行員会の皆さんお疲れ様でした!
           .screen.tackles_area
             = image_tag("results/2015/img_pic-round1-rank1-tackle.jpg", alt: "福永 雄海さん使用タックル", width: "600", height: "400")
             %table
@@ -408,9 +428,10 @@ description: 2015年1月27日（火）に開催された東京湾No.1ボート�
         %h1
           %i.fa.fa-picture-o
           イメージギャラリー
-        %p.section_summary 4位から10位までの方々です。
         %ul
-          - for i in 1..7
+          - data.result2015.round1[3..9].each_with_index do |f, i|
             %li
-              = image_tag "results/2015/round1/img_pic-gallery#{i}.jpg", width: "300", height: "225" 
+              = image_tag "results/2015/round1/img_pic-gallery#{i + 4}.jpg", width: "300", height: "225", alt: "#{f.angler[0]}さん"
+              %span
+                #{f.rank}位：#{f.angler[0]}さん
       = partial "shared/result_list"

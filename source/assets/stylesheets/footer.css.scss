@@ -67,7 +67,7 @@
               &:nth-child(even){
                 margin-right: 0;
               }
-              @for $i from 0 through 10{
+              @for $i from 0 through 11{
                 &:nth-child(#{$i + 1}){
                   background-position: 0 #{$i*-50}px;
                 }

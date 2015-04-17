@@ -20,20 +20,37 @@
       background-image: image_url("bg_pic-sliders.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      position: relative;
       @for $i from 0 through 2{
         &.slider#{$i}{
           background-position: 0 #{$i * -300}px;
         }
       }
       p{
+        width: 100%;
         font-size: 30px;
         color: #FFF;
         text-align: center;
         text-shadow: 1px 1px #000;
-        padding-top: 40px;
+        position: absolute;
+        top: 40px;
         span{
           font-size: 40px;
           color: $danger;
+        }
+      }
+      ul{
+        position: absolute;
+        color: #FFF;
+        bottom: 10px;
+        right: 10px;
+        li{
+          display: inline;
+          a{
+            img{
+              display: inline;
+            }
+          }
         }
       }
     }
@@ -481,9 +498,11 @@
           background-color: #d9edf7;
         }
         td{
+          white-space: nowrap;
           span.ruby{
             display: block;
             font-size: 10px;
+            margin-bottom: 3px;
           }
           strong{
             font-weight: bold;
@@ -615,6 +634,9 @@
       ul{
         font-size: 14px;
         line-height: 150%;
+      }
+      table ~ ul{
+        margin-top: 10px;
       }
     }
   }

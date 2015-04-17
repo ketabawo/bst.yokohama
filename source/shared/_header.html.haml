@@ -1,12 +1,16 @@
 %header#header
   .header_upper
     .header_upper_inner
-      .tagline 横浜を拠点とする東京湾No1アングラーを決めるボートシーバスルアートーナメント
+      .tagline 横浜を拠点とする東京湾No1アングラーを決める個人戦ボートシーバスルアートーナメント
       %ul
         %li
           = link_to "/about/committee.html" do
             %i.fa.fa-caret-right
             実行委員の紹介
+        %li
+          = link_to "/about/publishedcases.html" do
+            %i.fa.fa-caret-right
+            メディア掲載事例
   .header_inner
     - if val == "index"
       %h1#logo
@@ -18,7 +22,7 @@
       %p
         %abbr{title: "Boat Seabass Tournament"}
           BST
-        ボートシーバストーナメントは
+        ボートシーバストーナメントは、D-marina全面協力のもとに開催される
         %br
         東京湾唯一のライブフィッシュ方式で競うボートシーバスゲームルアートーナメントです。
     #header_utility

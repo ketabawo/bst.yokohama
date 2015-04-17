@@ -28,15 +28,13 @@ title: 2015年 シリーズランキング
               総評
             %dd
               %p.comment
-                トーナメントは始まったばかりです。
+                第二戦が終了し、年間順位も大きく変動しました。
                 %br
-                残り4戦あるので誰にでもシリーズ優勝の可能性はあります！！
-                %br
-                2戦目からのエントリーお待ちしております。
+                しかし、まだ三戦残っておりますので、どうなるかは神のみぞ知る（笑）
               %p.writer
                 （謎のサイト管理人）
         %table
-          %caption 敬称略
+          %caption 敬称略（同率の場合は最大魚）
           %thead
             %tr
               %th Rank
@@ -57,11 +55,11 @@ title: 2015年 シリーズランキング
                   = f.name
                 %td= f.boat
                 %td= f.points[0]
+                %td= f.points[1]
                 %td 
                 %td 
                 %td 
-                %td 
-                %td= f.points[0]
+                %td= f.points[0] + f.points[1]
           %tfoot
             %tr
               %th Rank
@@ -81,28 +79,28 @@ title: 2015年 シリーズランキング
         %table
           %tr
             %th ラウンド数
-            %td 1戦/5戦
+            %td 2戦/5戦
           %tr
             %th 参加数（のべ）
-            %td 23人
+            %td 47人
           %tr
             %th ウェイイン総数
-            %td 56本
+            %td 122本
           %tr
             %th リミットメイク率
-            %td 69.57％
+            %td 78.72％
           %tr
             %th 最長ウェイイン
             %td 216cm(TR)
           %tr
             %th 最大叉長
-            %td 74.0cm
+            %td 75.0cm
           %tr
             %th 最小叉長
             %td 40.0cm
           %tr
             %th 平均叉長
-            %td 50.9cm
+            %td 53.9cm
       %section#ranking_list
         %ul
           %li.s2014.on_sub
