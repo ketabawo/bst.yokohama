@@ -1,0 +1,363 @@
+---
+title: BST 2015 第4戦 大会結果
+description: 2015年6月9日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「BTS 2015」第4戦の大会結果です。
+---
+- weiin = []
+- fish_size = [] 
+- data.result2015.round4.each do |f|
+  - f.result.each do |size|
+    - fish_size.push(size)
+  - weiin.push(f.result.length)
+- limitmake = weiin.count(3)
+- double = weiin.count(2)
+- single = weiin.count(1)
+- nofish = weiin.count(0)
+= partial "shared/global_navigation", :locals => {:val => "results"}
+#topicpath
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
+    %li
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} BST公式TOP
+      %i.fa.fa-angle-right
+    %li
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
+      %i.fa.fa-angle-right
+    %li BST 2015 第4戦 大会結果
+#imagepanel_result
+  #imagepanel_result_inner.result2015_04
+    .layer
+      %h1 BST 2015 第4戦 大会結果
+%article#content
+  #content_inner
+    #main_column.double
+      %section#ranking_table
+        .chairmans_comment
+          %dl
+            %dt
+              %i.fa.fa-comment
+              総評
+            %dd
+              %p.comment
+                どうにか天気も回復し無事開催できました。<br>
+                今回でシリーズ優勝の可能性がある選手と、そうでない選手がハッキリ分かれた一戦でしたね！！<br>
+                最終戦でどうなるか楽しみです（笑）<br>
+                <span style="font-size: 12px;">レギュレーション違反のため柿澤選手は失格。</span><br><br>
+                <a href="http://www.marine-license.com/" target="_blank">マリンライセンスロイヤル</a>様、ご協賛ありがとうございました。
+              %p.writer
+                （謎のサイト管理人）
+        %table
+          %caption 敬称略。CP名無しは自操船参加者です。
+          %thead
+            %tr
+              %th No.
+              %th Name
+              %th boat/cap
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th Total
+          %tbody
+            - data.result2015.round4.each do |f|
+              %tr
+                %td= f.rank
+                %td
+                  %span.ruby= f.angler[1]
+                  = f.angler[0]
+                %td= f.angler[2]
+                %td= f.result[0]
+                %td= f.result[1]
+                %td= f.result[2]
+                %td= f.result[0].to_f + f.result[1].to_f + f.result[2].to_f
+          %tfoot
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th Total
+      %section#interviews
+        %h1
+          %i.fa.fa-trophy
+          上位3名の紹介
+        .interview
+          %h2 優勝：藤田 潤一さん（シークロ桝田）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル/ルアー
+          .screen.comment_area.active
+            = image_tag("results/2015/img_pic-round4-rank1-angler.jpg", alt: "藤田 潤一さん", width: "600", height: "400")
+            %p
+              今回は、事前のプラクティスで近場でのナイスサイズは難しいと判断した為、近場のポイントはスルーしました。<br>
+              しかし、沖へ出たのはいいが北のポイントへ行くか南のポイントへ行くかかなり迷いました。<br>
+              ここは一か八か北上して京浜運河を攻める事に。
+            %p
+              まずは、ストラクチャーをバイブレーションで探ってみると追いかけくるが食わせられない。<br>
+              そこで、シンキングミノーでのジャークに切り替えて食わせました。<br>
+              リミットメイクを達成後も北上を続け、グットサイズを三匹揃え、その後は戻りながら一発大物狙いで鶴見川河口へ。<br>
+              しかし不発。<br>
+              そこでストップフィッシング。
+            %p
+              入賞できたらいいなと思いながらの帰港でしたが、結果はまさかの優勝。<br>
+              協力してくださった方々、本当にありがとうございました。<br>
+              そして皆様、お疲れ様でした。
+          .screen.tackles_area
+            = image_tag("results/2015/img_pic-round4-rank1-tackle.jpg", alt: "使用タックル/ルアー", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td= link_to "DAIWA SALTIST BS 511ML", "//all.daiwa21.com/fishing/item/rod/salt_rd/saltist_bs/", target: "_blank"
+                  %td DAIWA '12 EXIST 2510 PE-H
+                  %td= link_to "RAPALA RAPINOVA-X MULTI-GAME 1.2", "//www.rapala.co.jp/r-line/rap-X/rapinova-X%20Multi-Game.html", target: "_blank"
+                  %td= link_to "DAIWA MORETHAN LEADER X'TREME 25LB", "//all.daiwa21.com/fishing/item/line/solt_li/morethan_leader_ex/index.html", target: "_blank"
+                %tr
+                  %th 2
+                  %td= link_to "DAIWA SALTIST BS 66ML", "//all.daiwa21.com/fishing/item/rod/salt_rd/saltist_bs/", target: "_blank"
+                  %td= link_to "DAIWA X-FIRE LBD 2510 PE-SH", "//all.daiwa21.com/fishing/item/reel/spin_rl/xfire/", target: "_blank"
+                  %td= link_to "RAPALA RAPINOVA-X MULTI-GAME 1.2", "//www.rapala.co.jp/r-line/rap-X/rapinova-X%20Multi-Game.html", target: "_blank"
+                  %td= link_to "DAIWA MORETHAN LEADER X'TREME 25LB", "//all.daiwa21.com/fishing/item/line/solt_li/morethan_leader_ex/index.html", target: "_blank"
+                %tr
+                  %th 3
+                  %td ABU GARCIA SALTY STAGE KR-X SBS-722MH-KR
+                  %td= link_to "DAIWA CELTATE 2510 R-PE", "//all.daiwa21.com/fishing/item/reel/spin_rl/certate/", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X8 1.2", "//www.duel.co.jp/products/saltwater/d_line/saltwater_line_pe/hc_x8/", target: "_blank"
+                  %td= link_to "DAIWA MORETHAN LEADER X'TREME 25LB", "//all.daiwa21.com/fishing/item/line/solt_li/morethan_leader_ex/index.html", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "BASSDAY RANGEVIB 70ES", "//www.bassday.co.jp/a_products/saltplug/range_vib/rangevib.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "VALLEY HILL AIR DEEP 80S", "//valleyhill.taniyamashoji.co.jp/catalogue/page01.jsp?mode=id/531", target: "_blank"
+        .interview
+          %h2 準優勝：伊藤 一石さん（BUSTER）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル/ルアー
+          .screen.comment_area.active
+            = image_tag("results/2015/img_pic-round4-rank2-angler.jpg", alt: "伊藤 一石さん", width: "600", height: "400")
+            %p
+              今回は根岸エリアをメインとしたプランでした。<br>
+              とは言っても特別状況が良いわけでもなく、むしろ日毎に悪くなってきている中での展開でしたが、どこのエリアも50cmから60cm台前半の魚が数多く釣れていたので、じっくり腰を据えてキッカーを獲れるエリア選択を優先しました。
+            %p
+              当日のスタート順は12番…<br>
+              これでは寄り道してる余裕も無いので、とりあえず目的の桟橋まで直行です。
+            %p
+              到着後、まずはジャークベイトでアウトサイドをサーチしましたが、反応はイマイチ…<br>
+              ここからAIR DEEP80sで杭周りを通すとポツポツバイトがあり、50cm、49cmと立て続けにヒットし、意外とスムーズに2本がライブウェルに入ります。
+            %p
+              しかし、30分程経過した頃から状況は一変。流れ込んだ濁りにより、ミスバイトが連発し始め、さらにバイトゾーンとリトリーブゾーンがうまく重ならなくなってしまったので、28gのジグに替え、魚探の反応を見ながら杭のピンスポットに流し込むと、着底直前に「ドンっ！」バーブレスのシングルフック1本だったのでヒヤヒヤでしたが、なんとかネットイン！計測してみると76cm!!!<br>
+              正直、ここまで大きいとは思いませんでしたが、狙って獲れたキッカーなので内容的には満足です。
+            %p
+              このあと再度AIR DEEPで60cmクラスがヒットするも、痛恨のフックアウト…<br><br>
+              
+              そしてタイムアップ(￣▽￣)
+            %p
+              結局、終わってみれば、ぴったり3本しか獲れていないというキワドイ状態でしたが、ビッグキッカーのおかげで準優勝となりました！！<br><br>
+              
+              最終戦の結果次第で年間ランキングが大きく変わりそうなので、最後まで諦めず上位のみなさんにしがみついていきます。<br>
+              （簡単に振り落とされそうですがww）<br><br>
+              
+              大会運営のみなさま、いつもありがとうございます！
+          .screen.tackles_area
+            = image_tag("results/2015/img_pic-round4-rank2-tackle.jpg", alt: "使用タックル/ルアー", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td SHIMANO FINAL DIMENSION TS610MLF
+                  %td= link_to "SHIMANO BASS ONE XT", "//fishing.shimano.co.jp/product/reel/2604", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X4 1.5", "//www.duel.co.jp/products/saltwater/d_line/saltwater_line_pe/hc_x4/", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X-TEX COBRA 20LB", "//www.duel.co.jp/products/bass/bass_line/bass_line_nylon/hc_line_cobra/", target: "_blank"
+                %tr
+                  %th 2
+                  %td= link_to "SHIMANO ZODIAS 1610ML", "//fishing.shimano.co.jp/product/rod/3852", target: "_blank"
+                  %td= link_to "SHIMANO BASS ONE XT", "//fishing.shimano.co.jp/product/reel/2604", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X4 1.5", "//www.duel.co.jp/products/saltwater/d_line/saltwater_line_pe/hc_x4/", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X-TEX COBRA 20LB", "//www.duel.co.jp/products/bass/bass_line/bass_line_nylon/hc_line_cobra/", target: "_blank"
+                %tr
+                  %th 3
+                  %td= link_to "SHIMANO ZODIAS 1610M", "//fishing.shimano.co.jp/product/rod/3852", target: "_blank"
+                  %td= link_to "SHIMANO BASS ONE XT", "//fishing.shimano.co.jp/product/reel/2604", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X4 1.5", "//www.duel.co.jp/products/saltwater/d_line/saltwater_line_pe/hc_x4/", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X-TEX COBRA 20LB", "//www.duel.co.jp/products/bass/bass_line/bass_line_nylon/hc_line_cobra/", target: "_blank"
+                %tr
+                  %th 4
+                  %td LCI EXELON CRANKER SP 663C
+                  %td= link_to "SHIMANO BASS ONE XT", "//fishing.shimano.co.jp/product/reel/2604", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X4 1.5", "//www.duel.co.jp/products/saltwater/d_line/saltwater_line_pe/hc_x4/", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X-TEX COBRA 20LB", "//www.duel.co.jp/products/bass/bass_line/bass_line_nylon/hc_line_cobra/", target: "_blank"
+                %tr
+                  %th 5
+                  %td SHIMANO CARDIFF 70ML
+                  %td= link_to "SHIMANO EXSENCE BB C3000M", "//fishing.shimano.co.jp/product/reel/3770", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X4 1.2", "//www.duel.co.jp/products/saltwater/d_line/saltwater_line_pe/hc_x4/", target: "_blank"
+                  %td= link_to "SUNLINE FC SNIPER 12LB", "//www.sunline.co.jp/sl_html2/products/bass/fc_sniper.html", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "VALLEY HILL AIR DEEP 80S", "//valleyhill.taniyamashoji.co.jp/catalogue/page01.jsp?mode=id/531", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "BAIT BREATH ONEJIG 30g", "//www.baitbreath.net/onejig.html", target: "_blank"
+        .interview
+          %h2 3位：水谷 純也さん（ストライカー）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル/ルアー
+          .screen.comment_area.active
+            = image_tag("results/2015/img_pic-round4-rank3-angler.jpg", alt: "水谷 純也さん", width: "600", height: "400")
+            %p
+              コメント
+          .screen.tackles_area
+            = image_tag("results/2015/img_pic-round4-rank3-tackle.jpg", alt: "使用タックル/ルアー", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td DAIWA SALTIST EXTREME STX-BC 651B
+                  %td SHIMANO METANIUM mg DC7
+                  %td=link_to "SUNLINE CASTAWAY 3.0", "//www.sunline.co.jp/sl_html2/products/salt/cast_away_pe.html", target: "_blank"
+                  %td=link_to "VARIVAS SHOCKLEADER 20LB", "//varivas.co.jp/Product/searchgroup/id:2059", target: "_blank"
+                %tr
+                  %th 2
+                  %td TIEMCO JUMPING JACK CANAL JJC61C
+                  %td SHIMANO METANIUM mg DC7
+                  %td=link_to "SUNLINE CASTAWAY 3.0", "//www.sunline.co.jp/sl_html2/products/salt/cast_away_pe.html", target: "_blank"
+                  %td=link_to "VARIVAS SHOCKLEADER 20LB", "//varivas.co.jp/Product/searchgroup/id:2059", target: "_blank"
+                %tr
+                  %th 3
+                  %td AIRMARK BAYARM BAS608RF4
+                  %td DAIWA CELTATE 2500R
+                  %td=link_to "BERKLEY FIRELINE 1.0", "//www.purefishing.jp/product/Line/berkley/su_pe/fireline/FireLine.html", target: "_blank"
+                  %td=link_to "VARIVAS SHOCKLEADER 20LB", "//varivas.co.jp/Product/searchgroup/id:2059", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "JACKALL BIG BACKER 107", "//www.jackall.co.jp/saltwater/products/lure/sea_bass/big-backer107/", target: "_blank"
+    #sub_column
+      %section#ranking_summary
+        %h1
+          %i.fa.fa-file-text-o
+          ラウンドサマリー
+        %table
+          %tr
+            %th 開催日
+            %td 2015-06-09
+          %tr
+            %th 天気
+            %td 曇り時々雨
+          %tr
+            %th 潮
+            %td 小潮
+          %tr
+            %th 参加者数
+            %td
+              - if data.result2015.round4.present? then
+                = weiin.length
+              - else
+                0
+              人
+          %tr
+            %th ウェイイン総数
+            %td
+              - if data.result2015.round4.present? then
+                = fish_size.length
+              - else
+                0
+              本
+          %tr
+            %th リミットメイク率
+            %td
+              - if data.result2015.round4.present? then
+                = (limitmake.to_f / weiin.length.to_f * 100).round(2)
+              - else
+                0
+              ％
+          %tr
+            %th 最大叉長
+            %td 
+              - if data.result2015.round4.present? then
+                = fish_size.sort.last
+              - else
+                0
+              cm
+          %tr
+            %th 最小叉長
+            %td 
+              - if data.result2015.round4.present? then
+                = fish_size.sort.first
+              - else
+                40
+              cm
+          %tr
+            %th 平均叉長
+            %td
+              - if data.result2015.round4.present? then
+                - total_size = fish_size.inject{|sum, n| sum + n }
+                = (total_size.to_f / fish_size.length.to_f).round(1)
+              - else
+                0
+              cm
+      :plain
+        <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['ウェイイン数', '人数'],
+        ['リミットメイク',     #{limitmake}],
+        ['2本',      #{double}],
+        ['1本',  #{single}],
+        ['ノーフィッシュ', #{nofish}],
+        ]);
+        var options = {
+        title: 'ウェイイン数内訳',
+        titleTextStyle:{fontSize: 16},
+        legend: 'none',
+        chartArea: {left:0,top:35,width:'90%',height:'90%'},
+        colors: ['#4cae4c', '#46b8da', '#f0ad4e', '#d9534f']
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+        }
+        </script>
+      #piechart
+      %section#image_gallery
+        %h1
+          %i.fa.fa-picture-o
+          イメージギャラリー
+        %ul
+          - data.result2015.round4[3..9].each_with_index do |f, i|
+            %li
+              = image_tag "results/2015/round4/img_pic-gallery#{i + 4}.jpg", width: "300", height: "225", alt: "#{f.angler[0]}さん"
+              %span
+                #{f.rank}位：#{f.angler[0]}さん
+      = partial "shared/result_list"

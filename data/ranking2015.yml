@@ -3,154 +3,164 @@ result:
     name: 森田 英典
     furigana: モリタ ヒデノリ
     boat: リアル
-    points: [80, 90]
-  - rank: 1
+    points: [80, 90, 0, 80]
+  - rank: 2
     name: 遠藤 正明
     furigana: エンドウ マサアキ
     boat: アイランドクルーズ
-    points: [90, 80]
+    points: [90, 80, 0, 70]
   - rank: 3
-    name: 福永 雄海
-    furigana: フクナガ ユウミ
-    boat: シーバスキャプテン
-    points: [100, 45]
-  - rank: 3
-    name: 藤田 正明
-    furigana: フジタ マサアキ
-    boat: レンタル
-    points: [70, 75]
-  - rank: 5
     name: 池上 日明
     furigana: イケガミ アキラ
     boat: D-marina
-    points: [35, 100]
+    points: [35, 100, 0, 75]
+  - rank: 4
+    name: 福永 雄海
+    furigana: フクナガ ユウミ
+    boat: シーバスキャプテン
+    points: [100, 45, 0, 50]
+  - rank: 5
+    name: 藤田 正明
+    furigana: フジタ マサアキ
+    boat: レンタル
+    points: [70, 75, 0, 45]
   - rank: 6
     name: 早川 昌和
     furigana: ハヤカワ マサカズ
     boat: ストライカー
-    points: [75, 50]
+    points: [75, 50, 0, 60]
   - rank: 7
-    name: 柿澤 寛
-    furigana: カキザワ ヒロシ
-    boat: ストライカー
-    points: [65, 55]
-  - rank: 8
-    name: 一迫 敏洋
-    furigana: イチハザマ トシヒロ
-    boat: リアル
-    points: [45, 70]
-  - rank: 9
-    name: 大畠 拓
-    furigana: オオバタケ タク
-    boat: シークロ
-    points: [85, 5]
-  - rank: 9
-    name: 熊膳 英大
-    furigana: クマゼン ヒデヒロ
-    boat: ザ シーマン
-    points: [5, 85]
-  - rank: 11
     name: 伊藤 一石
     furigana: イトウ カズイシ
     boat: レンタル
-    points: [5, 70]
-  - rank: 12
-    name: 数野 達也
-    furigana: カズノ タツヤ
-    boat: インパクト
-    points: [5, 60]
-  - rank: 13
-    name: 奥野 忠弘
-    furigana: オクノ タダヒロ
-    boat: 林遊船
-    points: [60, 0]
-  - rank: 14
-    name: 大坂 善郎
-    furigana: オオサカ ヨシロウ
-    boat: K.S.P.ジャック
-    points: [55, 0]
-  - rank: 15
-    name: 岡村 真司
-    furigana: オカムラ シンジ
-    boat: レンタル
-    points: [15, 35]
-  - rank: 15
-    name: 長谷 里奈
-    furigana: ハセ リナ
-    boat: ザ シーマン
-    points: [50, 0]
-  - rank: 17
-    name: 水谷 純也
-    furigana: ミズタニ ジュンヤ
-    boat: ストライカー
-    points: [0, 40]
-  - rank: 17
-    name: 安井 雄二
-    furigana: ヤスイ ユウジ
-    boat: K.S.P.ジャック
-    points: [40, 0]
-  - rank: 19
-    name: 大島 道雄
-    furigana: オオシマ ミチオ
-    boat: レンタル
-    points: [30, 5]
-  - rank: 20
+    points: [5, 70, 0, 90]
+  - rank: 8
     name: 藤田 潤一
     furigana: フジタ ジュンイチ
     boat: シークロ
-    points: [5, 25]
-  - rank: 20
-    name: 多田 雄一
-    furigana: タダ ユウイチ
-    boat: 横浜ベイサイドマリーナ
-    points: [0, 30]
-  - rank: 22
-    name: 横溝 浩
-    furigana: ヨコミゾ ヒロシ
-    boat: ザ シーマン
-    points: [25, 0]
-  - rank: 23
-    name: 松木 邦彰
-    furigana: マツキ クニアキ
+    points: [5, 25, 0, 100]
+  - rank: 9
+    name: 水谷 純也
+    furigana: ミズタニ ジュンヤ
     boat: ストライカー
-    points: [20, 0]
-  - rank: 24
+    points: [0, 40, 0, 85]
+  - rank: 10
+    name: 一迫 敏洋
+    furigana: イチハザマ トシヒロ
+    boat: リアル
+    points: [45, 70, 0, 5]
+  - rank: 11
+    name: 大畠 拓
+    furigana: オオバタケ タク
+    boat: シークロ
+    points: [85, 5, 0, 30]
+  - rank: 12
+    name: 柿澤 寛
+    furigana: カキザワ ヒロシ
+    boat: ストライカー
+    points: [65, 55, 0, 0]
+  - rank: 13
+    name: 数野 達也
+    furigana: カズノ タツヤ
+    boat: インパクト
+    points: [5, 60, 0, 40]
+  - rank: 14
+    name: 熊膳 英大
+    furigana: クマゼン ヒデヒロ
+    boat: ザ シーマン
+    points: [5, 85, 0, 5]
+  - rank: 15
+    name: 池田 裕之
+    furigana: イケダ ヒロユキ
+    boat: Valley hill
+    points: [0, 0, 0, 65]
+  - rank: 16
+    name: 東海林 博
+    furigana: ショウジ ヒロシ
+    boat: 平野ボート
+    points: [0, 5, 0, 55]
+  - rank: 17
+    name: 奥野 忠弘
+    furigana: オクノ タダヒロ
+    boat: 林遊船
+    points: [60, 0, 0, 0]
+  - rank: 18
+    name: 大坂 善郎
+    furigana: オオサカ ヨシロウ
+    boat: K.S.P.ジャック
+    points: [55, 0, 0, 0]
+  - rank: 19
+    name: 岡村 真司
+    furigana: オカムラ シンジ
+    boat: レンタル
+    points: [15, 35, 0, 0]
+  - rank: 20
+    name: 長谷 里奈
+    furigana: ハセ リナ
+    boat: ザ シーマン
+    points: [50, 0, 0, 0]
+  - rank: 21
     name: 齋藤 剛宏
     furigana: サイトウ タカヒロ
     boat: D-marina
-    points: [5, 5]
-  - rank: 25
-    name: 加藤 靖暁
-    furigana: カトウ ヤスアキ
-    boat: シーバスターズ
-    points: [0, 5]
+    points: [5, 5, 0, 35]
+  - rank: 22
+    name: 安井 雄二
+    furigana: ヤスイ ユウジ
+    boat: K.S.P.ジャック
+    points: [40, 0, 0, 0]
+  - rank: 23
+    name: 大島 道雄
+    furigana: オオシマ ミチオ
+    boat: レンタル
+    points: [30, 5, 0, 5]
+  - rank: 24
+    name: 多田 雄一
+    furigana: タダ ユウイチ
+    boat: 横浜ベイサイドマリーナ
+    points: [0, 30, 0, 0]
   - rank: 25
     name: 平澤 貴一
     furigana: ヒラサワ タカシ
     boat: 平野ボート
-    points: [0, 5]
-  - rank: 25
-    name: 東海林 博
-    furigana: ショウジ ヒロシ
-    boat: 平野ボート
-    points: [0, 5]
-  - rank: 25
+    points: [0, 5, 0, 25]
+  - rank: 26
+    name: 横溝 浩
+    furigana: ヨコミゾ ヒロシ
+    boat: ザ シーマン
+    points: [25, 0, 0, 0]
+  - rank: 27
+    name: 松木 邦彰
+    furigana: マツキ クニアキ
+    boat: ストライカー
+    points: [20, 0, 0, 0]
+  - rank: 28
+    name: 加藤 靖暁
+    furigana: カトウ ヤスアキ
+    boat: シーバスターズ
+    points: [0, 5, 0, 5]
+  - rank: 29
     name: 山西 雄太
     furigana: ヤマニシ ユウタ
     boat: レンタル
-    points: [0, 5]
-  - rank: 25
+    points: [0, 5, 0, 0]
+  - rank: 30
     name: 中川 芳男
     furigana: ナカガワ ヨシオ
     boat: シーバスターズ
-    points: [0, 5]
-  - rank: 25
+    points: [0, 5, 0, 0]
+  - rank: 31
+    name: 兼古 卓弥
+    furigana: カネコ タクヤ
+    boat: インパクト
+    points: [0, 0, 0, 5]
+  - rank: 32
     name: 阿部 公哉
     furigana: アベ マサヤ
     boat: 横浜ベイサイドマリーナ
-    points: [0, 5]
-  - rank: 25
+    points: [0, 5, 0, 0]
+  - rank: 33
     name: 安東 茂樹
     furigana: アンドウ シゲキ
     boat: D-marina
-    points: [5, 0]
+    points: [5, 0, 0, 0]
