@@ -1,3 +1,61 @@
+round5:
+  - rank: --
+    angler: [藤田 潤一, フジタ ジュンイチ, シークロ/桝田]
+    result: []
+  - rank: --
+    angler: [伊藤 一石, イトウ カズイシ, BUSTER]
+    result: []
+  - rank: --
+    angler: [水谷 純也, ミズタニ ジュンヤ, ストライカー]
+    result: []
+  - rank: --
+    angler: [森田 英典, モリタ ヒデノリ, リアル]
+    result: []
+  - rank: --
+    angler: [池上 日明, イケガミ アキラ, D-marina/安東]
+    result: []
+  - rank: --
+    angler: [遠藤 正明, エンドウ マサアキ, アイランドクルーズ]
+    result: []
+  - rank: --
+    angler: [池田 裕之, イケダ ヒロユキ, Valley hill]
+    result: []
+  - rank: --
+    angler: [早川 昌和, ハヤカワ マサカズ, ストライカー]
+    result: []
+  - rank: --
+    angler: [東海林 博, ショウジ ヒロシ, 平野ボート/平澤]
+    result: []
+  - rank: --
+    angler: [福永 雄海, フクナガ ユウミ, シーバスキャプテン]
+    result: []
+  - rank: --
+    angler: [藤田 正明, フジタ マサアキ, レンタル]
+    result: []
+  - rank: --
+    angler: [数野 達也, カズノ タツヤ, インパクト]
+    result: []
+  - rank: --
+    angler: [齋藤 剛宏, サイトウ タカヒロ, D-marina]
+    result: []
+  - rank: --
+    angler: [大畠 拓, オオバタケ タク, シークロ/岡本]
+    result: []
+  - rank: --
+    angler: [平澤 貴一, ヒラサワ タカシ, 平野ボート/東海林]
+    result: []
+  - rank: --
+    angler: [熊膳 英大, クマゼン ヒデヒロ, ザ シーマン/金子]
+    result: []
+  - rank: --
+    angler: [一迫 敏洋, イチハザマ トシヒロ, リアル/森田]
+    result: []
+  - rank: --
+    angler: [大島 道雄, オオシマ ミチオ, レンタル]
+    result: []
+  - rank: --
+    angler: [柿澤 寛, カキザワ ヒロシ, ストライカー]
+    result: []
 round4:
   - rank: 1
     angler: [藤田 潤一, フジタ ジュンイチ, シークロ/桝田]
@@ -65,8 +123,6 @@ round4:
   - rank: --
     angler: [柿澤 寛, カキザワ ヒロシ, ストライカー]
     result: []
-
-
 round3:
   - rank: --
     angler: [池上 日明, イケガミ アキラ, D-marina]
