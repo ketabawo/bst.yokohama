@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: http://bst.yokohama/sitemap.xml
