@@ -6,28 +6,19 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
   #imagepanel_top_inner
     .slider.slider0
       %p
-        東京湾
-        %span
-          No.1
-        ボートシーバストーナメンターを決める
+        BST2015は無事終了いたしました。
       %ul
         %li= link_to image_tag("img_bnr-suzukimarine.gif", alt: "スズキマリン様"), "http://suzukimarine.co.jp/", target: "_blank"
         %li= link_to image_tag("img_bnr-marinelicence.gif", alt: "マリンライセンスロイヤル様"), "http://www.marine-license.com/", target: "_blank"
     .slider.slider1
       %p
-        プロとアマによる
-        %span
-          ガチ
-        バトル！
+        多数のエントリー、ご協賛ありがとうございました！
       %ul
         %li= link_to image_tag("img_bnr-suzukimarine.gif", alt: "スズキマリン様"), "http://suzukimarine.co.jp/", target: "_blank"
         %li= link_to image_tag("img_bnr-marinelicence.gif", alt: "マリンライセンスロイヤル様"), "http://www.marine-license.com/", target: "_blank"
     .slider.slider2
       %p
-        エントリー随時
-        %span
-          受付中
-        ！！
+        2016シリーズも宜しくお願い致します！！
       %ul
         %li= link_to image_tag("img_bnr-suzukimarine.gif", alt: "スズキマリン様"), "http://suzukimarine.co.jp/", target: "_blank"
         %li= link_to image_tag("img_bnr-marinelicence.gif", alt: "マリンライセンスロイヤル様"), "http://www.marine-license.com/", target: "_blank"
@@ -41,17 +32,18 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
         %ul
           %li
             %i.fa.fa-caret-right
-            第4戦の<a href="/results/2015/round4.html">大会結果</a>等を更新しました。
+            BST2015シリーズは終了いたしました。2016シリーズも宜しくお願い致します！
             %span
-              (2015-06-12）
-          %li
-            %i.fa.fa-caret-right
-            2015各戦上位3名は、コメント・タックルデータ・使用ルアーの情報共有をお願い致します。
-        - if false
-          .message
-            %p
-              %i.fa.fa-exclamation-triangle
-              表示がおかしい時は「CTRL+SHIFT+Rキー(win IE以外)」or「command+shift+Rキー（mac）」を押してブラウザのキャッシュをクリアしてください。
+              (2015-07-14）
+        .message
+          %p
+            %i.fa.fa-exclamation-triangle
+            緊急告知
+          %p
+            9月8日にシリーズとは関係のない
+            = link_to "エクストララウンド", "/results/2015/roundex.html"
+            開催決定！<br>
+            参加資格は2015年本戦に1度でも参戦された方のみ（上限15艇）
       = partial "shared/events2015"
       %section#timetable
         %h1
@@ -103,12 +95,12 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           ランキング
         %h2
           %i.fa.fa-chevron-right
-          2015シリーズ（第4戦終了）
+          2015シリーズ（全3戦）
         %table
           %caption
-            = link_to "/entry/" do
+            = link_to "/rankings/2015.html" do
               %i.fa.fa-caret-right
-              参加者募集中
+              詳しくはこちら
           %thead
             %tr
               %th Rank
@@ -118,19 +110,19 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           %tbody
             %tr
               %td
-                1
+                %i.fa.fa-trophy
               %td 森田 英典
               %td リアル
               %td 250
             %tr
               %td
-                2
+                %i.fa.fa-trophy
               %td 遠藤 正明
               %td アイランドクルーズ
               %td 240
             %tr
               %td
-                3
+                %i.fa.fa-trophy
               %td 池上 日明
               %td D-marina
               %td 210

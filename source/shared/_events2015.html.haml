@@ -88,9 +88,7 @@
     .eye_catch
       .pic2015.round5
     .this_content
-      %span.success 絶賛募集中
-      %span.info フライOK
-      %span.primary 後援募集中
+      %span.danger 中止
       %h2{itemprop: "name"} BST 2015 第5戦
       %dl
         %dt 開催日:
@@ -101,8 +99,20 @@
           %span{itemprop: "name"} D-marina
           %span{itemprop: "address"} 横浜市神奈川区東神奈川2-49-11
       %p{itemprop: "description"}
-        ご不明な点などございましたら、大会事務局までお問い合せください。
-        %br
-        = link_to "/entry/" do
-          %i.fa.fa-caret-right
-          エントリー
+        強風のため中止となりました。
+  .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
+    .eye_catch
+      .pic2015.round5
+    .this_content
+      %span.info 準備中
+      %h2{itemprop: "name"} BST 2015 EXラウンド
+      %dl
+        %dt 開催日:
+        %dd{itemprop: "startDate", content: "2015-09-08"} 2015-09-08
+        %dt
+          %span 集合場所:
+        %dd{itemprop: "location", itemscope: "itemscope", itemtype: "http://schema.org/Place"}
+          %span{itemprop: "name"} D-marina
+          %span{itemprop: "address"} 横浜市神奈川区東神奈川2-49-11
+      %p{itemprop: "description"}
+        新たな試みとして叉長ではなく重量で競います。<br>エントリーフィー：10000円

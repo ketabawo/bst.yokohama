@@ -10,7 +10,7 @@
     <loc>http://bst.yokohama/about/publishedcases.html</loc>
   </url>
   <url>
-    <loc>http://bst.yokohama/results/2014/round2.html</loc>
+    <loc>http://bst.yokohama/results/2014/round3.html</loc>
   </url>
   <url>
     <loc>http://bst.yokohama/schedules/</loc>
@@ -23,6 +23,9 @@
   </url>
   <url>
     <loc>http://bst.yokohama/results/</loc>
+  </url>
+  <url>
+    <loc>http://bst.yokohama/results/2015/roundex.html</loc>
   </url>
   <url>
     <loc>http://bst.yokohama/results/2015/round5.html</loc>
@@ -44,9 +47,6 @@
   </url>
   <url>
     <loc>http://bst.yokohama/results/2014/round4.html</loc>
-  </url>
-  <url>
-    <loc>http://bst.yokohama/results/2014/round3.html</loc>
   </url>
   <url>
     <loc>http://bst.yokohama/entry/me_mailform/template/confirm.html</loc>
@@ -92,6 +92,9 @@
   </url>
   <url>
     <loc>http://bst.yokohama/results/2014/round1.html</loc>
+  </url>
+  <url>
+    <loc>http://bst.yokohama/results/2014/round2.html</loc>
   </url>
 </urlset>
 

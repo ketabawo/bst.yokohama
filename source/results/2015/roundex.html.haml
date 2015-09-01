@@ -1,10 +1,10 @@
 ---
-title: BST 2015 第4戦 大会結果
-description: 2015年7月14日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「BTS 2015」第5戦の大会結果です。
+title: BST 2015 エクストララウンド 大会結果
+description: 2015年9月8日（火）に開催された「BTS 2015」エクストララウンドの大会結果です。
 ---
 - weiin = []
 - fish_size = [] 
-- data.result2015.round5.each do |f|
+- data.result2015.roundex.each do |f|
   - f.result.each do |size|
     - fish_size.push(size)
   - weiin.push(f.result.length)
@@ -23,11 +23,11 @@ description: 2015年7月14日（火）に開催された東京湾No.1ボート�
       = link_to "/results/", itemprop: "url" do
         %span{itemprop: "title"} 大会結果
       %i.fa.fa-angle-right
-    %li BST 2015 第5戦 大会結果
+    %li BST 2015 エクストララウンド 大会結果
 #imagepanel_result
   #imagepanel_result_inner.result2015_05
     .layer
-      %h1 BST 2015 第5戦 大会結果
+      %h1 BST 2015 エクストララウンド 大会結果
 %article#content
   #content_inner
     #main_column.double
@@ -39,11 +39,15 @@ description: 2015年7月14日（火）に開催された東京湾No.1ボート�
               総評
             %dd
               %p.comment
-                強風のため、延期なしの中止となりました。
+                ルールは基本的に同じですが、試験的にサイズではなく重量で競います。<br>
+                参加資格：
+                2015本戦に1度でも参戦された方<br>
+                エントリーフィー：10000円<br>
+                参加艇上限：15艇。
               %p.writer
                 （謎のサイト管理人）
         %table
-          %caption 敬称略。CP名無しは自操船参加者です。
+          %caption 五十音順敬称略、CP名無しは自操船参加者です。
           %thead
             %tr
               %th No.
@@ -54,7 +58,7 @@ description: 2015年7月14日（火）に開催された東京湾No.1ボート�
               %th 3rd
               %th Total
           %tbody
-            - data.result2015.round5.each do |f|
+            - data.result2015.roundex.each do |f|
               %tr
                 %td= f.rank
                 %td
@@ -85,10 +89,10 @@ description: 2015年7月14日（火）に開催された東京湾No.1ボート�
               %li#comment.active コメント
               %li#tackles タックル/ルアー
           .screen.comment_area.active
-            = image_tag("results/2015/img_pic-round5-rank1-angler.jpg", alt: "さん", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-roundex-rank1-angler.jpg", alt: "さん", width: "600", height: "400")
             %p
           .screen.tackles_area
-            = image_tag("results/2015/img_pic-round5-rank1-tackle.jpg", alt: "使用タックル/ルアー", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-roundex-rank1-tackle.jpg", alt: "使用タックル/ルアー", width: "600", height: "400")
             %table
               %thead
                 %tr
@@ -115,7 +119,7 @@ description: 2015年7月14日（火）に開催された東京湾No.1ボート�
               %li#comment.active コメント
               %li#tackles タックル/ルアー
           .screen.comment_area.active
-            = image_tag("results/2015/img_pic-round5-rank2-angler.jpg", alt: "さん", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-roundex-rank2-angler.jpg", alt: "さん", width: "600", height: "400")
             %p
           .screen.tackles_area
             = image_tag("results/2015/img_pic-round4-rank2-tackle.jpg", alt: "使用タックル/ルアー", width: "600", height: "400")
@@ -145,10 +149,10 @@ description: 2015年7月14日（火）に開催された東京湾No.1ボート�
               %li#comment.active コメント
               %li#tackles タックル/ルアー
           .screen.comment_area.active
-            = image_tag("results/2015/img_pic-round5-rank3-angler.jpg", alt: "さん", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-roundex-rank3-angler.jpg", alt: "さん", width: "600", height: "400")
             %p
           .screen.tackles_area
-            = image_tag("results/2015/img_pic-round5-rank3-tackle.jpg", alt: "使用タックル/ルアー", width: "600", height: "400")
+            = image_tag("results/2015/img_pic-roundex-rank3-tackle.jpg", alt: "使用タックル/ルアー", width: "600", height: "400")
             %table
               %thead
                 %tr
@@ -176,17 +180,17 @@ description: 2015年7月14日（火）に開催された東京湾No.1ボート�
         %table
           %tr
             %th 開催日
-            %td 2015-07-14
+            %td 2015-09-08
           %tr
             %th 天気
             %td 
           %tr
             %th 潮
-            %td 大潮
+            %td 
           %tr
             %th 参加者数
             %td
-              - if data.result2015.round5.present? then
+              - if data.result2015.roundex.present? then
                 = weiin.length
               - else
                 0
@@ -194,7 +198,7 @@ description: 2015年7月14日（火）に開催された東京湾No.1ボート�
           %tr
             %th ウェイイン総数
             %td
-              - if data.result2015.round5.present? then
+              - if data.result2015.roundex.present? then
                 = fish_size.length
               - else
                 0
@@ -202,36 +206,36 @@ description: 2015年7月14日（火）に開催された東京湾No.1ボート�
           %tr
             %th リミットメイク率
             %td
-              - if data.result2015.round5.present? then
+              - if data.result2015.roundex.present? then
                 = (limitmake.to_f / weiin.length.to_f * 100).round(2)
               - else
                 0
               ％
           %tr
-            %th 最大叉長
+            %th 最大重量
             %td 
-              - if data.result2015.round5.present? then
+              - if data.result2015.roundex.present? then
                 = fish_size.sort.last
               - else
                 0
-              cm
+              g
           %tr
-            %th 最小叉長
+            %th 最小重量
             %td 
-              - if data.result2015.round5.present? then
+              - if data.result2015.roundex.present? then
                 = fish_size.sort.first
               - else
                 40
-              cm
+              g
           %tr
-            %th 平均叉長
+            %th 平均重量
             %td
-              - if data.result2015.round5.present? then
+              - if data.result2015.roundex.present? then
                 - total_size = fish_size.inject{|sum, n| sum + n }
                 = (total_size.to_f / fish_size.length.to_f).round(1)
               - else
                 0
-              cm
+              g
       :plain
         <script type="text/javascript">
         google.load("visualization", "1", {packages:["corechart"]});
@@ -262,9 +266,9 @@ description: 2015年7月14日（火）に開催された東京湾No.1ボート�
             %i.fa.fa-picture-o
             イメージギャラリー
           %ul
-            - data.result2015.round5[3..9].each_with_index do |f, i|
+            - data.result2015.roundex[3..9].each_with_index do |f, i|
               %li
-                = image_tag "results/2015/round4/img_pic-gallery#{i + 4}.jpg", width: "300", height: "225", alt: "#{f.angler[0]}さん"
+                = image_tag "results/2015/roundex/img_pic-gallery#{i + 4}.jpg", width: "300", height: "225", alt: "#{f.angler[0]}さん"
                 %span
                   #{f.rank}位：#{f.angler[0]}さん
       = partial "shared/result_list"
