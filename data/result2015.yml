@@ -1,42 +1,36 @@
 roundex:
-  - rank: --
-    angler: [池上 日明, イケガミ アキラ, D-marina/安東]
-    result: []
-  - rank: --
-    angler: [池田 裕之, イケダ ヒロユキ, Valley hill]
-    result: []
-  - rank: --
-    angler: [一迫 敏洋, イチハザマ トシヒロ, リアル/森田]
-    result: []
-  - rank: --
-    angler: [伊藤 一石, イトウ カズイシ, BUSTER]
-    result: []
-  - rank:  --
-    angler: [遠藤 正明, エンドウ マサアキ, アイランドクルーズ]
-    result: []
-  - rank: --
-    angler: [大島 道雄, オオシマ ミチオ, レンタル]
-    result: []
-  - rank: --
-    angler: [数野 達也, カズノ タツヤ, インパクト]
-    result: []
-  - rank: --
-    angler: [齋藤 剛宏, サイトウ タカヒロ, D-marina]
-    result: []
-  - rank: --
+  - rank: 1
     angler: [早川 昌和, ハヤカワ マサカズ, ストライカー]
-    result: []
-  - rank: --
-    angler: [福永 雄海, フクナガ ユウミ, シーバスキャプテン]
-    result: []
-  - rank: --
-    angler: [藤田 潤一, フジタ ジュンイチ, シークロ/桝田]
-    result: []
-  - rank: --
-    angler: [水谷 純也, ミズタニ ジュンヤ, ストライカー]
-    result: []
-  - rank: --
+    result: [72.0, 64.5, 55.0]
+  - rank: 2
+    angler: [池上 日明, イケガミ アキラ, D-marina]
+    result: [71.5, 55.0, 49.0]
+  - rank:  3
+    angler: [遠藤 正明, エンドウ マサアキ, アイランドクルーズ]
+    result: [59.0, 57.0, 55.0]
+  - rank: 4
     angler: [森田 英典, モリタ ヒデノリ, リアル]
+    result: [53.0, 49.5, 47.5]
+  - rank: 5
+    angler: [池田 裕之, イケダ ヒロユキ, Valley hill]
+    result: [55.0, 47.5, 47.0]
+  - rank: 6
+    angler: [数野 達也, カズノ タツヤ, インパクト]
+    result: [55.0, 45.0, 44.0]
+  - rank: 7
+    angler: [齋藤 剛宏, サイトウ タカヒロ, D-marina]
+    result: [50.0, 48.0, 45.0]
+  - rank: 8
+    angler: [藤田 潤一, フジタ ジュンイチ, シークロ/桝田]
+    result: [54.0, 54.0]
+  - rank: 9
+    angler: [岡本 慶一郎, オカモト ケイイチロウ, シークロ]
+    result: [47.0, 46.0]
+  - rank: 10
+    angler: [伊藤 一石, イトウ カズイシ, BUSTER]
+    result: [43.0]
+  - rank: 11
+    angler: [大島 道雄, オオシマ ミチオ, レンタル]
     result: []
 
 round5:

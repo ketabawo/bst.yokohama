@@ -104,7 +104,7 @@
     .eye_catch
       .pic2015.round5
     .this_content
-      %span.info 準備中
+      %span.danger 終了
       %h2{itemprop: "name"} BST 2015 EXラウンド
       %dl
         %dt 開催日:
@@ -115,4 +115,8 @@
           %span{itemprop: "name"} D-marina
           %span{itemprop: "address"} 横浜市神奈川区東神奈川2-49-11
       %p{itemprop: "description"}
-        新たな試みとして叉長ではなく重量で競います。<br>エントリーフィー：10000円
+        多数のエントリーありがとうございました。
+        %br
+        = link_to "/results/2015/roundex.html" do
+          %i.fa.fa-caret-right
+          詳しくはこちら

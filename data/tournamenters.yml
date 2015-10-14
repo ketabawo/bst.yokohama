@@ -1,0 +1,9 @@
+tournamenters:
+  - &tid1
+    id: 1
+    name1: 大畠 拓
+    name2: Taku Obatake
+    name3: オオバタケ タク
+    birth: 1971-9-12
+    job: フロントエンドエンジニア
+    
