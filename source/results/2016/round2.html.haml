@@ -1,0 +1,384 @@
+---
+title: BST 2016 第2戦 大会結果
+description: 2016年2月16日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「BTS 2016」第2戦の大会結果です。
+---
+- weiin = []
+- fish_size = [] 
+- data.result2016.round2.each do |f|
+  - f.result.each do |size|
+    - fish_size.push(size)
+  - weiin.push(f.result.length)
+- weiin5 = weiin.count(5)
+- weiin4 = weiin.count(4)
+- weiin3 = weiin.count(3)
+- weiin2 = weiin.count(2)
+- weiin1 = weiin.count(1)
+- weiin0 = weiin.count(0)
+= partial "shared/global_navigation", :locals => {:val => "results"}
+#topicpath
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
+    %li
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} BST公式TOP
+      %i.fa.fa-angle-right
+    %li
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
+      %i.fa.fa-angle-right
+    %li BST 2016 第2戦 大会結果
+#imagepanel_result
+  #imagepanel_result_inner.result2016_02
+    .layer
+      %h1 BST 2016 第2戦 大会結果
+%article#content
+  #content_inner
+    #main_column.double
+      %section#ranking_table
+        .chairmans_comment
+          %dl
+            %dt
+              %i.fa.fa-comment
+              総評
+            %dd
+              %p.comment
+                5本リミットになった2戦目。<br>
+                各選手リミットメイクに苦戦したとの声も多く聞こえてきましたが、終わってみれば1戦目よりリミット達成率が上がったのは各選手の底力を感じました。<br>
+                表彰台は、ベテランアングラーが定番の沖周りで抜群の強さを見せつけた結果となり、シリーズ戦の行方も混戦になり益々楽しみになってきました。
+              %p.writer
+                （実行委員 早川）
+        %table
+          %caption 森選手はスポット枠
+          %thead
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+          %tbody
+            - data.result2016.round2.each do |f|
+              %tr
+                %td= f.rank
+                %td
+                  %span.ruby= f.angler[1]
+                  = f.angler[0]
+                %td= f.angler[2]
+                %td= f.result[0]
+                %td= f.result[1]
+                %td= f.result[2]
+                %td= f.result[3]
+                %td= f.result[4]
+                %td= f.result[0].to_f + f.result[1].to_f + f.result[2].to_f + f.result[3].to_f + f.result[4].to_f
+          %tfoot
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+      %section#interviews
+        %h1
+          %i.fa.fa-trophy
+          上位3名の紹介
+        .interview
+          %h2 優勝：森田 英典選手（Real）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2016/img_pic-round2-1.jpg", alt: "森田 英典選手", width: "600", height: "400")
+            %p
+              本日の目標は、ジギングで50～60cmの260cmを出来るだけ早い時間でキープ<br>
+              残り時間で、あの手この手でじっくりサイズアップ<br>
+              事前予想で優勝320cm、300cmでお立ち台の読み
+            %p
+              少しでも長い時間、釣りがしたいところでスタート順は・・・15船中14番<br>
+              まあ、持ってない男としてはこんなもんです(T_T)<br>
+              気を取り直してのんびりスタート
+            %p
+              最初のポイントでノーバイト（まあ、想定範囲）<br>
+              粘らずさっさと移動<br>
+              続いて本命ポイント<br>
+              予定通りジギングで入れパク<br>
+              これまた予定通り55cmの金太郎飴（本当は、予定外の70cmが混じると良かったが・・・）<br>
+              でも20分でリミットメイク<br>
+              そこから30分粘るが、サイズアップの気配なし<br>
+              そこからダッシュで移動
+            %p
+              スタートから1時間以内に275cm以上キープ出来てるので少し心の余裕が(^^♪<br>
+              今度は、ミノー主体にサイズアップを狙う<br>
+              少し食わせるのに小技が必要な状況だったが、この辺のアジャストは得意分野<br>
+              すぐにいいペースで釣れだす<br>
+              時折混じる60cm前後を数センチ単位だが、丁寧に入れ替える<br>
+              半分が入れ替わったところでラストポイントへ移動
+            %p
+              今度は、チョコチョコジギング＆穴撃ち（ジグヘッド）で2本入れ替えで時間終了<br>
+              300cmあるか微妙な感じで終了<br>
+              とりあえず目標の最低値はクリアーかな<br>
+              まあ、優勝は無理だけどお立ち台はとれたかな～<br>
+              って思いながらの帰着
+            %p
+              結構最後まで釣りしてたので検量順は後ろの方<br>
+              順番待ちの間に魚のケアーと他の参加者の検量を偵察<br>
+              みんなまずまずの魚をそろえてる<br>
+              あまり詳細なサイズは、見ないようにして結果発表を楽しみに…
+            %p
+              いつものように10位からの発表<br>
+              とりあえず5位までに呼ばれないことを祈りながら聞いていく<br>
+              無事5位までスルー<br>
+              3位の発表の時2位と0.5cm差と発表<br>
+              3位のサイズを聞いて+0.5が2位ってことは・・・
+            %p
+              まさかの優勝！<br>
+              <br>
+              本気で思ってなかったまさかの優勝に本人一番びっくり(@_@)<br>
+              しかも2位と10.5cm差<br>
+              なんだか拍子抜け<br>
+              でも、やっぱりうれしい(^^♪<br>
+              前回が惨敗だっただけに何としても3位キープと思っていたので最後にうれしい大誤算<br>
+              シリーズランキングも望みは、つないだ
+            %p
+              前回、今回と戦ってみて今年から大幅に変更になったルールで昨年までとは、試合内容も大幅に変わった印象を受けた<br>
+              少しだけ今年の勝ち方が分かった気がする<br>
+              この調子で今年もシリーズチャンピオン目指して頑張ります
+            %p
+              P.S.いつも楽しい大会を提供してくださる大会関係者の皆さんや会場を提供してくださるDマリーナさん、表彰式を盛り上げてくれるYAMAHAさん、ビックフィッシュ賞に花を添えてくださるマリンライセンスロイヤルさんに心から感謝いたします
+            %p
+              %i.fa.fa-link
+              = link_to "Cap森田のシーバス日記", "http://ameblo.jp/seabass-real/", target: "_blank"
+          .screen.tackles_area
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td= link_to "TIEMCO JJC-T72C BLAST", "http://www.tiemco.co.jp/products/groups/view/490", target: "_blank"
+                  %td= link_to "SHIMANO CURADO 201HG LEFT", "http://fishing.shimano.co.jp/product/reel/3830", target: "_blank"
+                  %td= link_to "SUNLINE CSATAWAY PE 3.0", "http://www.sunline.co.jp/sl_html2/products/salt/cast_away_pe.html", target: "_blank"
+                  %td= link_to "SUNLINE SYSTEM SHOCK LEADER FC 30lb", "http://www.sunline.co.jp/sl_html2/products/salt/systemshock_reader_fc.html", target: "_blank"
+                %tr
+                  %th 2
+                  %td= link_to "TIEMCO JJC-73S LAUNCHER", "http://www.tiemco.co.jp/products/groups/view/495", target: "_blank"
+                  %td= link_to "SHIMANO STRADIC 2500HGS", "http://fishing.shimano.co.jp/product/reel/4073", target: "_blank"
+                  %td= link_to "SUNLINE CSATAWAY PE 0.8", "http://www.sunline.co.jp/sl_html2/products/salt/cast_away_pe.html", target: "_blank"
+                  %td= link_to "SUNLINE SYSTEM SHOCK LEADER FC 20lb", "http://www.sunline.co.jp/sl_html2/products/salt/systemshock_reader_fc.html", target: "_blank"
+                %tr
+                  %th 3
+                  %td= link_to "TIEMCO JJC-70C EXTREME", "http://www.tiemco.co.jp/products/groups/view/490", target: "_blank"
+                  %td= link_to "SHIMANO BRENIOUS LEFT", "http://fishing.shimano.co.jp/product/reel/3698", target: "_blank"
+                  %td= link_to "SUNLINE CSATAWAY PE 0.8", "http://www.sunline.co.jp/sl_html2/products/salt/cast_away_pe.html", target: "_blank"
+                  %td= link_to "SUNLINE SYSTEM SHOCK LEADER FC 20lb", "http://www.sunline.co.jp/sl_html2/products/salt/systemshock_reader_fc.html", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "TIEMCO OCEAN DOMINETOR 60g", "http://www.tiemco.co.jp/products/groups/view/746", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "TIEMCO ABYSS 18g", "http://www.tiemco.co.jp/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "VALLEY HILL AIR DEEP 80S", "http://valleyhill.taniyamashoji.co.jp/catalogue/page01.jsp?mode=id/531", target: "_blank"
+        .interview
+          %h2 準優勝：遠藤 正明選手（アイランドクルーズ）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2016/img_pic-round2-2.jpg", alt: "遠藤 正明選手", width: "600", height: "400")
+            %p
+              %i.fa.fa-link
+              = link_to "アイクル えんどうまさあきのブログ", "http://ameblo.jp/masaakiendo/", target: "_blank"
+          .screen.tackles_area
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td= link_to "VALLEY HILL RES-610M", "http://valleyhill.taniyamashoji.co.jp/catalogue/page01.jsp?mode=id/497", target: "_blank"
+                  %td= link_to "DAIWA LUVIAS 3012 S.O.M CUSTOM", "http://daiwa-fishingshow.globeride.jp/2015aw/luvias/", target: "_blank"
+                  %td= link_to "YGK G-SOUL X8 UPGRADE 1.2", "http://yoz-ami.jp/259", target: "_blank"
+                  %td= link_to "YGK GALIS SHORE LEADER 25lb", "http://yoz-ami.jp/235", target: "_blank"
+                %tr
+                  %th 2
+                  %td= link_to "VALLEY HILL REC-69M", "http://valleyhill.taniyamashoji.co.jp/catalogue/page01.jsp?mode=id/497", target: "_blank"
+                  %td= link_to "DAIWA ZILLION TW 1516SH", "http://www.daiwaweb.com/jp/fishing/item/reel/bait_rl/zillion_tw/", target: "_blank"
+                  %td= link_to "DAIWA SOLTIGA 12BRAID 1.2", "http://www.daiwaweb.com/jp/fishing/item/line/solt_li/saltiga_12braid/index.html", target: "_blank"
+                  %td= link_to "YGK GALIS SHORE LEADER 25lb", "http://yoz-ami.jp/235", target: "_blank"
+                %tr
+                  %th 3
+                  %td= link_to "VALLEY HILL REC-66ML", "http://valleyhill.taniyamashoji.co.jp/catalogue/page01.jsp?mode=id/497", target: "_blank"
+                  %td= link_to "DAIWA morethan PE SV 8.1R-TW", "http://www.daiwaweb.com/jp/fishing/item/reel/bait_rl/mt_pe_sv/", target: "_blank"
+                  %td= link_to "DAIWA SOLTIGA 12BRAID 1.2", "http://www.daiwaweb.com/jp/fishing/item/line/solt_li/saltiga_12braid/index.html", target: "_blank"
+                  %td= link_to "YGK GALIS SHORE LEADER 25lb", "http://yoz-ami.jp/235", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "VALLEY HILL AIR DEEP 80S", "http://valleyhill.taniyamashoji.co.jp/catalogue/page01.jsp?mode=id/531", target: "_blank"
+        .interview
+          %h2 3位：内田 信吾選手（SEAWOLF）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2016/img_pic-round2-3.jpg", alt: "内田 信吾選手", width: "600", height: "400")
+            %p
+              前日に海を見た時には、春一番のシケ後で港の前が泥濁り状態だったことを踏まえて今日の潮は良い悪いがハッキリすると予想。<br>
+              幸運にもスタート順位3番手を引き当てたので真っ先に中間位置のメジャーバース周りから釣り始めるコースを選びました。<br>
+            %p
+              しかし、この作戦は見事に失敗。バースはことごとくタンカーが着いていてゲーム成立せず。<br>
+              慌てて運河内に戻し、キャスティングで勝負と思いバイブレーションを結んでみるも、こちらも何か違う感じ。<br>
+              やはり第1戦と同様、沖で群れの反応に当てる作戦に切り替えました。<br>
+              沖へ出ると直ぐに反応山盛りでヒット連発！春の陽気も手伝い入食いフル回転で大汗を掻きました。
+            %p
+              トーナメントは普段の釣行では味わえない、冷や汗とドキドキで非常に疲れます。（笑）
+          .screen.tackles_area
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td カーボン6.6ftオリジナル
+                  %td <a href="http://fishing.shimano.co.jp/" target="_blank">SHIMANO</a> '10 STELLA 3000
+                  %td= link_to "YGK G-SOUL X8 UPGRADE 1.5", "http://yoz-ami.jp/259", target: "_blank"
+                  %td= link_to "RAIGLON POWER ACCEL NYLON 30lb", "http://www.toalson.co.jp/fishing/r5170.html", target: "_blank"
+                %tr
+                  %th 2
+                  %td カーボン6.6ftオリジナル
+                  %td= link_to "SHIMANO CALCUTTA CONQUEST 200HG", "http://fishing.shimano.co.jp/product/reel/3826", target: "_blank"
+                  %td= link_to "YGK G-SOUL X8 UPGRADE 1.5", "http://yoz-ami.jp/259", target: "_blank"
+                  %td= link_to "RAIGLON POWER ACCEL NYLON 30lb", "http://www.toalson.co.jp/fishing/r5170.html", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                オリジナルジグ 60g/80g
+    #sub_column
+      %section#ranking_summary
+        %h1
+          %i.fa.fa-file-text-o
+          ラウンドサマリー
+        %table
+          %tr
+            %th 開催日
+            %td 2015-02-16
+          %tr
+            %th 天気
+            %td 晴
+          %tr
+            %th 潮
+            %td 小潮
+          %tr
+            %th 参加者数
+            %td
+              - if data.result2016.round2.present? then
+                = weiin.length
+              - else
+                0
+              人
+          %tr
+            %th ウェイイン総数
+            %td
+              - if data.result2016.round2.present? then
+                = fish_size.length
+              - else
+                0
+              本
+          %tr
+            %th リミットメイク率
+            %td
+              - if data.result2016.round2.present? then
+                = (weiin5.to_f / weiin.length.to_f * 100).round(2)
+              - else
+                0
+              ％
+          %tr
+            %th 最大叉長
+            %td 
+              - if data.result2016.round2.present? then
+                = fish_size.sort.last
+              - else
+                0
+              cm
+          %tr
+            %th 最小叉長
+            %td 
+              - if data.result2016.round2.present? then
+                = fish_size.sort.first
+              - else
+                40
+              cm
+          %tr
+            %th 平均叉長
+            %td
+              - if data.result2016.round2.present? then
+                - total_size = fish_size.inject{|sum, n| sum + n }
+                = (total_size.to_f / fish_size.length.to_f).round(1)
+              - else
+                0
+              cm
+      :plain
+        <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['ウェイイン数', '人数'],
+        ['リミットメイク',     #{weiin5}],
+        ['4本',      #{weiin4}],
+        ['3本',  #{weiin3}],
+        ['2本',      #{weiin2}],
+        ['1本',  #{weiin1}],
+        ['ノーフィッシュ', #{weiin0}],
+        ]);
+        var options = {
+        title: 'ウェイイン数内訳',
+        titleTextStyle:{fontSize: 16},
+        legend: 'none',
+        chartArea: {left:0,top:35,width:'90%',height:'90%'},
+        colors: ['#2e6da4', '#4cae4c', '#46b8da', '#563d7c', '#eea236', '#d43f3a']
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+        }
+        </script>
+      #piechart
+      - if false
+        %section#image_gallery
+          %h1
+            %i.fa.fa-picture-o
+            イメージギャラリー
+          %ul
+            - data.result2016.round2[3..9].each_with_index do |f, i|
+              %li
+                = image_tag "results/2015/round1/img_pic-gallery#{i + 4}.jpg", width: "300", height: "225", alt: "#{f.angler[0]}さん"
+                %span
+                  #{f.rank}位：#{f.angler[0]}さん
+      = partial "shared/result_list"

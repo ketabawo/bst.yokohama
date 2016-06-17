@@ -28,6 +28,18 @@
     line-height: 150%;
     margin-bottom: 10px;
   }
+  .bank_info{
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #CFCFCF;
+    border: 1px solid #CCC;
+    padding: 10px;
+    margin-bottom: 10px;
+    span{
+      font-size: 12px;
+      color: #d9534f;
+    }
+  }
   ul{
     margin-bottom: 10px;
     li{
@@ -140,6 +152,7 @@
     border-radius: 3px;
     padding: 15px 30px;
     cursor: pointer;
+    -webkit-appearance: none;
   }
   input[type="button"]{
     background-color: $info;

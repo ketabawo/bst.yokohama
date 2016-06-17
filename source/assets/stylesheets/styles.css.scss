@@ -128,10 +128,18 @@
         background-image: image_url("results/2015/bg_pic-toppanel-2015_0#{$i}.jpg");
       }
     }
+    @for $i from 1 through 6{
+      &.result2016_0#{$i}{
+        background-image: image_url("results/2016/bg_pic-toppanel-2016_0#{$i}.jpg");
+      }
+    }
   }
 }
 #events{
   margin-bottom: 20px;
+  p.caption{
+    font-size: 12px;
+  }
   .element{
     display: table;
     width: 100%;
@@ -140,6 +148,31 @@
       display: table-cell;
       width: 170px;
       vertical-align: top;
+      .pic2016{
+        width: 160px;
+        height: 120px;
+        background-image: image_url('schedules/2016/bg_pic-eyecatches2016.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.round1{
+          background-position: 0 0;
+        }
+        &.round2{
+          background-position: 0 -120px;
+        }
+        &.round3{
+          background-position: 0 -240px;
+        }
+        &.round4{
+          background-position: 0 -360px;
+        }
+        &.round5{
+          background-position: 0 -480px;
+        }
+        &.round6{
+          background-position: 0 -600px;
+        }
+      }
       .pic2015{
         width: 160px;
         height: 120px;
@@ -357,12 +390,12 @@
       background-size: cover;
       margin: 0 30px 20px 0;
       float: left;
-      @for $i from 2013 through 2015{
+      @for $i from 2013 through 2016{
         &.s#{$i}{
           background-image: image_url("rankings/bg_btn-rankings#{$i}.jpg");
         }
       }
-      &:last-child{
+      &:nth-child(3n){
         margin-right: 0;
       }
       a{
@@ -396,7 +429,7 @@
       margin: 0 30px 20px 0;
       float: left;
       position: relative;
-      @for $i from 2013 through 2015{
+      @for $i from 2013 through 2016{
         &.s#{$i}{
           background-image: image_url("rankings/bg_btn-rankings#{$i}.jpg");
         }
@@ -405,7 +438,7 @@
         margin-right: 0;
         float: none;
       }
-      &:last-child{
+      &:nth-child(3n){
         margin-right: 0;
       }
       dt{
@@ -477,7 +510,7 @@
     thead, tbody, tfoot{
       tr{
         th, td{
-          font-size: 14px;
+          font-size: 13px;
           border-right: 1px solid #DDD;
           border-bottom: 1px solid #DDD;
           padding: 15px 10px;

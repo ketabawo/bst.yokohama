@@ -18,17 +18,8 @@
           float: left;
         }
         &:last-child{
-          width: 520px;
+          width: 420px;
           float: right;
-        }
-        #fb_widget{
-          width: 520px;
-          background-color: #FFF;
-          margin-bottom: 20px;
-          float: right;
-          .fb-like-box{
-            background-color: #FFF;
-          }
         }
         #comittee_info{
           dl{
@@ -47,12 +38,13 @@
             }
           }
         }
-        #pro_guides{
+        #pro_guides, #support_makers{
           width: 420px;
-          float: left;
-          p{
+          dt{
             font-size: 14px;
+            font-weight: bold;
             color: #FFF;
+            margin-bottom: 10px;
           }
           ul{
             width: 100%;
@@ -60,7 +52,6 @@
             li{
               width: 200px;
               height: 50px;
-              background-image: image_url('bg_bnr-guides.gif');
               background-repeat: no-repeat;
               margin: 0 20px 10px 0;
               float: left;
@@ -79,6 +70,12 @@
               }
             }
           }
+        }
+        #pro_guides li{
+          background-image: image_url('bg_bnr-guides.gif');
+        }
+        #support_makers li{
+          background-image: image_url('bg_bnr-makers.gif');
         }
       }
     }

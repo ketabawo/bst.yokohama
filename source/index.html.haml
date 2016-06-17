@@ -1,27 +1,21 @@
 ---
-description: 横浜ベイエリアを拠点とし東京湾唯一無二のライブフィッシュ制ボートシーバスゲームルアートーナメント「BST」公式サイト。プロ・アマが年間5ラウンドを個人で戦う本格トーナメントです。参戦して頂けるアングラー・フィッシングガイド、協賛や後援していただけるメーカー様を随時募集しています。
+description: 横浜ベイエリアを拠点とし東京湾唯一無二のライブフィッシュ制ボートシーバスゲームルアートーナメント「BST」公式サイト。プロ・アマが年間6ラウンドを個人で戦う本格トーナメントです。参戦して頂けるアングラー・フィッシングガイド、協賛や後援していただけるメーカー様を随時募集しています。
 ---
 = partial "shared/global_navigation", locals: {val: "top"}
 #imagepanel_top
   #imagepanel_top_inner
     .slider.slider0
       %p
-        BST2015は無事終了いたしました。
-      %ul
-        %li= link_to image_tag("img_bnr-suzukimarine.gif", alt: "スズキマリン様"), "http://suzukimarine.co.jp/", target: "_blank"
-        %li= link_to image_tag("img_bnr-marinelicence.gif", alt: "マリンライセンスロイヤル様"), "http://www.marine-license.com/", target: "_blank"
+        有名ガイドやメーカープロスタッフ多数がひしめく総勢14選手で
+      = partial "shared/sponsors"
     .slider.slider1
       %p
-        多数のエントリー、ご協賛ありがとうございました！
-      %ul
-        %li= link_to image_tag("img_bnr-suzukimarine.gif", alt: "スズキマリン様"), "http://suzukimarine.co.jp/", target: "_blank"
-        %li= link_to image_tag("img_bnr-marinelicence.gif", alt: "マリンライセンスロイヤル様"), "http://www.marine-license.com/", target: "_blank"
+        東京湾ボートシーバスアングラーNo.1を決める本気のトーナメント！
+      = partial "shared/sponsors"
     .slider.slider2
       %p
-        2016シリーズも宜しくお願い致します！！
-      %ul
-        %li= link_to image_tag("img_bnr-suzukimarine.gif", alt: "スズキマリン様"), "http://suzukimarine.co.jp/", target: "_blank"
-        %li= link_to image_tag("img_bnr-marinelicence.gif", alt: "マリンライセンスロイヤル様"), "http://www.marine-license.com/", target: "_blank"
+        生まれ変わったBST2016シリーズに刮目せよ！！！
+      = partial "shared/sponsors"
 %article#content
   #content_inner
     #main_column.double
@@ -32,22 +26,14 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
         %ul
           %li
             %i.fa.fa-caret-right
-            = link_to "第31回東京ベイ シーバスゲームフェスティバル", "//www.jgfa.or.jp/news/event/p000725.html"
-            開催決定！！
+            <a href="/results/2016/round4.html">第4戦の大会結果</a>を公開しました。
             %span
-              (2015-10-14）
-          %li
-            %i.fa.fa-caret-right
-            = link_to "第9回横浜港ボートフィッシング大会", "/ycc2015.docs"
-            のエントリー受付中！！
-            %span
-              (2015-10-14）
-          %li
-            %i.fa.fa-caret-right
-            BST2015シリーズは終了いたしました。2016シリーズも宜しくお願い致します！
-            %span
-              (2015-07-14）
-      = partial "shared/events2015"
+              (2016-06-18）
+        .message
+          %p
+            第5戦のスポット参戦申し込み締め切りは7月10日（日）までです。<br>
+            参戦希望の方は<a href="/entry/">こちら</a>よりお申し込みください。
+      = partial "shared/events2016"
       %section#timetable
         %h1
           %i.fa.fa-clock-o
@@ -65,7 +51,7 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
             %tr
               %td 〜08:10
               %td
-                受付：参加費用5000円を納入、出船順のくじびきを引いて受付を完了させてください。
+                受付：出船順のくじびきを引いて受付を完了させてください。
             %tr
               %td 08:15〜
               %td
@@ -97,13 +83,42 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           %i.fa.fa-list-ol
           ランキング
         %h2
-          %i.fa.fa-chevron-right
-          2015シリーズ（全3戦）
+          %i.fa.fa-chevron-right 2016シリーズ（4/6戦）
+        %table
+          %caption
+            = link_to "/rankings/2016.html" do
+              %i.fa.fa-caret-right 詳しくはこちら
+          %thead
+            %tr
+              %th Rank
+              %th Name
+              %th Boat
+              %th Pts
+          %tbody
+            %tr
+              %td
+                1
+              %td 池上 日明
+              %td D-marina
+              %td 350
+            %tr
+              %td
+                2
+              %td 遠藤 正明
+              %td アイランドクルーズ
+              %td 350
+            %tr
+              %td
+                3
+              %td 森田 英典
+              %td Real
+              %td 315
+        %h2
+          %i.fa.fa-chevron-right 2015シリーズ（全3戦）
         %table
           %caption
             = link_to "/rankings/2015.html" do
-              %i.fa.fa-caret-right
-              詳しくはこちら
+              %i.fa.fa-caret-right 詳しくはこちら
           %thead
             %tr
               %th Rank
@@ -130,13 +145,11 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
               %td D-marina
               %td 210
         %h2
-          %i.fa.fa-chevron-right
-          2014シリーズ（全5戦）
+          %i.fa.fa-chevron-right 2014シリーズ（全5戦）
         %table
           %caption
             = link_to "/rankings/2014.html" do
-              %i.fa.fa-caret-right
-              詳しくはこちら
+              %i.fa.fa-caret-right 詳しくはこちら
           %thead
             %tr
               %th Rank
@@ -163,13 +176,11 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
               %td シーバスキャプテン
               %td 385
         %h2
-          %i.fa.fa-chevron-right
-          2013シリーズ（全4戦）
+          %i.fa.fa-chevron-right 2013シリーズ（全4戦）
         %table
           %caption
             = link_to "/rankings/2013.html" do
-              %i.fa.fa-caret-right
-              詳しくはこちら
+              %i.fa.fa-caret-right 詳しくはこちら
           %thead
             %tr
               %th Rank
@@ -200,57 +211,62 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
         %h1
           %i.fa.fa-check
           その他トーナメント情報
-        %p.section_summary
-          BST以外の横浜周辺で開催されるボートシーバストーナメント情報です。
+        %p.section_summary BST以外の横浜周辺で開催されるボートシーバストーナメント情報です。
         .element
           %h2 第4回 G.O.M. ワーム限定ボートシーバストーナメント
           %span.danger 終了
           %dl
             %dt 開催日:
-            %dd 2015-02-22
+            %dd 2016-02-21
           %dl
-            %dt 詳細：
+            %dt 問い合せ先：
             %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/g-o-m", target: "_blank"
         .element
-          %h2 第8回 TOKYO BAY CUP
+          %h2 第20回 サバロカップ
           %span.danger 終了
           %dl
             %dt 開催日:
-            %dd 2015-05-24
+            %dd 2016-03-27
           %dl
-            %dt 詳細・エントリー：
-            %dd= link_to "公式サイト", "//www.umijuku.net/tbc/entry/", target: "_blank"
+            %dt 大会結果：
+            %dd= link_to "サバロ店長ブログ", "//sabalo.co.jp/shopblog/2788/", target: "_blank"
+        - if false
+          .element
+            %h2 第9回 東京ベイカップ
+            -#%span.danger 終了
+            %dl
+              %dt 開催日:
+              %dd 2016-05-15
+            %dl
+              %dt 問い合せ先：
+              %dd= link_to "NPO法人 海塾", "//www.umijuku.net/", target: "_blank"
         .element
-          %h2 第9回 横浜ボートフィッシング大会シーバストーナメント
-          %span.warning JGFA会員限定
-          %span.info チーム戦
+          %h2 第10回 横浜ボートフィッシング大会シーバストーナメント
+          -#%span.danger 終了
           %dl
             %dt 開催日:
-            %dd 2015-11-03
+            %dd 2016-11-03
           %dl
             %dt 問い合せ先：
-            %dd アイランドクルーズ 遠藤
+            %dd= link_to "アイランドクルーズ", "//www.boatseabass.jp/"
         .element
-          %h2 第9回 ハマ海杯
-          %span.info フライOK
-          %span.info ショアOK
+          %h2 第31回 東京ベイ・シーバスゲーム・フェスティバル
+          -#%span.danger 終了
           %dl
             %dt 開催日:
-            %dd 2015-11予定
+            %dd 2015-11-13
+          %dl
+            %dt 問い合せ先：
+            %dd= link_to "JGFA", "//www.jgfa.or.jp/news/event/p000725.html", target: "_blank"
+        .element
+          %h2 第9回 ハマ海杯
+          -#%span.danger 終了
+          %dl
+            %dt 開催日:
+            %dd 2016-11
           %dl
             %dt 問い合せ先：
             %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/", target: "_blank"
-        .element
-          %h2 第31回 東京ベイ・シーバスゲーム・フェスティバル
-          %span.warning JGFA会員限定
-          %span.info チーム戦
-          %span.info フライOK
-          %dl
-            %dt 開催日:
-            %dd 2015-12-06
-          %dl
-            %dt 問い合せ先：
-            %dd= link_to "JGFA", "www.jgfa.or.jp/news/event/p000725.html", target: "_blank"
         - if false
           .element
             %h2 第18回 湾！GUN！シーバストーナメント

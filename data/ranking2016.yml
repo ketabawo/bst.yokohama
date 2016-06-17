@@ -1,0 +1,71 @@
+result:
+  - rank: 1<span style="color:#4cae4c;">→</span>
+    name: 池上 日明
+    furigana: イケガミ アキラ
+    boat: D-marina
+    points: [100, 80, 80, 90, 0, 0]
+  - rank: 2<span style="color:#4cae4c;">→</span>
+    name: 遠藤 正明
+    furigana: エンドウ マサアキ
+    boat: アイランドクルーズ
+    points: [60, 90, 100, 100, 0, 0]
+  - rank: 3<span style="color:#4cae4c;">→</span>
+    name: 森田 英典
+    furigana: モリタ ヒデノリ
+    boat: Real
+    points: [65, 100, 75, 75, 0, 0]
+  - rank: 4<span style="color:#d9534f;">↑</span>
+    name: 内田 信吾
+    furigana: ウチダ シンゴ
+    boat: SEAWOLF
+    points: [85, 85, 55, 85, 0, 0]
+  - rank: 5<span style="color:#d9534f;">↑</span>
+    name: 大畠 拓
+    furigana: オオバタケ タク
+    boat: Sea Style
+    points: [45, 75, 90, 50, 0, 0]
+  - rank: 6<span style="color:#4cae4c;">→</span>
+    name: 池田 裕之
+    furigana: イケダ ヒロユキ
+    boat: Valley hill
+    points: [80, 70, 65, 40, 0, 0]
+  - rank: 7<span style="color:#46b8da;">↓</span>
+    name: 早川 昌和
+    furigana: ハヤカワ マサカズ
+    boat: Striker
+    points: [90, 65, 85, 0, 0, 0]
+  - rank: 8<span style="color:#4cae4c;">→</span>
+    name: 岡本 慶一郎
+    furigana: オカモト ケイイチロウ
+    boat: シークロ
+    points: [75, 45, 60, 55, 0, 0]
+  - rank: 9<span style="color:#d9534f;">↑</span>
+    name: 福永 雄海
+    furigana: フクナガ ユウミ
+    boat: Seabass Captain
+    points: [30, 35, 70, 70, 0, 0]
+  - rank: 10<span style="color:#d9534f;">↑</span>
+    name: 数野 達也
+    furigana: カズノ タツヤ
+    boat: エバーグリーン
+    points: [50, 25, 40, 80, 0, 0]
+  - rank: 11<span style="color:#4cae4c;">→</span>
+    name: 小尾 えつし
+    furigana: オビ エツシ
+    boat: E&A
+    points: [40, 60, 25, 45, 0, 0]
+  - rank: 12<span style="color:#d9534f;">↑</span>
+    name: 藤田 正明
+    furigana: フジタ マサアキ
+    boat: TEAM 8
+    points: [35, 40, 0, 65, 0, 0]
+  - rank: 13<span style="color:#46b8da;">↓</span>
+    name: 斎藤 剛宏
+    furigana: サイトウ タカヒロ
+    boat: D-marina
+    points: [70, 55, 30, 0, 0, 0]
+  - rank: 14<span style="color:#4cae4c;">→</span>
+    name: 杉山 貴洋
+    furigana: スギヤマ タカヒロ
+    boat: BLUE DOG
+    points: [0, 50, 35, 35, 0, 0]

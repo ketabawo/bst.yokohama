@@ -53,6 +53,7 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 page "/entry/*", :layout => "entry"
 page "/sitemap.xml", :layout => "sitemap"
+page "/test.html", :layout => false
 
 compass_config do |config|
     config.line_comments = false

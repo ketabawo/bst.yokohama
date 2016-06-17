@@ -1,9 +1,13 @@
-tournamenters:
-  - &tid1
-    id: 1
-    name1: 大畠 拓
-    name2: Taku Obatake
-    name3: オオバタケ タク
-    birth: 1971-9-12
-    job: フロントエンドエンジニア
-    
+members:
+  - id: 1
+    data:
+      name: taro
+      age: 44
+  - id: 2
+    data:
+      name: jiro
+      age: 17
+  - id: 3
+    data:
+      name: saburo
+      age: 17

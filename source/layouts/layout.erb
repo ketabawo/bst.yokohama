@@ -35,31 +35,41 @@
       ga('require', 'displayfeatures');
       ga('send', 'pageview');
     </script>
+    <script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "http://bst.yokohama/",
+    "potentialAction": {
+     "@type": "SearchAction",
+     "target": "http://bst.yokohama/search?q={search_term}",
+     "query-input": "required name=search_term"
+     }
+    }
+    </script>
   </head>
   <body class="<%= page_classes %>">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '723141461159033',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+    
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
     <%= partial "shared/header", locals: {val: page_classes}%>
     <%= yield %>
     <%= partial "shared/footer" %>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id; js.async = true;
-      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=516734618358765&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <%= javascript_include_tag  "all" %>
-    <script>
-    (function($){$(document).ready(function(){
-      setTimeout(function(){
-        $('.fb-like-box-custom').each(function(){
-          $(this).addClass('fb-like-box');
-          $(this).removeClass('fb-like-box-custom');
-        });
-        FB.XFBML.parse();
-      }, 4000);
-    })})(jQuery)
-    </script>
   </body>
 </html>

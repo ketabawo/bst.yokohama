@@ -1,4 +1,15 @@
 //= require_tree .
+/*
+$(document).ready(function(){
+    $('#js-test').customSelect();
+    
+});
+*/
+(function ($) {
+  console.log("start");
+  $('#js-test').easySelectBox();
+  console.log("end");
+})(jQuery);
 
 $(function(){
   $('#imagepanel_top_inner').bxSlider({

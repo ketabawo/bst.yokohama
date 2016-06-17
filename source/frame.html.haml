@@ -1,0 +1,16 @@
+!!! 5  
+%html  
+  %head  
+    %script{src: "//code.jquery.com/jquery-1.11.3.min.js"}
+  %body
+    #box{style: "width: 100px; height: 100px; background-color: #CCC;"}  
+    :javascript
+      $(function(){
+        var size = $("#box").outerHeight();
+      // メッセージ受信イベント
+        window.addEventListener('message', function(event) {
+            // メッセージ送信元のサイトに返答する
+            event.source.postMessage(size, event.origin);
+        }, false);
+      
+      });

@@ -1,0 +1,434 @@
+---
+title: BST 2016 第3戦 大会結果
+description: 2016年5月17日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「BTS 2016」第3戦の大会結果です。
+---
+- weiin = []
+- fish_size = [] 
+- data.result2016.round3.each do |f|
+  - f.result.each do |size|
+    - fish_size.push(size)
+  - weiin.push(f.result.length)
+- weiin5 = weiin.count(5)
+- weiin4 = weiin.count(4)
+- weiin3 = weiin.count(3)
+- weiin2 = weiin.count(2)
+- weiin1 = weiin.count(1)
+- weiin0 = weiin.count(0)
+= partial "shared/global_navigation", :locals => {:val => "results"}
+#topicpath
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
+    %li
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} BST公式TOP
+      %i.fa.fa-angle-right
+    %li
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
+      %i.fa.fa-angle-right
+    %li BST 2016 第3戦 大会結果
+#imagepanel_result
+  #imagepanel_result_inner.result2016_03
+    .layer
+      %h1 BST 2016 第3戦 大会結果
+%article#content
+  #content_inner
+    #main_column.double
+      %section#ranking_table
+        .chairmans_comment
+          %dl
+            %dt
+              %i.fa.fa-comment
+              総評
+            %dd
+              %p.comment
+                天候だけでなく釣果も予想通りの大荒れであった第3戦。<br>
+                過去最低のリミットメイク率の中、しっかり5本揃えるプランを持っていた選手が優位にゲームを組み立てた印象でした。
+                <br><br>
+                YAMAHA様、マリンライセンスロイヤル様、スズキマリン様、マリンサービス児嶋様、ご協賛・ご協力ありがとうございました。
+              %p.writer
+                （実行委員 大畠）
+        %table
+          %caption 澤村・東海林両選手はスポット参戦、NFは帰着順
+          %thead
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+          %tbody
+            - data.result2016.round3.each do |f|
+              %tr
+                %td= f.rank
+                %td
+                  %span.ruby= f.angler[1]
+                  = f.angler[0]
+                %td= f.angler[2]
+                %td= f.result[0]
+                %td= f.result[1]
+                %td= f.result[2]
+                %td= f.result[3]
+                %td= f.result[4]
+                %td= f.result[0].to_f + f.result[1].to_f + f.result[2].to_f + f.result[3].to_f + f.result[4].to_f
+          %tfoot
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+      %section#interviews
+        %h1
+          %i.fa.fa-trophy
+          上位3名の紹介
+        .interview
+          %h2 遠藤 正明 選手（アイランドクルーズ）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2016/img_pic-round3-1.jpg", alt: "遠藤 正明 選手（アイランドクルーズ）", width: "600", height: "400")
+            %p
+              関係者のみなさま、選手のみなさまお疲れさまでした。<br>
+              雨風赤潮と厳しいコンディションの中、開催は判断は難しかったのではないかと思います。<br>
+              全員が、安全に事故なく帰航出来たことは何よりも良かったことと思います。
+            %p
+              さて、今回私は悪天候から出場を予定していた船を前日に変更して了解を頂きました。<br>
+              細かい釣りでいくか、大きなエリアから回遊の魚を獲るかの判断を迷いましたが後者を選びました。<br>
+              そして、そのパターンがギリギリのところでなんとか5本キャッチ出来きウエイン出来ました。<br>
+              確か昨年の同じ時期の大会でも同じように横須賀エリアに向かうも反応悪く、急いで南本牧へ戻りギリギリで追加しリミットメイク出来ました。<br>
+              そのトラウマもありましたが同じエリアを選びました。<br>
+              自分の好きなエリアで厳しいながらもリミットメイク、そして優勝出来たことは何よりも嬉しいことです。
+            %p
+              また、ウイニングルアーが自分の考えたカラーであることがより嬉しいことです。<br>
+              普段から応援して頂いてるメーカー様に少し恩返しが出来たと思います。
+            %p
+              今年はまだ3戦残っています。僅差で気を緩めない状況であります。<br>
+              年間総合優勝を目指し頑張ります。<br>
+              （状況の詳細は、アメブロに書いてあります。）
+            %p
+              %i.fa.fa-link
+              = link_to "アイクル えんどうまさあきのブログ", "//ameblo.jp/masaakiendo/", target: "_blank"
+          .screen.tackles_area
+            = image_tag("results/2016/img_pic-round3-1tackles.jpg", alt: "遠藤選手の使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td= link_to "DAIWA SALTIST BS 70M", "//www.daiwa.com/jp/fishing/item/rod/salt_rd/saltist_bs/index.html", target: "_blank"
+                  %td= link_to "DAIWA CERTATE 3012H", "//www.daiwaweb.com/global/ja/fishingshow/2016ss/certate/index.html", target: "_blank"
+                  %td= link_to "DAIWA MEGA SENSOR 12BRAID 1.5", "//www.daiwaweb.com/jp/fishing/item/line/fune_li/megasensor_12braid/", target: "_blank"
+                  %td= link_to "YGK GALIS SHORE LEADER 20lb", "//yoz-ami.jp/235", target: "_blank"
+                %tr
+                  %th 2
+                  %td= link_to "VALLEY HILL RES-610M", "//valleyhill.taniyamashoji.co.jp/catalogue/page01.jsp?mode=id/497", target: "_blank"
+                  %td
+                    = link_to "DAIWA LUVIAS 3012H", "//daiwa-fishingshow.globeride.jp/2015aw/luvias/", target: "_blank"
+                    = link_to "S.O.M CUSTOM", "//www.studio-oceanmark.com/", target: "_blank"
+                  %td= link_to "YGK G-SOUL X8 UPGRADE 1.5", "//yoz-ami.jp/259", target: "_blank"
+                  %td= link_to "YGK GALIS SHORE LEADER 20lb", "//yoz-ami.jp/235", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "O.S.P RUDRA 130SP SW(W CHART KONOSHIRO)", "//www.o-s-p.net/products/asura-o-s-p-rudra-130-sp/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "O.S.P VARUNA 110S(W CHART KONOSHIRO)", "//www.o-s-p.net/products/asura-o-s-p-varuna-110-s/", target: "_blank"
+        .interview
+          %h2 準優勝：大畠 拓 選手（Sea Style）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2016/img_pic-round3-2.jpg", alt: "大畠 拓 選手（Sea Style）", width: "600", height: "400")
+            %p
+              今回よりボートがYAMAHA SR-Xに変わり、大幅に機動力が強化されたのは以前に比べて大きなアドバンテージ！<br>
+              プラクティスでは、あくまでも人気のなさそうなポイントを重点的に撃ち回り、ここなら1本2本は獲れるであろうポイントを数箇所みつけることに成功。<br>
+              当日はそれらを軸に巡回コースを組み立て、兎に角5本揃えることを命題とした。<br>
+            %p
+              用意したタックルは中近距離用（No.2〜5）を中心に、ライトリグ用（No.1）と大型船ポケットに深く入り込まなくても遠目から撃ち込むための長距離砲（No.6）の3パターン。
+            %p
+              最初に行ったエリアでサイズこそ伸びなかったが十分すぎる釣果を得ることができてしまったという嬉しい誤算が発生する。<br>
+              最近の状況を鑑みると、他選手は5本揃えるのに苦労しているのは必至だろうし、仮に揃えていても自分と同じ様にサイズは伸びなやんでいるはず！<br>
+              ある程度サイズをまとめればワンチャンスあると考え、競技時間はかなり残ってるにも関わらず途中のポイントを叩きつつ帰着することを決断。<br>
+              数本キャッチし1本入れ替え、最終的に30分近くを余して帰着。
+              このタフコンディション下で20本近く掛けることが出来たのは運が良かったとしか言いようがない。
+            %p
+              結果、自分にとって都合よく歯車がズレてくれたおかげで、昨年度第1戦以来のお立ち台に上がる事が出来ました。<br>
+              ※今回はシークロ升田さんから頂いたヒントのおかげかもしれません（笑）<br>
+              <br>
+              色んな方々に助けていただいての結果ではありますが、シングル制となって初のお立ち台はアマチュアの僕にとって大きな自信となりました。<br>
+              これに慢心することなく残り3戦も全力でぶつかっていきますので応援宜しくお願い致します。
+            %p
+              %i.fa.fa-link
+              = link_to "人生補完計画 2nd Impact", "//ketabawo.asia", target: "_blank"
+          .screen.tackles_area
+            = image_tag("results/2016/img_pic-round3-2tackles.jpg", alt: "大畠選手の使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td= link_to "Megabass SilverShadow SSXX-60ML", "//www.megabass.co.jp/site/products/ssxx-60ml/", target: "_blank"
+                  %td= link_to "Megabass LIN258HM", "//www.megabass.co.jp/site/products/lin258hm/", target: "_blank"
+                  %td= link_to "VARIVAS SALT WATER VLS 12LB", "//www.varivas.co.jp/Product/searchgroup/name:%E3%82%BD%E3%83%AB%E3%83%88%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC/type:VLS/view3:2/id:1428", target: "_blank"
+                  %td --
+                %tr
+                  %th 2
+                  %td Megabass Rampage 海狼 RXGti-63MLC
+                  %td= link_to "Megabass FX73-SV", "//www.megabass.co.jp/site/products/fx73sv-2/", target: "_blank"
+                  %td
+                    = link_to "GOSEN ", "//www.gosen-f.jp/"
+                    PE SW for LURE 2.0
+                  %td= link_to "GOSEN X LEADER FC 20LB", "//www.gosen-f.jp/products/list.php?id=1332318177-273428&ca=5", target: "_blank"
+                %tr
+                  %th 3
+                  %td Megabass Rampage 海狼 RXGti-63MLC
+                  %td DAIWA T3SV 8.1R-TW
+                  %td= link_to "YAMATOYO FAMELL SALT WATER 16LB", "//yamatoyo.com/products/salt-water2015/", target: "_blank"
+                  %td --
+                %tr
+                  %th 4
+                  %td Megabass SilverShadow SXX-60MC
+                  %td= link_to "DAIWA ZILLION SV TW 1016SV-XXHL", "//www.daiwa.com/jp/fishing/item/reel/bait_rl/zillion_sv_tw/index.html", target: "_blank"
+                  %td= link_to "SUNLINE ALL STAGE 12LB", "//www.sunline.co.jp/sl_html2/products/allpurpose/all_stage.html", target: "_blank"
+                  %td --
+                %tr
+                  %th 5
+                  %td= link_to "Megabass SilverShadow SS-63MC", "//www.megabass.co.jp/site/products/ss-63mc/", target: "_blank"
+                  %td= link_to "DAIWA morethan PE SV 8.1R TW", "//www.daiwa.com/jp/fishing/item/reel/bait_rl/mt_pe_sv/index.html", target: "_blank"
+                  %td GOSEN PE SW for LURE 2.0
+                  %td GOSEN X LEADER FC 20LB
+                %tr
+                  %th 6
+                  %td Megabass DESTROYER 裂壊 THP F6-68X
+                  %td= link_to "DAIWA ZILLION TW 1516SH", "//www.daiwa.com/jp/fishing/item/reel/bait_rl/zillion_tw/index.html", target: "_blank"
+                  %td= link_to "DUEL HARDCORE X4 1.5", "//www.duel.co.jp/products/saltwater/d_line/saltwater_line_pe/hc_x4/", target: "_blank"
+                  %td= link_to "YAMATOYO FLOURO 20LB", "//yamatoyo.com/products/fluoro-shock-leader-big/", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "DRESS D-head TRICKY 7g", "//www.shop-dress.jp/SHOP/tricky.html", target: "_blank"
+                +
+                = link_to "DUO Realis V-TAIL SHAD 3inch", "//duo-inc.co.jp/bass/realis/realis-v-tailshad3/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "DUO Bay RUF S-80(H-MODEL)", "//duo-inc.co.jp/saltwater/bay-ruf/bay-ruf-s-80/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "DUO Tide Vib SCORE", "//duo-inc.co.jp/saltwater/tide-vib/tide-vib-score/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "NORIES ", "//www.nories.com/", target: "_blank"
+                LAYDOWN MINNOW MID SW92
+              %li
+                %i.fa.fa-caret-right
+                = link_to "Megabass MAGBEAT", "//www.megabass.co.jp/site/products/magbeat", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "Mangrove Studio TRIX", "//www.mangrove-studio.com/mangrove_s/products/ocean/ocj-trx.html", target: "_blank"
+        .interview
+          %h2 3位：早川 昌和 選手（ストライカー）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2016/img_pic-round3-3.jpg", alt: "早川 昌和 選手（ストライカー）", width: "600", height: "400")
+            %p
+              前日までの状況は、毎日気温の寒暖差で潮色はコロコロ変わり、強風続きでかなりタフな状況。特に上げ潮は魚が口を使ってくれずガイドでも大苦戦しておりました。<br>
+              当日も強風に雨とスタートが10番という事もあり、運河へ行こうと決め他選手の動向を見守ると皆さん、風表で有ろう某エリア方面へ。
+            %p
+              この方面は、昨日ガイドで60㎝クラスがバクバクで5本300㎝も十分可能なエリア(昨日状況であれば）。<br>
+              しかし、私の船では到底他選手には追いつけないので、運河でリミットを揃え、このエリアへはキッカーを取りに行こうと、はやる気持ちを抑えスタート。<br>
+              最初のポイントへ着くと私の選択したエリアは予想以上に潮色良く一安心。エアディープで活性の高い魚を探っていくと、ファーストバイトは超ショートバイト。<br>
+              すかさず竿をプロトのPRM SPBC-662M-TZに持ち替え、次のバイトに備えるとしっかりと口の中に入ってくれ無事にゲット！感触的に、簡単にリミットが揃うかと思いましたがやはり難しい。<br>
+              レンジを変えタックルを変え、付近の壁などそのエリアを丹念に釣っていき2時間程で7本をキャッチ。<br>
+              そのエリア近くにある穴撃ちポイントを試しましたが、チェイスしてきた魚が明らかに小さいサイズばかりだったので深追いせずに本命ポイントへ！<br>
+              ダバダバな中ポイントへ着くと昨日とは潮色が全く違い、潮色良すぎ。ベイトの反応も乏しく雰囲気ないので、大型を狙えるパターンをランガンで探りましたが、やはり状況は甘くなく追加なしで帰着しました。<br>
+            %p
+              しかし、ここで異常事態発生！
+              ライブウェルを外部循環にしていた為、桟橋近くの悪い水が生簀に侵入。上から3匹目がデッドフィッシュになりそうだったので、リリースボックスへ持ち込みスタッフの皆さんに蘇生をお願い致しました。<br>
+              完全に自分のミス。ライブフィッシュの難しいところですね。<br>
+              各選手、この状況でかなり苦戦したようで、リミットメイクは半数以下のたった6名。
+              キッカーフィッシュは入らなかったもののアベレージサイズに恵まれて、3位入賞出来たことは素直に嬉しいです。<br>
+              今戦では、『ナノアロイ、トルザイト、アラミド繊維』など最新技術を搭載し調整中のプロトロッドのおかげで、吸い込む様な小さなバイトも確実にフックアップ出来たことがリミットメイク達成の大きな要因だったと思います。<br>
+              サポートメーカー様に感謝です。
+            %p
+              最後に参加された選手の皆様、大会運営をお手伝いいただきました、サポートメーカーの皆様。<br>
+              （今回は、沢山のスタッフの方が、BSTの大会当日にお手伝いをいただき心から感謝しております）<br>
+              雨の中ありがとうございました。
+          .screen.tackles_area
+            = image_tag("results/2016/img_pic-round3-3tackles.jpg", alt: "早川選手の使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td Abu Garcia SALTY STAGE　PRM SPBC-662M-TZ(プロトタイプ）
+                  %td
+                    = link_to "Abu Garcia Revo", "//www.purefishing.jp/product/bc/abugarcia/ambassadeur/revo/", target: "_blank"
+                    ALC-IB6
+                  %td= link_to "Berkley SuperFireLine 2.0", "//www.purefishing.jp/product/Line/super_fireline.html", target: "_blank"
+                  %td= link_to "VARIVAS VEP SHOCK LEADER 20LB", "//www.varivas.co.jp/Product/searchgroup/id:2090", target: "_blank"
+                %tr
+                  %th 2
+                  %td Abu Garcia SALTY STAGE　PRM SPBC-662M-TZ(プロトタイプ）
+                  %td Abu Garcia Revo ALC-IB7
+                  %td Berkley SuperFireLine 2.0
+                  %td VARIVAS VEP SHOCK LEADER 20LB
+                %tr
+                  %th 3
+                  %td= link_to "NORIES SEABASS PROGRAM 66MHC-Tight Unlimited", "//www.nories.com/saltwater/rods/seabass_program/seabass_program.html", target: "_blank"
+                  %td= link_to "DAIWA ZILLION SV TW 1016SV-SHL", "//www.daiwa.com/jp/fishing/item/reel/bait_rl/zillion_sv_tw/index.html", target: "_blank"
+                  %td= link_to "YGK G-soul upgrade PE X8 2.0", "//yoz-ami.jp/259", target: "_blank"
+                  %td VARIVAS VEP SHOCK LEADER 20LB
+                %tr
+                  %th 4
+                  %td Abu Garcia SALTY STAGE　PRM SPBS-702M-TZ(プロトタイプ)
+                  %td= link_to "DAIWA EXIST 2508PE", "//www.daiwaweb.com/jp/fishing/item/special/2015ss/exist2/1239641_5383.html", target: "_blank"
+                  %td YGK G-soul upgrade PE X8 2.0
+                  %td VARIVAS VEP SHOCK LEADER 20LB
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "バレーヒル エアディープ80S", "//valleyhill.taniyamashoji.co.jp/catalogue/page01.jsp?mode=id/531", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "ラッキークラフト ビーフリーズ78S", "//www.luckycraft.co.jp/product/salt/Bfreeze78.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "エコギア3Dジグヘッド（11g, 14g）", "//www.ecogear.jp/ecogear/jig_head/3d_jig_head.html", target: "_blank"
+                +
+                MARS ローリングシャッド M（パールホワイト、ルミナスグロー、三河シロギス、シラスホロ）
+    #sub_column
+      %section#ranking_summary
+        %h1
+          %i.fa.fa-file-text-o
+          ラウンドサマリー
+        %table
+          %tr
+            %th 開催日
+            %td 2015-05-17
+          %tr
+            %th 天気
+            %td 雨
+          %tr
+            %th 潮
+            %td 若潮
+          %tr
+            %th 参加者数
+            %td
+              - if data.result2016.round3.present? then
+                = weiin.length
+              - else
+                0
+              人
+          %tr
+            %th ウェイイン総数
+            %td
+              - if data.result2016.round3.present? then
+                = fish_size.length
+              - else
+                0
+              本
+          %tr
+            %th リミットメイク率
+            %td
+              - if data.result2016.round3.present? then
+                = (weiin5.to_f / weiin.length.to_f * 100).round(2)
+              - else
+                0
+              ％
+          %tr
+            %th 最大叉長
+            %td 
+              - if data.result2016.round3.present? then
+                = fish_size.sort.last
+              - else
+                0
+              cm
+          %tr
+            %th 最小叉長
+            %td 
+              - if data.result2016.round3.present? then
+                = fish_size.sort.first
+              - else
+                40
+              cm
+          %tr
+            %th 平均叉長
+            %td
+              - if data.result2016.round3.present? then
+                - total_size = fish_size.inject{|sum, n| sum + n }
+                = (total_size.to_f / fish_size.length.to_f).round(1)
+              - else
+                0
+              cm
+      :plain
+        <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['ウェイイン数', '人数'],
+        ['リミットメイク',     #{weiin5}],
+        ['4本',      #{weiin4}],
+        ['3本',  #{weiin3}],
+        ['2本',      #{weiin2}],
+        ['1本',  #{weiin1}],
+        ['ノーフィッシュ', #{weiin0}],
+        ]);
+        var options = {
+        title: 'ウェイイン数内訳',
+        titleTextStyle:{fontSize: 16},
+        legend: 'none',
+        chartArea: {left:0,top:35,width:'90%',height:'90%'},
+        colors: ['#2e6da4', '#4cae4c', '#46b8da', '#563d7c', '#eea236', '#d43f3a']
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+        }
+        </script>
+      #piechart
+      - if false
+        %section#image_gallery
+          %h1
+            %i.fa.fa-picture-o
+            イメージギャラリー
+          %ul
+            - data.result2016.round3[3..9].each_with_index do |f, i|
+              %li
+                = image_tag "results/2015/round1/img_pic-gallery#{i + 4}.jpg", width: "300", height: "225", alt: "#{f.angler[0]}さん"
+                %span
+                  #{f.rank}位：#{f.angler[0]}さん
+      = partial "shared/result_list"

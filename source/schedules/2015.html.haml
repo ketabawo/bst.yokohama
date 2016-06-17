@@ -1,0 +1,78 @@
+---
+title: BST 2015 ボートシーバストーナメント競技日程
+description: BST 2015シリーズ年間競技日程です。開催終了していないラウンドへの参戦は随時募集しておりますので、是非ご参加ください。
+---
+= partial "shared/global_navigation", :locals => {:val => "schedules"}
+#topicpath
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
+    %li
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} BST公式TOP
+      %i.fa.fa-angle-right
+    %li BST 2015 ボートシーバストーナメント競技日程
+#imagepanel_low
+  #imagepanel_low_inner.schedules_header
+    .bg_layer
+      %h1 BST 2015シリーズ競技日程
+%article#content
+  #content_inner
+    #main_column.single
+      = partial "shared/events2015"
+      %section#timetable
+        %h1
+          %i.fa.fa-clock-o
+          タイムテーブル
+        %p.section_summary
+          各日程は基本的に以下のスケジュールで進行しますが
+          %br
+          気象状況等で変更となる場合は事前に告知・連絡致します。
+          %table
+            %thead
+              %tr
+                %th 時間軸
+                %th イベント
+            %tbody
+              %tr
+                %td 〜08:10
+                %td
+                  受付：出船順のくじびきを引いて受付を完了させてください。
+              %tr
+                %td 08:15〜
+                %td
+                  ライブウェルチェック：スタッフが参加艇のライブウェル（生け簀）をチェックします。
+              %tr
+                %td 08:20〜
+                %td
+                  キャプテンミーティング：ルールについての説明や当日の流れなどを説明します。<br>
+                  終了後、各艇スタートポイントへ移動してください。
+              %tr
+                %td 08:40〜45
+                %td
+                  スタートフィッシング：日清製粉前の水路に集合、スタッフの指示に従い、くじ引きで決定した順に出船してください。<br>
+                  ※移動の際、スローエリアは最徐行でお願いします。
+                  = image_tag "regulations/img_pic-deadslowarea.gif", alt: "デッドスローエリアとスタートポイント図解", width: "300", height: "224"
+              %tr
+                %td 〜12:50
+                %td
+                  ストップフィッシング：競技を終了し制限時間までに帰着してください。
+              %tr
+                %td 13:30〜
+                %td 検量：帰着順に検量を開始します。
+              %tr
+                %td 14:00〜
+                %td 表彰式：昼食後、表彰式を行います。
+      %section#ranking_list
+        %h1
+          %i.fa.fa-calendar
+          過去のシリーズ日程
+        %p.section_summary
+          過去に開催されたシリーズの日程を参照できます。
+        %ul
+          %li.s2014
+            = link_to "/schedules/2014.html" do
+              %span
+                2014年
+          %li.s2013
+            = link_to "/schedules/2013.html" do
+              %span
+                2013年
