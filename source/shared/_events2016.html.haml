@@ -78,7 +78,7 @@
     .eye_catch
       .pic2016.round5
     .this_content
-      %span.info 募集中
+      %span.danger 終了
       %h2{itemprop: "name"} BST 2016 第5戦
       %dl
         %dt 開催日:
@@ -89,16 +89,14 @@
           %span{itemprop: "name"} D-marina
           %span{itemprop: "address"} 横浜市神奈川区東神奈川2-49-11
       %p{itemprop: "description"}
-        予備日程：2016-08-09
-        %br
-        = link_to "/entry" do
+        = link_to "/results/2016/round5.html" do
           %i.fa.fa-caret-right
-          エントリーはこちら
+          詳しくはこちら
   .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
     .eye_catch
       .pic2016.round6
     .this_content
-      %span.success 準備中
+      %span.info 募集中
       %h2{itemprop: "name"} BST 2016 第6戦
       %dl
         %dt 開催日:
@@ -110,9 +108,8 @@
           %span{itemprop: "address"} 横浜市神奈川区東神奈川2-49-11
       %p{itemprop: "description"}
         予備日程：2016-09-27
-        - if false
-          %br
-          = link_to "/entry" do
-            %i.fa.fa-caret-right
-            エントリーはこちら
+        %br
+        = link_to "/entry" do
+          %i.fa.fa-caret-right
+          エントリーはこちら
   %p.caption 入替戦予定日：10月18日（予備日：10月25日）

@@ -1,3 +1,50 @@
+round5:
+  - rank: 1
+    angler: [福永 雄海, フクナガ ユウミ, Seabass Captain]
+    result: [74.5, 57.0, 55.0, 53.0, 52.0]
+  - rank: 2
+    angler: [池田 裕之, イケダ ヒロユキ, Valley hill]
+    result: [56.0, 52.0, 50.5, 49.0, 48.5]
+  - rank: 3
+    angler: [数野 達也, カズノ タツヤ, エバーグリーン]
+    result: [60.5, 52.0, 49.5, 47.0, 46.0]
+  - rank: 4
+    angler: [早川 昌和, ハヤカワ マサカズ, Striker]
+    result: [58.0, 52.0, 48.5, 47.0, 45.0]
+  - rank: 5
+    angler: [池上 日明, イケガミ アキラ, D-marina]
+    result: [47.5, 46.0, 45.5, 44.5, 43.5]
+  - rank: 6
+    angler: [大畠 拓, オオバタケ タク, Sea Style]
+    result: [53.0, 50.0, 46.5, 44.5]
+  - rank: 7
+    angler: [齋藤 剛宏, サイトウ タカヒロ, D-marina]
+    result: [49.0, 49.0, 46.5, 43.0]
+  - rank: 8
+    angler: [岡本 慶一郎, オカモト ケイイチロウ, シークロ]
+    result: [54.5, 46.0, 45.5]
+  - rank: 9
+    angler: [遠藤 正明, エンドウ マサアキ, アイランドクルーズ]
+    result: [47.5, 44.5, 41.5]
+  - rank: 10
+    angler: [杉山 貴洋, スギヤマ タカヒロ, BLUE DOG]
+    result: [53.5, 44.0]
+  - rank: 11
+    angler: [藤田 正明, フジタ マサアキ, TEAM 8]
+    result: [51.0, 44.0]
+  - rank: 12
+    angler: [東海林 博, ショウジ ヒロシ, YAMAHA FISHING]
+    result: [52.0]
+  - rank: 13
+    angler: [森田 英典, モリタ ヒデノリ, Real]
+    result: [44.0]
+  - rank: 14
+    angler: [内田 信吾, ウチダ シンゴ, SEAWOLF]
+    result: []
+  - rank: --
+    angler: [小尾 えつし, オビ エツシ, E&A]
+    result: []
+
 round4:
   - rank: 1
     angler: [遠藤 正明, エンドウ マサアキ, アイランドクルーズ]
@@ -54,7 +101,7 @@ round3:
     result: [57.5, 49.0, 48.0, 42.0, 40.0]
   - rank: 5
     angler: [森田 英典, モリタ ヒデノリ, Real]
-    result: [47.5, 47.5, 46.0, 46.0, 43.0,]
+    result: [47.5, 47.5, 46.0, 46.0, 43.0]
   - rank: 6
     angler: [福永 雄海, フクナガ ユウミ, Seabass Captain]
     result: [55.5, 46.5, 44.0, 41.0, 41.0]

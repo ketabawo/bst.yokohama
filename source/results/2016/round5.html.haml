@@ -1,0 +1,363 @@
+---
+title: BST 2016 第5戦 大会結果
+description: 2016年7月26日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「BTS 2016」第5戦の大会結果です。
+---
+- weiin = []
+- fish_size = [] 
+- data.result2016.round5.each do |f|
+  - f.result.each do |size|
+    - fish_size.push(size)
+  - weiin.push(f.result.length)
+- weiin5 = weiin.count(5)
+- weiin4 = weiin.count(4)
+- weiin3 = weiin.count(3)
+- weiin2 = weiin.count(2)
+- weiin1 = weiin.count(1)
+- weiin0 = weiin.count(0)
+= partial "shared/global_navigation", :locals => {:val => "results"}
+#topicpath
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
+    %li
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} BST公式TOP
+      %i.fa.fa-angle-right
+    %li
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
+      %i.fa.fa-angle-right
+    %li BST 2016 第5戦 大会結果
+#imagepanel_result
+  #imagepanel_result_inner.result2016_05
+    .layer
+      %h1 BST 2016 第5戦 大会結果
+%article#content
+  #content_inner
+    #main_column.double
+      %section#ranking_table
+        .chairmans_comment
+          %dl
+            %dt
+              %i.fa.fa-comment
+              総評
+            %dd
+              %p.comment
+                直近は、非常にタフな状況でリミットメイクすら厳しいという声が各選手から聞かれておりました。<br>
+                今年は梅雨明けが遅れており当日も厳しい暑さで無かったことがせめてもの救いだったように思います。
+              %p.comment
+                そんな中開催された大会でしたが、戦前の予想通り各選手がリミットメイクに苦しんだようで、終わってみればリミットメイク達成は15人中僅かに5人。<br>
+                リミットメイク出来た選手が選んだエリアは横浜エリアと千葉エリア。<br>
+                興味深いのは、5人の選手の戦術はそれぞれ違い、トップからディープと様々なレンジを攻略しリミットメイクした模様。<br>
+                また各選手が強いパターンを持っており皆10本以上のシーバスをキャッチしたとのこと。<br>
+                中でも、2位に30㎝以上の差をつけ優勝した福永選手の底力は、驚愕の一言につきる。
+              %p.writer
+                （実行委員 早川）
+        %table
+          %caption 東海林選手はスポット参戦。小尾選手は<a href="/regulations/index.html#rule3-8-4">レギュレーション（3-8-4）</a>違反のため失格。
+          %thead
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+          %tbody
+            - data.result2016.round5.each do |f|
+              %tr
+                %td= f.rank
+                %td
+                  %span.ruby= f.angler[1]
+                  = f.angler[0]
+                %td= f.angler[2]
+                %td= f.result[0]
+                %td= f.result[1]
+                %td= f.result[2]
+                %td= f.result[3]
+                %td= f.result[4]
+                %td= f.result[0].to_f + f.result[1].to_f + f.result[2].to_f + f.result[3].to_f + f.result[4].to_f
+          %tfoot
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+      %section#interviews
+        %h1
+          %i.fa.fa-trophy
+          上位3名の紹介
+        .interview
+          %h2 優勝：福永 雄海 選手（Seabass Captain）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2016/img_pic-round5-1.jpg", alt: "福永 雄海 選手（Seabass Captain）", width: "600", height: "400")
+            %p
+              今回はぶっつけ本番！当日他の選手の話をしていると、パッとしない状況らしく、それならば超地元で勝負ということでスタート。<br>
+              過去の記憶をたどり、ポイント＆メソッドを組み立てながらの釣りとなりました。
+            %p
+              横浜港内のストラクチャーとシャローが混在しているようなポイントでレンジミノーⅡとレンジバイブアイアンを駆使し、スタート40分ほどで50㎝オーバーのリミットメイク達成♪
+            %p
+              時間もメンタルもかなりの余裕ができたので、南の本牧方面もしくは北の京浜運河方面に移るか悩んだ結果、北上することに決定。<br>
+              しかし、シーバスは各ポイントにちらほらいるもののサイズダウン・・・<br>
+              早々に見切りを付け、ボートをすっ飛ばし横浜港へ戻り、前半手を付けていないポイントへ入るとまたもやミノーで50Ｕｐが連発！<br>
+              レンジバイブアイアンに切り替えボトムからミドルレンジを探ると、ここで出ました74.5㎝！
+            %p
+              今シーズンは第1戦2戦と大はずししていたので何とか一矢報いた結果になりました。<br>
+              残りは最終戦のみ！年間は取れないけれど、連覇を目指します！
+          .screen.tackles_area
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td= link_to "SHIMANO WORLD SHAULA 1701FF", "//fishing.shimano.co.jp/product/rod/1675", target: "_blank"
+                  %td= link_to "SHIMANO STELLA 4000", "//fishing.shimano.co.jp/product/reel/3504", target: "_blank"
+                  %td= link_to "VARIVAS SALTWATER VA-G", "//www.varivas.co.jp/Product/searchgroup/name:%E3%82%BD%E3%83%AB%E3%83%88%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC/type:VA-G/view3:2/id:1434", target: "_blank"
+                  %td= link_to "VARIVAS VEP SHOCKLEADER NYRON 20LB", "//www.varivas.co.jp/Product/searchgroup/id:2090", target: "_blank"
+                %tr
+                  %th 2
+                  %td= link_to "SAURUS BLACKFIN FUKKO CUSTOM 610", "//www.saurus50.jp/", target: "_blank"
+                  %td= link_to "SHIMANO CALCUTTA CONQUEST 201", "//fishing.shimano.co.jp/product/reel/333", target: "_blank"
+                  %td= link_to "VARIVAS HIGH GRADE PE 1.0", "//www.varivas.co.jp/Product/searchgroup/name:%E3%83%8F%E3%82%A4%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89PE/type:/view3:2/id:4204", target: "_blank"
+                  %td= link_to "VARIVAS VEP SHOCKLEADER NYRON 20LB", "//www.varivas.co.jp/Product/searchgroup/id:2090", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "RANGE MINNOW II 70S", "//archive.bassday.co.jp/a_products/saltplug/range_minnow2/rangeminnow.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "RANGE VIB 70 IRON", "//archive.bassday.co.jp/a_products/saltplug/rv_iron/rangevib_iron.html", target: "_blank"
+        .interview
+          %h2 準優勝：池田 裕之 選手（Valley hill）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2016/img_pic-round5-2.jpg", alt: "池田 裕之 選手（Valley hill）", width: "600", height: "400")
+            %p
+              第5戦目にしてやっとお立ち台に上がれました。いやぁ長かった…(笑)
+            %p
+              前日プラから目星を付けてエリアはシャロー隣接の急深なブレイクラインとそれに絡むシェード。<br>
+              そこにベイトが絡めば激熱スポットになるのでは？的なプラン。<br>
+              前日プラで確認した時は雰囲気抜群もベイトが絡んでおらずイマイチでしたが、大会当日は水色からベイトまで全てリンク。<br>
+              期待を込めて釣りを始めると2投目からイレグイ状態に♪サイズは40半ばくらいですが30分くらいでリミットメイク。<br>
+              2時間ほど数センチ単位の入れ替えを丁寧にひたすら繰り返しました。<br>
+              ラスト1時間でポイントを変えずにルアーを冷音からライブワイヤー邪道SPにチェンジして4本入れ替えすることが出来ました。
+          .screen.tackles_area
+            -#= image_tag("results/2016/img_pic-round5-2tackles.jpg", alt: "池田 裕之 選手の使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td= link_to "Valleyhill Respect RSS-68ML", "//valleyhill.taniyamashoji.co.jp/catalogue/page01.jsp?mode=id/497", target: "_blank"
+                  %td= link_to "SHIMANO '07 STELLA C3000", "//fishing.shimano.co.jp/", target: "_blank"
+                  %td= link_to "DUEL X-wire8 0.6", "//www.duel.co.jp/products/x_wire8", target: "_blank"
+                  %td= link_to "DUEL POWERCARBON SHOCK LEADER FLUORO 16LB", "//www.duel.co.jp/english/products/powercarbon_sl", target: "_blank"
+                %tr
+                  %th 2
+                  %td= link_to "Valleyhill ボートシーバス専用ロッド MLプロト", "//valleyhill.taniyamashoji.co.jp/index.jsp", target: "_blank"
+                  %td= link_to "SHIMANO '15 TWINPOWER C3000HG", "//fishing.shimano.co.jp/product/reel/3823", target: "_blank"
+                  %td= link_to "DUEL X-wire8 0.6", "//www.duel.co.jp/products/x_wire8", target: "_blank"
+                  %td= link_to "DUEL POWERCARBON SHOCK LEADER FLUORO 16LB", "//www.duel.co.jp/english/products/powercarbon_sl", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "JADO 冷音 24g", "//www.ja-do.jp/new/products_salt/pd_fujisawa/rain/rain.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "whiplash factory LIVE WIRE", "//www.whiplash.jp/pb04.htm", target: "_blank"
+        .interview
+          %h2 3位：数野 達也 選手（エバーグリーン）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2016/img_pic-round5-3.jpg", alt: "数野 達也 選手（エバーグリーン）", width: "600", height: "400")
+            %p
+              横浜、川崎のプラではほぼ釣れておらずプラでは触らなかった千葉エリアに行く事に。<br>
+              釣り始めるといい感じで釣れてすぐにリミットメイク。<br>
+              エリアはエグレがある壁周りをエバーグリーンマービー90をメインに使っていき渋くなったらピックアップのスリートラップにマドネスのジグヘットで釣っていきました。<br>
+              かなりの数が釣れますが特大サイズが出なかったのが残念でしたが毎度の事ながら楽しい大会した。残り1戦がんばっていきたいと思います。<br>
+              大会運営委員の方々お疲れさまでした
+            %p
+              %i.fa.fa-link
+              = link_to "インパクト", "//seabass-impact.com/", target: "_blank"
+          .screen.tackles_area
+            = image_tag("results/2016/img_pic-round5-3tackles.jpg", alt: "数野 達也 選手の使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td= link_to "EVERGREEN HERACLES HCSS-611M POWER SHAKER", "//www.evergreen-fishing.com/goods_list/ThePowerShaker611m_01095270_1.html", target: "_blank"
+                  %td= link_to "EVERGREEN OPUS-1", "//www.evergreen-fishing.com/goods_list/Opus1_04010010_1.html", target: "_blank"
+                  %td= link_to "VARIVAS AVANI SEABASS PE MAX POWER 1.0", "//varivas.co.jp/Product/searchgroup/id:4216", target: "_blank"
+                  %td= link_to "VARIVAS VEP SHOCKLEADER NYRON 16LB", "//www.varivas.co.jp/Product/searchgroup/id:2090", target: "_blank"
+                %tr
+                  %th 2
+                  %td= link_to "EVERGREEN HERACLES HCSC-69H-LTS", "http://www.evergreen-fishing.com/goods_list/TheHeraclesLts_01095061_1.html", target: "_blank"
+                  %td= link_to "DAIWA ZILLION TW 1516HL", "//www.daiwa.com/jp/fishing/item/reel/bait_rl/zillion_tw/index.html", target: "_blank"
+                  %td= link_to "VARIVAS AVANI SEABASS PE MAX POWER 1.2", "//varivas.co.jp/Product/searchgroup/id:4216", target: "_blank"
+                  %td= link_to "VARIVAS VEP SHOCKLEADER NYRON 16LB", "//www.varivas.co.jp/Product/searchgroup/id:2090", target: "_blank"
+                %tr
+                  %th 3
+                  %td= link_to "EVERGREEN SYNERGY CSYC-73MH+ THE SUPER TRIUMPH", "http://www.evergreen-fishing.com/goods_list/TheSuperTriumph_01100060_1.html", target: "_blank"
+                  %td= link_to "DAIWA MORETHAN PE SV 8.1L-TW", "//www.daiwa.com/jp/fishing/item/reel/bait_rl/mt_pe_sv/index.html", target: "_blank"
+                  %td= link_to "VARIVAS AVANI SEABASS PE MAX POWER 1.2", "//varivas.co.jp/Product/searchgroup/id:4216", target: "_blank"
+                  %td= link_to "VARIVAS VEP SHOCKLEADER NYRON 16LB", "//www.varivas.co.jp/Product/searchgroup/id:2090", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "EVERGREEN MARVIE90", "//www.evergreen-fishing.com/goods_list/Marvie90_11925707_2.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "EVERGREEN IRON MARVIE", "//www.evergreen-fishing.com/goods_list/IronMarvie_11980702_2.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "MADNESS SHIRITEN VIB93", "//www.madness.co.jp/products/seabass/shiriten-vibe93", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "ACTIVE CROSS WATER 爆岸ジグ 30g", "//www.active-kobe.co.jp/index.php", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "MADNESS BAKUREE HEAD", "//www.madness.co.jp/products/worm/bakuree-head", target: "_blank"
+                +
+                = link_to "MADNESS BAKUREE FISH86", "//www.madness.co.jp/products/worm/bakuree-fish86", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "MADNESS BAKUREE HEAD", "//www.madness.co.jp/products/worm/bakuree-head", target: "_blank"
+                +
+                = link_to "PICKUP THREETRAP", "//www.pickup-m.com/", target: "_blank"
+    #sub_column
+      %section#ranking_summary
+        %h1
+          %i.fa.fa-file-text-o
+          ラウンドサマリー
+        %table
+          %tr
+            %th 開催日
+            %td 2015-07-26
+          %tr
+            %th 天気
+            %td 曇り
+          %tr
+            %th 潮
+            %td 小潮
+          %tr
+            %th 参加者数
+            %td
+              - if data.result2016.round5.present? then
+                = weiin.length
+              - else
+                0
+              人
+          %tr
+            %th ウェイイン総数
+            %td
+              - if data.result2016.round5.present? then
+                = fish_size.length
+              - else
+                0
+              本
+          %tr
+            %th リミットメイク率
+            %td
+              - if data.result2016.round5.present? then
+                = (weiin5.to_f / weiin.length.to_f * 100).round(2)
+              - else
+                0
+              ％
+          %tr
+            %th 最大叉長
+            %td 
+              - if data.result2016.round5.present? then
+                = fish_size.sort.last
+              - else
+                0
+              cm
+          %tr
+            %th 最小叉長
+            %td 
+              - if data.result2016.round5.present? then
+                = fish_size.sort.first
+              - else
+                40
+              cm
+          %tr
+            %th 平均叉長
+            %td
+              - if data.result2016.round5.present? then
+                - total_size = fish_size.inject{|sum, n| sum + n }
+                = (total_size.to_f / fish_size.length.to_f).round(1)
+              - else
+                0
+              cm
+      :plain
+        <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['ウェイイン数', '人数'],
+        ['リミットメイク',     #{weiin5}],
+        ['4本',      #{weiin4}],
+        ['3本',  #{weiin3}],
+        ['2本',      #{weiin2}],
+        ['1本',  #{weiin1}],
+        ['ノーフィッシュ', #{weiin0}],
+        ]);
+        var options = {
+        title: 'ウェイイン数内訳',
+        titleTextStyle:{fontSize: 16},
+        legend: 'none',
+        chartArea: {left:0,top:35,width:'90%',height:'90%'},
+        colors: ['#2e6da4', '#4cae4c', '#46b8da', '#563d7c', '#eea236', '#d43f3a']
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+        }
+        </script>
+      #piechart
+      - if false
+        %section#image_gallery
+          %h1
+            %i.fa.fa-picture-o
+            イメージギャラリー
+          %ul
+            - data.result2016.round5[3..9].each_with_index do |f, i|
+              %li
+                = image_tag "results/2015/round1/img_pic-gallery#{i + 4}.jpg", width: "300", height: "225", alt: "#{f.angler[0]}さん"
+                %span
+                  #{f.rank}位：#{f.angler[0]}さん
+      = partial "shared/result_list"
