@@ -21,39 +21,41 @@ description: BST ボートシーバストーナメントの各大会結果を詳
         %p.section_summary
           各シリーズ各ラウンドの結果を見る事ができます。
         #result_list_inner
+          %dl.s2017
+            %dt 2017年
+            %dd
+              %ul
+                %li= link_to "第1戦", "/results/2017/round1.html"
+                %li= link_to "第2戦", "/results/2017/round2.html"
+                %li= link_to "第3戦", "/results/2017/round3.html"
+                %li= link_to "第4戦", "/results/2017/round4.html"
+                %li= link_to "第5戦", "/results/2017/round5.html"
+              %ul
+                %li= link_to "EX01", "/results/2017ex/round1.html"
+                %li= link_to "EX05", "/results/2017ex/round5.html"
           %dl.s2016
             %dt 2016年
             %dd
               %ul
-                %li= link_to "第1戦", "/results/2016/round1.html"
-                %li= link_to "第2戦", "/results/2016/round2.html"
-                %li= link_to "第3戦", "/results/2016/round3.html"
-                %li= link_to "第4戦", "/results/2016/round4.html"
-                %li= link_to "第5戦", "/results/2016/round5.html"
+                - (1..6).each do |i|
+                  %li= link_to "第#{i}戦", "/results/2016/round#{i}.html"
           %dl.s2015
             %dt 2015年
             %dd
               %ul
-                %li= link_to "第1戦", "/results/2015/round1.html"
-                %li= link_to "第2戦", "/results/2015/round2.html"
-                %li= link_to "第3戦", "/results/2015/round3.html"
-                %li= link_to "第4戦", "/results/2015/round4.html"
-                %li= link_to "第5戦", "/results/2015/round5.html"
+                - (1..5).each do |i|
+                  %li= link_to "第#{i}戦", "/results/2015/round#{i}.html"
                 %li= link_to "EX", "/results/2015/roundex.html"
           %dl.s2014
             %dt 2014年
             %dd
               %ul
-                %li= link_to "第1戦", "/results/2014/round1.html"
-                %li= link_to "第2戦", "/results/2014/round2.html"
-                %li= link_to "第3戦", "/results/2014/round3.html"
-                %li= link_to "第4戦", "/results/2014/round4.html"
-                %li= link_to "第5戦", "/results/2014/round5.html"
+                - (1..5).each do |i|
+                  %li= link_to "第#{i}戦", "/results/2014/round#{i}.html"
+
           %dl.s2013
             %dt 2013年
             %dd
               %ul
-                %li= link_to "第1戦", "/results/2013/round1.html"
-                %li= link_to "第2戦", "/results/2013/round2.html"
-                %li= link_to "第3戦", "/results/2013/round3.html"
-                %li= link_to "第4戦", "/results/2013/round4.html"
+                - (1..4).each do |i|
+                  %li= link_to "第#{i}戦", "/results/2013/round#{i}.html"

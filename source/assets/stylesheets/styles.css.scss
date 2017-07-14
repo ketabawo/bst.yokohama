@@ -133,6 +133,14 @@
         background-image: image_url("results/2016/bg_pic-toppanel-2016_0#{$i}.jpg");
       }
     }
+    @for $i from 1 through 5{
+      &.result2017_0#{$i}{
+        background-image: image_url("results/2017/bg_pic-toppanel-2017_0#{$i}.jpg");
+      }
+    }
+    &.result2017ex_01{
+      background-image: image_url("results/2017/bg_pic-toppanel-2017ex_01.jpg");
+    }
   }
 }
 #events{
@@ -148,6 +156,56 @@
       display: table-cell;
       width: 170px;
       vertical-align: top;
+      .pic2017{
+        width: 160px;
+        height: 120px;
+        background-image: image_url('schedules/2017/bg_pic-eyecatches2017.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.round1{
+          background-position: 0 0;
+        }
+        &.round2{
+          background-position: 0 -120px;
+        }
+        &.round3{
+          background-position: 0 -240px;
+        }
+        &.round4{
+          background-position: 0 -360px;
+        }
+        &.round5{
+          background-position: 0 -480px;
+        }
+        &.round6{
+          background-position: 0 -600px;
+        }
+      }
+      .pic2017ex{
+        width: 160px;
+        height: 120px;
+        background-image: image_url('schedules/2017/bg_pic-eyecatches2017ex.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.round1{
+          background-position: 0 0;
+        }
+        &.round2{
+          background-position: 0 -120px;
+        }
+        &.round3{
+          background-position: 0 -240px;
+        }
+        &.round4{
+          background-position: 0 -360px;
+        }
+        &.round5{
+          background-position: 0 -480px;
+        }
+        &.round6{
+          background-position: 0 -600px;
+        }
+      }
       .pic2016{
         width: 160px;
         height: 120px;
@@ -501,6 +559,7 @@
     width: 100%;
     border-top: 1px solid #DDD;
     border-left: 1px solid #DDD;
+    box-sizing: border-box;
     caption{
       font-size: 14px;
       caption-side: bottom;
@@ -513,7 +572,8 @@
           font-size: 13px;
           border-right: 1px solid #DDD;
           border-bottom: 1px solid #DDD;
-          padding: 15px 10px;
+          padding: 10px 8px;
+          box-sizing: border-box;
         }
       }
     }
@@ -531,6 +591,9 @@
           background-color: #d9edf7;
         }
         td{
+          ul{
+            line-height: 1.5;
+          }
           white-space: nowrap;
           span.ruby{
             display: block;

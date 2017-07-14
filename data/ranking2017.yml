@@ -1,0 +1,66 @@
+result:
+  - rank: 1
+    name: 内田 信吾
+    furigana: ウチダ シンゴ
+    boat: SEAWOLF
+    points: [15, 0, 20, 17, 17]
+  - rank: 2
+    name: 早川 昌和
+    furigana: ハヤカワ マサカズ
+    boat: Striker
+    points: [14, 0, 17, 11, 13]
+  - rank: 3
+    name: 遠藤 正明
+    furigana: エンドウ マサアキ
+    boat: アイランドクルーズ
+    points: [13, 0, 0, 20, 20]
+  - rank: 4
+    name: 森田 英典
+    furigana: モリタ ヒデノリ
+    boat: Real
+    points: [17, 0, 7, 4, 15]
+  - rank: 5
+    name: 岡本 慶一郎
+    furigana: オカモト ケイイチロウ
+    boat: シークロ
+    points: [20, 0, 13, 9, 0]
+  - rank: 6
+    name: 数野 達也
+    furigana: カズノ タツヤ
+    boat: エバーグリーン
+    points: [7, 0, 15, 14, 5]
+  - rank: 7
+    name: 斎藤 剛宏
+    furigana: サイトウ タカヒロ
+    boat: D-marina
+    points: [11, 0, 9, 7, 14]
+  - rank: 8
+    name: 池田 裕之
+    furigana: イケダ ヒロユキ
+    boat: Valley hill
+    points: [9, 0, 11, 2, 7]
+  - rank: 9
+    name: 大畠 拓
+    furigana: オオバタケ タク
+    boat: サカナクラブ
+    points: [3, 0, 4, 5, 11]
+  - rank: 10
+    name: 杉山 貴洋
+    furigana: スギヤマ タカヒロ
+    boat: BLUE DOG
+    points: [5, 0, 14, 1, 3]
+  - rank: 11
+    name: 澤村 智之
+    furigana: サワムラ トモユキ
+    boat: 湾遊7
+    points: [4, 0, 0, 15, 4]
+  - rank: 12
+    name: 福永 雄海
+    furigana: フクナガ ユウミ
+    boat: Seabass Captain
+    points: [0, 0, 5, 13, 0]
+  - rank: 13
+    name: 小尾 えつし
+    furigana: オビ エツシ
+    boat: E&A
+    points: [2, 0, 3, 3, 9]

@@ -3,31 +3,30 @@
     %i.fa.fa-database
     その他ラウンド大会結果
   #result_list_inner
+    %dl.s2016.on_sub
+      %dt 2016年
+      %dd
+        %ul
+          %li
+            - (1..6).each do |i|
+              = link_to "第#{i}戦", "/results/2016/round#{i}.html"
     %dl.s2015.on_sub
       %dt 2015年
       %dd
         %ul
           %li
-            = link_to "第1戦", "/results/2015/round1.html"
-            = link_to "第2戦", "/results/2015/round2.html"
-            = link_to "第3戦", "/results/2015/round3.html"
-            = link_to "第4戦", "/results/2015/round4.html"
-            = link_to "第5戦", "/results/2015/round5.html"
+            - (1..5).each do |i|
+              = link_to "第#{i}戦", "/results/2015/round#{i}.html"
             = link_to "EX", "/results/2015/roundex.html"
     %dl.s2014.on_sub
       %dt 2014年
       %dd
         %ul
-          %li= link_to "第1戦", "/results/2014/round1.html"
-          %li= link_to "第2戦", "/results/2014/round2.html"
-          %li= link_to "第3戦", "/results/2014/round3.html"
-          %li= link_to "第4戦", "/results/2014/round4.html"
-          %li= link_to "第5戦", "/results/2014/round5.html"
+          - (1..5).each do |i|
+            %li= link_to "第#{i}戦", "/results/2014/round#{i}.html"
     %dl.s2013.on_sub
       %dt 2013年
       %dd
         %ul
-          %li= link_to "第1戦", "/results/2013/round1.html"
-          %li= link_to "第2戦", "/results/2013/round2.html"
-          %li= link_to "第3戦", "/results/2013/round3.html"
-          %li= link_to "第4戦", "/results/2013/round4.html"
+          - (1..4).each do |i|
+            %li= link_to "第#{i}戦", "/results/2013/round#{i}.html"

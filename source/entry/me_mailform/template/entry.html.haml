@@ -1,6 +1,6 @@
 ---
-title: BST2016 第6戦 スポット参戦申し込み
-description: 東京湾で唯一のライブフィッシュ方式によるボートシーバストーナメント「BST2016」に参戦するための仮エントリーフォーム。
+title: BST2017 EXラウンド05 エントリーフォーム
+description: BST2017 EXラウンド05のエントリーフォームです。
 ---
 = partial "shared/global_navigation", locals: {val: "entry"}
 #topicpath
@@ -8,7 +8,7 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
     %li
       = link_to "B.S.T公式TOP", "/"
       %i.fa.fa-angle-right
-    %li BST2016 第6戦 スポット参戦申し込みフォーム
+    %li BST2017 EXラウンド05 エントリーフォーム
 %article#content
   #content_inner
     #main_column.single
@@ -18,29 +18,47 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
           入力内容に不備があるため申し込みは完了していません。
         %section#howtoentry
           %h1 エントリー方法
-          %p
-            以下のフォームにてエントリーしてください。
-            応募多数の場合は、抽選により決定させていただきます。
-            当選された方のみ、2016年8月23日までに下記のフォームに入力されたメールアドレスへご連絡差し上げます。
-          %p
-            ボートの手配はご自身でお願いいたします。
-            スポット参戦の場合はガイドチャーターでも可能です。
-            応募締め切りは2016年8月21日です。
           %h2
             %i.fa.fa-chevron-right
-            参戦費用
+            <span style="display:inline-block;background-color:#F00;color:#FFF;padding:3px 10px;border-radius:3px;margin-right:5px;">重要</span>開催条件
+          %p{style: "background-color:#EEE;border:1px solid #F00;padding:10px;border-radius:5px;"}
+            - if false
+              エクストララウンド（以下EXラウンド）はBST各戦が予定どおり終了し、それらの予備日で開催します。<br>
+              よって、本戦が延期になった場合、EXラウンドは開催されないことを予めご了承ください。<br>
+              また、応募艇数が6艇（上限は12艇）に満たない場合も開催いたしません。<br>
+            今回の募集は<strong style="font-weight:bold;">2017年6月20日（火）開催予定分</strong>です。
+            すでに6艇集まっているので開催は決定です（天候で中止はあり）<br>
+          %h2
+            %i.fa.fa-chevron-right
+            参加資格・費用・締切
           %p
-            スポット参戦フィー12,000円
-          .bank_info
-            当日、受付にお支払いください。
+            ご自身でボートの手配ができる方であればどなたでも参加可能です。<br>
+            普段利用しているフィッシングガイドのチャーターやレンタルボート、自身所有艇で参加できます。
+          %p
+            EXラウンドは本戦とは異なりチーム戦（本戦同様の1人も可）となります。<br>
+            1チーム10000円を開催日に現金でお支払いください。
+          %p
+            エントリー締切は2017年6月18日（日）。<br>
+            ※フォーム入力内容に虚偽がある場合はエントリーを受け付けませんのでご注意ください。<br>
+            ※締切日前でも応募艇数が12を超えた時点でエントリーを打ち切ります。<br><br>
+            - if false
+              実施の可否は2月一日に公式サイトと<a href="https://www.facebook.com/boatseabasstournament/" target="_blank">Facabookページ</a>にてお知らせします。<br>
+              ※本戦が延期になった時点でEXラウンドは中止、その際の中止連絡はいたしません。
+          %h2
+            %i.fa.fa-chevron-right
+            競技方法
+          %p
+            基本的に<a href="/regulations/" target="_blank">本戦と同様のルール</a>です。<br>
+            異なる点は以下の通り。<br>
+            ・チーム戦である（1艇あたり3選手までOK）<br>
+            ・年間ポイント等のランキングはありません
           %h2
             %i.fa.fa-chevron-right
             集合場所
           %p
-            大会開催日に以下の場所へ集合してください。
-            %br
+            大会開催日に以下の場所へ集合してください。<br>
             マリーナ駐車場（1台1000円）には限りがございます。<br>
-            満車の場合は、マリーナ隣のコインパーキングに実費で駐車してください。
+            満車の場合は、マリーナ近隣のコインパーキングに実費で駐車してください。
           %p
             神奈川県横浜市神奈川区東神奈川2-49-11
             %br
@@ -59,7 +77,7 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
           %table
             %tr
               %th
-                お名前
+                代表者名
                 %span 必須
               %td
                 %input.name{type: "text", name: "name", placeholder: "例）出井 麻里奈", value:""}
@@ -67,7 +85,7 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
                   エラーメッセージ
             %tr
               %th
-                お名前フリガナ
+                フリガナ
                 %span 必須
               %td
                 %input.ruby{type: "text", name: "ruby", placeholder: "例）デイ マリナ", value:""}
@@ -77,10 +95,10 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
                   全角カタカナでご入力ください。
             %tr
               %th
-                電話番号
+                携帯電話番号
                 %span 必須
               %td
-                %input.phone{type: "text", name: "phone", placeholder: "例）045-461-1062", value:""}
+                %input.phone{type: "text", name: "phone", placeholder: "例）090-1234-5678", value:""}
                 #phone_error
                   エラーメッセージ
                 %span.hint
@@ -99,27 +117,34 @@ description: 東京湾で唯一のライブフィッシュ方式によるボー�
                   携帯の場合は迷惑フィルターで「daruma-marine.com」を必ず受信許可に設定お願いいたします。
             %tr
               %th
-                ボート名
+                チーム名
                 %span 必須
               %td
-                %input.boat{type: "text", name: "boat", placeholder: "例）D-marina", value:""}
+                %input.boat{type: "text", name: "boat", placeholder: "例）レンタルボート", value:""}
                 #boat_error
                   エラーメッセージ
                 %span.hint
-                  フィッシングガイド名やご自身のボート名、所属団体名など<br>
+                  チーム名やガイド名など<br>
             %tr
               %th
-                住所
+                代表者住所
+                %span 必須
               %td
                 %input.addr{type: "text", name: "addr", value: "", placeholder: "例）神奈川県横浜市神奈川区東神奈川2-49-11"}
+                #addr_error
+                  エラーメッセージ
+                %span.hint
+                  正しい住所を入力してください<br>
             %tr
               %th
-                通信欄
+                チーム構成・質問など
+                %span 必須
               %td
-                %textarea{name: "comment", rows: "10"}
+                %textarea{name: "comment", rows: "10", placeholder: "横浜太郎・川崎二郎"}
                 #comment_error
                   エラーメッセージ
                 %span.hint
+                  代表者以外のメンバー名（フルネーム）をご記入ください。
                   参加するにあたって疑問や質問、コメント等ございましたら入力してください。
         .form-actions
           %input.to_entry{type: "submit", value: "参戦申し込みする", onclick: "ga('send', 'event', 'ENTRY', 'SUBMIT', '申し込み');"}

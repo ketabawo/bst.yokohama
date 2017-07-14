@@ -1,0 +1,103 @@
+---
+title: 2017年 シリーズランキング
+---
+= partial "shared/global_navigation", :locals => {:val => "rankings"}
+#topicpath
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
+    %li
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} BST公式TOP
+      %i.fa.fa-angle-right
+    %li
+      = link_to "/rankings/", itemprop: "url" do
+        %span{itemprop: "title"} シリーズランキング
+      %i.fa.fa-angle-right
+    %li 2017年 シリーズランキング
+#imagepanel_low
+  #imagepanel_low_inner.rankings_header
+    .bg_layer
+      %h1 2017年 シリーズランキング
+%article#content
+  #content_inner
+    #main_column.double
+      %section#ranking_table
+        .chairmans_comment
+          %dl
+            %dt
+              %i.fa.fa-comment
+              総評
+            %dd
+              %p.comment
+                スポンサーのヤマハマリン様、マリンライセンスロイヤル様、スズキマリン様、1年間ありがとうございました。<br>
+                そして、なによりも1年間戦い抜いた選手、及び運営業務に関わった皆さん、お疲れ様でした！！
+              %p.writer
+                （ハッピーマックスみしま）
+        %table
+          %caption 敬称略（同率の場合はウェイイン合計叉長）
+          %thead
+            %tr
+              %th Rank
+              %th Name
+              %th boat
+              %th R 1
+              %th R 2
+              %th R 3
+              %th R 4
+              %th R 5
+              %th Total
+          %tbody
+            - data.ranking2017.result.each do |f|
+              %tr
+                %td= f.rank
+                %td
+                  %span.ruby= f.furigana
+                  = f.name
+                %td= f.boat
+                %td= f.points[0]
+                %td= f.points[1]
+                %td= f.points[2]
+                %td= f.points[3]
+                %td= f.points[4] 
+                %td= f.points[0] + f.points[1] + f.points[2] + f.points[3] + f.points[4]
+          %tfoot
+            %tr
+              %th Rank
+              %th Name
+              %th boat
+              %th R 1
+              %th R 2
+              %th R 3
+              %th R 4
+              %th R 5
+              %th Total
+    #sub_column
+      %section#ranking_summary
+        %h1
+          %i.fa.fa-file-text-o
+          シリーズサマリー
+        %table
+          %tr
+            %th ラウンド数
+            %td 4戦/5戦（第2戦中止）
+          %tr
+            %th 参加数（のべ）
+            %td 49人
+          %tr
+            %th ウェイイン総数
+            %td 200本
+          %tr
+            %th リミットメイク率
+            %td 65.31％
+          %tr
+            %th 最長ウェイイン
+            %td 310.5cm(TR)
+          %tr
+            %th 最大叉長
+            %td 75.0cm
+          %tr
+            %th 最小叉長
+            %td 40.0cm
+          %tr
+            %th 平均叉長
+            %td 52.7cm
+      = partial "shared/result_list"

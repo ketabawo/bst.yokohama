@@ -1,0 +1,182 @@
+---
+title: BST 2017 エクストララウンド05 エントリーリスト
+description: 2017年2月7日（火）に開催されたBTS 2017 エクストララウンド05のエントリーリストです。
+---
+- weiin = []
+- fish_size = [] 
+- best_3 = []
+- data.result2017.ex_round5.each do |f|
+  - f.result.each do |size|
+    - fish_size.push(size)
+  - weiin.push(f.result.length)
+- weiin5 = weiin.count(5)
+- weiin4 = weiin.count(4)
+- weiin3 = weiin.count(3)
+- weiin2 = weiin.count(2)
+- weiin1 = weiin.count(1)
+- weiin0 = weiin.count(0)
+= partial "shared/global_navigation", :locals => {:val => "results"}
+#topicpath
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
+    %li
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} BST公式TOP
+      %i.fa.fa-angle-right
+    %li
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
+      %i.fa.fa-angle-right
+    %li BST 2017 エクストララウンド05 エントリーリスト
+#imagepanel_result
+  #imagepanel_result_inner.result2017ex_05
+    .layer
+      %h1 BST 2017 エクストララウンド05 エントリーリスト
+%article#content
+  #content_inner
+    #main_column.double
+      %section#ranking_table
+        .chairmans_comment
+          %dl
+            %dt
+              %i.fa.fa-comment
+              総評
+            %dd
+              %p.comment
+              %p.writer
+                （実行委員：）
+        %table
+          %thead
+            %tr
+              %th Rank
+              %th Team
+              %th Member
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+          %tbody
+            - data.result2017.ex_round5.each do |f|
+              %tr
+                %td= f.rank
+                %td= f.team[0]
+                %td
+                  %ul
+                    - f.members.each do |member|
+                      %li= member
+                %td= f.result[0]
+                %td= f.result[1]
+                %td= f.result[2]
+                %td= f.result[3]
+                %td= f.result[4]
+                %td= f.result[0].to_f + f.result[1].to_f + f.result[2].to_f + f.result[3].to_f + f.result[4].to_f
+          %tfoot
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+      - if false
+        %section#image_gallery
+          %h1
+            %i.fa.fa-picture-o
+            参加チームのみなさん
+          %ul
+            - data.result2017.ex_round5.each do |f|
+              %li= f.team[0]
+    #sub_column
+      %section#ranking_summary
+        %h1
+          %i.fa.fa-file-text-o
+          ラウンドサマリー
+        %table
+          %tr
+            %th 開催日
+            %td 2017-06-20
+          %tr
+            %th 天気
+            %td 
+          %tr
+            %th 潮
+            %td 
+          %tr
+            %th チーム数
+            %td
+              - if data.result2017.ex_round5.present? then
+                = weiin.length
+              - else
+                0
+          %tr
+            %th ウェイイン総数
+            %td
+              - if data.result2017.ex_round5.present? then
+                = fish_size.length
+              - else
+                0
+              本
+          %tr
+            %th リミットメイク率
+            %td
+              - if data.result2017.ex_round5.present? then
+                = (weiin5.to_f / weiin.length.to_f * 100).round(2)
+              - else
+                0
+              ％
+          %tr
+            %th 最大叉長
+            %td 
+              - if data.result2017.ex_round5.present? then
+                = fish_size.sort.last
+              - else
+                0
+              cm
+          %tr
+            %th 最小叉長
+            %td 
+              - if data.result2017.ex_round5.present? then
+                = fish_size.sort.first
+              - else
+                40
+              cm
+          %tr
+            %th 平均叉長
+            %td
+              - if data.result2017.ex_round5.present? then
+                - total_size = fish_size.inject{|sum, n| sum + n }
+                = (total_size.to_f / fish_size.length.to_f).round(1)
+              - else
+                0
+              cm
+      :plain
+        <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['ウェイイン数', '人数'],
+        ['リミットメイク',     #{weiin5}],
+        ['4本',      #{weiin4}],
+        ['3本',  #{weiin3}],
+        ['2本',      #{weiin2}],
+        ['1本',  #{weiin1}],
+        ['ノーフィッシュ', #{weiin0}],
+        ]);
+        var options = {
+        title: 'ウェイイン数内訳',
+        titleTextStyle:{fontSize: 16},
+        legend: 'none',
+        chartArea: {left:0,top:35,width:'90%',height:'90%'},
+        colors: ['#2e6da4', '#4cae4c', '#46b8da', '#563d7c', '#eea236', '#d43f3a']
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+        }
+        </script>
+      #piechart
+      = partial "shared/result_list"

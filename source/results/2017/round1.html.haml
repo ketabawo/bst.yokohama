@@ -1,0 +1,320 @@
+---
+title: BST 2017 第1戦 大会結果
+description: 2017年1月24日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「BTS 2017」第1戦の大会結果です。
+---
+- weiin = []
+- fish_size = [] 
+- best_3 = []
+- data.result2017.round1.each do |f|
+  - f.result.each do |size|
+    - fish_size.push(size)
+  - weiin.push(f.result.length)
+- weiin5 = weiin.count(5)
+- weiin4 = weiin.count(4)
+- weiin3 = weiin.count(3)
+- weiin2 = weiin.count(2)
+- weiin1 = weiin.count(1)
+- weiin0 = weiin.count(0)
+= partial "shared/global_navigation", :locals => {:val => "results"}
+#topicpath
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
+    %li
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} BST公式TOP
+      %i.fa.fa-angle-right
+    %li
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
+      %i.fa.fa-angle-right
+    %li BST 2017 第1戦 大会結果
+#imagepanel_result
+  #imagepanel_result_inner.result2017_01
+    .layer
+      %h1 BST 2017 第1戦 大会結果
+%article#content
+  #content_inner
+    #main_column.double
+      %section#ranking_table
+        .chairmans_comment
+          %dl
+            %dt
+              %i.fa.fa-comment
+              総評
+            %dd
+              %p.comment
+                今年一番の冷え込みだった当日、それがどう影響するかがカギだったと思います。<br>
+                そんな第1戦を制したのはトーナメントレコードを叩き出した岡本選手でした！<br>
+                プロ勢は状況がどうあれ、しっかり魚も持って帰ってくるところが素晴らしい！<br>
+                僕もサカナの匂いをかぎつけられるスキルが欲しい（笑）
+              %p.writer
+                （実行委員：大畠）
+        %table
+          %caption 福永選手は病欠
+          %thead
+            %tr
+              %th Rank
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+          %tbody
+            - data.result2017.round1.each do |f|
+              %tr
+                %td= f.rank
+                %td
+                  %span.ruby= f.angler[1]
+                  = f.angler[0]
+                %td= f.angler[2]
+                %td= f.result[0]
+                %td= f.result[1]
+                %td= f.result[2]
+                %td= f.result[3]
+                %td= f.result[4]
+                %td= f.result[0].to_f + f.result[1].to_f + f.result[2].to_f + f.result[3].to_f + f.result[4].to_f
+          %tfoot
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+      %section#interviews
+        %h1
+          %i.fa.fa-trophy
+          上位3名の紹介
+        .interview
+          %h2 優勝：岡本 慶一郎 選手（シークロ）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2017/img_pic-round1-rank1-angler.jpg", alt: "岡本 慶一郎", width: "600", height: "400")
+            %p
+              シ－ズン初期に特に魚影濃いエリアで、比較的水深のあるポイント数ヶ所を釣りました。<br>
+              ルアーは鉄板バイブ(IP26)とメタルジグ(ムラジグ40g)を使用しました。<br>
+              キャッチは15～20本。<br>
+              縦の動きのジグで何本か釣った後、横の動きのバイブで何本か釣って、またジグに戻すといった具合に、目先を変えて場をスレさせないように釣っていきました。<br>
+              BST名物、三島さんの名司会で優勝をコ－ルされて嬉しかった～。
+          .screen.tackles_area
+            = image_tag("results/2017/img_pic-round1-rank1-tackles.jpg", alt: "岡本 慶一郎選手使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td= link_to "TAPER & SHAPE CURVESTER BAY HEART CBHS-66MB", "//www.taperandshape.co.jp/curvester/bayheart/spec.html", target: "_blank"
+                  %td DAIWA CELTATE 2508PE
+                  %td= link_to "TORAY SEABASS PE POWERGAME 1.0", "//www.torayfishing.net/products/lure/seabass/seabass_p003.html", target: "_blank"
+                  %td{rowspan: "3"}= link_to "VARIVAS VEP SHOCKLEADER 25LB", "//www.varivas.co.jp/Product/searchgroup/id:2090", target: "_blank"
+                %tr
+                  %th 2
+                  %td TAPER & SHAPE CURVESTER BAY HEART CBHTS-67MHB
+                  %td= link_to "SHIMANO STELLA 2500S", "//fishing.shimano.co.jp/product/reel/3504", target: "_blank"
+                  %td{rowspan: "2"}= link_to "VARIVAS AVANI SEABASS PE 1.0", "//www.varivas.co.jp/Product/searchgroup/id:4215", target: "_blank"
+                %tr
+                  %th 3
+                  %td DAIWA SALTIST BAY JIGGING STBJ631XHB
+                  %td SHIMANO METANIUM MG7
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "COREMAN IP-26", "//www.coreman.jp/product/ironplate/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "MURAJIG 40g", "//www.seikai.info/collections/mura%E3%81%AEjig%E5%B1%8B", target: "_blank"
+        .interview
+          %h2 準優勝：森田 英典 選手（Real）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2017/img_pic-round1-rank2-angler.jpg", alt: "森田 英典", width: "600", height: "400")
+            %p
+              準備中
+          .screen.tackles_area
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td= link_to "", "", target: "_blank"
+                  %td= link_to "", "", target: "_blank"
+                  %td= link_to "", "", target: "_blank"
+                  %td= link_to "", "", target: "_blank"
+                %tr
+                  %th 2
+                  %td= link_to "", "", target: "_blank"
+                  %td= link_to "", "", target: "_blank"
+                  %td= link_to "", "", target: "_blank"
+                  %td= link_to "", "", target: "_blank"
+                %tr
+                  %th 3
+                  %td= link_to "", "", target: "_blank"
+                  %td= link_to "", "", target: "_blank"
+                  %td= link_to "", "", target: "_blank"
+                  %td= link_to "", "", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "", "", target: "_blank"
+        .interview
+          %h2 3位：内田 信吾 選手（SEAWOLF）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2017/img_pic-round1-rank3-angler.jpg", alt: "内田 信吾", width: "600", height: "400")
+            %p
+              前日のプラで近場では大型が出なかった事も有り大会本番は沖へ出る作戦でした。<br>
+              しかし、スタート前にベイトタックルをセットしていると何故かドラグを締めても締まらない！？トラブル発生です。<br>
+              この日の為にわざわざオーバーホールをして一度も使ってないリールを持って来たのに、そこが間違いでした遠征あるあるです（涙）やむを得ず作戦を変更して前日のプラ通りスピニング1本で近場のストラクチャーを攻め小型の群れからサイズを揃えました。<br>
+              結果的に3位に入る事が出来たのでこの流れが良かったのかも知れません。そして大会終了後、港でリールをチェックすると一瞬で直ると言うお約束な展開でした（笑）
+          .screen.tackles_area
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td カーボン6.6ftオリジナル
+                  %td <a href="http://fishing.shimano.co.jp/" target="_blank">シマノ</a> 10ステラ3000
+                  %td{rowspan: "2"}= link_to "ヨツアミ G-soul Upgreade X8 1.5号", "http://yoz-ami.jp/259", target: "_blank"
+                  %td{rowspan: "2"}= link_to "東亜ストリングス パワーアクセル20lb", "http://www.toalson.co.jp/fishing/r5170.html", target: "_blank"
+                %tr
+                  %th 2
+                  %td カーボン6.6ftオリジナル
+                  %td= link_to "シマノ カルカッタコンクエスト200HG", "http://fishing.shimano.co.jp/product/reel/3826", target: "_blank"
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                ジグヘッドワーム
+    #sub_column
+      %section#ranking_summary
+        %h1
+          %i.fa.fa-file-text-o
+          ラウンドサマリー
+        %table
+          %tr
+            %th 開催日
+            %td 2017-01-24
+          %tr
+            %th 天気
+            %td 晴
+          %tr
+            %th 潮
+            %td 中潮
+          %tr
+            %th 参加者数
+            %td
+              - if data.result2017.round1.present? then
+                = weiin.length
+              - else
+                0
+              人
+          %tr
+            %th ウェイイン総数
+            %td
+              - if data.result2017.round1.present? then
+                = fish_size.length
+              - else
+                0
+              本
+          %tr
+            %th リミットメイク率
+            %td
+              - if data.result2017.round1.present? then
+                = (weiin5.to_f / weiin.length.to_f * 100).round(2)
+              - else
+                0
+              ％
+          %tr
+            %th 最大叉長
+            %td 
+              - if data.result2017.round1.present? then
+                = fish_size.sort.last
+              - else
+                0
+              cm
+          %tr
+            %th 最小叉長
+            %td 
+              - if data.result2017.round1.present? then
+                = fish_size.sort.first
+              - else
+                40
+              cm
+          %tr
+            %th 平均叉長
+            %td
+              - if data.result2017.round1.present? then
+                - total_size = fish_size.inject{|sum, n| sum + n }
+                = (total_size.to_f / fish_size.length.to_f).round(1)
+              - else
+                0
+              cm
+      :plain
+        <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['ウェイイン数', '人数'],
+        ['リミットメイク',     #{weiin5}],
+        ['4本',      #{weiin4}],
+        ['3本',  #{weiin3}],
+        ['2本',      #{weiin2}],
+        ['1本',  #{weiin1}],
+        ['ノーフィッシュ', #{weiin0}],
+        ]);
+        var options = {
+        title: 'ウェイイン数内訳',
+        titleTextStyle:{fontSize: 16},
+        legend: 'none',
+        chartArea: {left:0,top:35,width:'90%',height:'90%'},
+        colors: ['#2e6da4', '#4cae4c', '#46b8da', '#563d7c', '#eea236', '#d43f3a']
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+        }
+        </script>
+      #piechart
+      - if false
+        %section#image_gallery
+          %h1
+            %i.fa.fa-picture-o
+            イメージギャラリー
+          %ul
+            - data.result2017.round1[3..9].each_with_index do |f, i|
+              %li
+                = image_tag "results/2015/round1/img_pic-gallery#{i + 4}.jpg", width: "300", height: "225", alt: "#{f.angler[0]}さん"
+                %span
+                  #{f.rank}位：#{f.angler[0]}さん
+      = partial "shared/result_list"

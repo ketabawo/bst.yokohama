@@ -1,0 +1,129 @@
+---
+title: BST2017 レギュラーエントリー申し込み
+description: 東京湾No.1アングラーを決めるボートシーバストーナメント「BST2017」に参戦するための仮エントリーフォーム。
+---
+= partial "shared/global_navigation", locals: {val: "entry"}
+#topicpath
+  %ol
+    %li
+      = link_to "B.S.T公式TOP", "/"
+      %i.fa.fa-angle-right
+    %li BST2017 レギュラーエントリー申し込みフォーム
+%article#content
+  #content_inner
+    #main_column.single
+      %form{name: "me_mailform", action: "index.php", method: "post"}
+        #error_message
+          %i.fa.fa-exclamation-triangle
+          入力内容に不備があるため申し込みは完了していません。
+        %section#howtoentry
+          %h1 エントリー方法
+          %p
+            以下のフォームにてエントリーしてください。
+            応募多数の場合は、入替戦を実施し艇数を調整します。
+            入替戦の実施の有無は公式ウェブサイトおよびFacebookページで発表。
+            また、以下のご記入頂いたメールアドレスへご連絡いたします。
+          %p
+            ボートの手配はご自身でお願いいたします。
+            応募締め切りは2016年10月15日です。
+          %h2
+            %i.fa.fa-chevron-right
+            参戦費用
+          %p
+            全5戦分50,000円を締め切りまでに以下の口座へ振り込みください。
+            振込手数料は各自負担でお願いいたします。
+          .bank_info
+            横浜銀行 辻堂支店 普通口座 1480244 サイトウタカヒロ
+          %h2
+            %i.fa.fa-chevron-right
+            集合場所
+          %p
+            大会開催日に以下の場所へ集合してください。
+            %br
+            マリーナ駐車場（1台1000円）には限りがございます。<br>
+            満車の場合は、マリーナ近隣のコインパーキングに実費で駐車してください。
+          %p
+            神奈川県横浜市神奈川区東神奈川2-49-11
+            %br
+            D-marina
+            %br
+            TEL : 045-451-3187
+            %br
+            Mail: d-marina@daruma-marine.com
+          %h2
+            %i.fa.fa-chevron-right
+            その他
+          %p
+            メールフォームが正しく動作しない場合は、お手数ですが上記の電話番号、もしくはメールアドレスへ参加の旨をご連絡ください。
+        %section#entryform
+          %h1 エントリーフォーム
+          %table
+            %tr
+              %th
+                お名前
+                %span 必須
+              %td
+                %input.name{type: "text", name: "name", placeholder: "例）出井 麻里奈", value:""}
+                #name_error
+                  エラーメッセージ
+            %tr
+              %th
+                お名前フリガナ
+                %span 必須
+              %td
+                %input.ruby{type: "text", name: "ruby", placeholder: "例）デイ マリナ", value:""}
+                #ruby_error
+                  エラーメッセージ
+                %span.hint
+                  全角カタカナでご入力ください。
+            %tr
+              %th
+                電話番号
+                %span 必須
+              %td
+                %input.phone{type: "text", name: "phone", placeholder: "例）045-461-1062", value:""}
+                #phone_error
+                  エラーメッセージ
+                %span.hint
+                  携帯電話などの常に連絡が取れる電話番号をご入力ください。
+            %tr
+              %th
+                メールアドレス
+                %span 必須
+              %td
+                %input.email{type: "email", name: "email", placeholder: "例）d-marina@daruma-marine.com", value:""}
+                #email_error
+                  エラーメッセージ
+                %span.hint
+                  常に確認ができるメールアドレスを入力してください。
+                  %br
+                  携帯の場合は迷惑フィルターで「daruma-marine.com」を必ず受信許可に設定お願いいたします。
+            %tr
+              %th
+                ボート名
+                %span 必須
+              %td
+                %input.boat{type: "text", name: "boat", placeholder: "例）D-marina", value:""}
+                #boat_error
+                  エラーメッセージ
+                %span.hint
+                  フィッシングガイド名やご自身のボート名、所属団体名など<br>
+            %tr
+              %th
+                住所
+              %td
+                %input.addr{type: "text", name: "addr", value: "", placeholder: "例）神奈川県横浜市神奈川区東神奈川2-49-11"}
+            %tr
+              %th
+                通信欄
+              %td
+                %textarea{name: "comment", rows: "10"}
+                #comment_error
+                  エラーメッセージ
+                %span.hint
+                  参加するにあたって疑問や質問、コメント等ございましたら入力してください。
+        .form-actions
+          %input.to_entry{type: "submit", value: "参戦申し込みする", onclick: "ga('send', 'event', 'ENTRY', 'SUBMIT', '申し込み');"}
+      %p.credit
+        %span#powered_by_me
+

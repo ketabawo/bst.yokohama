@@ -1,0 +1,315 @@
+---
+title: BST 2017 第4戦 大会結果
+description: 2017年5月23日（火）に開催された東京湾No.1ボートシーバスアングラーを決めるトーナメント「BTS 2017」第4戦の大会結果です。
+---
+- weiin = []
+- fish_size = [] 
+- data.result2017.round4.each do |f|
+  - f.result.each do |size|
+    - fish_size.push(size)
+  - weiin.push(f.result.length)
+- weiin5 = weiin.count(5)
+- weiin4 = weiin.count(4)
+- weiin3 = weiin.count(3)
+- weiin2 = weiin.count(2)
+- weiin1 = weiin.count(1)
+- weiin0 = weiin.count(0)
+= partial "shared/global_navigation", :locals => {:val => "results"}
+#topicpath
+  %ol{itemscope: "itemscope", itemtype: "http://data-vocabulary.org/Breadcrumb"}
+    %li
+      = link_to "/", itemprop: "url" do
+        %span{itemprop: "title"} BST公式TOP
+      %i.fa.fa-angle-right
+    %li
+      = link_to "/results/", itemprop: "url" do
+        %span{itemprop: "title"} 大会結果
+      %i.fa.fa-angle-right
+    %li BST 2017 第4戦 大会結果
+#imagepanel_result
+  #imagepanel_result_inner.result2017_04
+    .layer
+      %h1 BST 2017 第4戦 大会結果
+%article#content
+  #content_inner
+    #main_column.double
+      %section#ranking_table
+        .chairmans_comment
+          %dl
+            %dt
+              %i.fa.fa-comment
+              総評
+            %dd
+              %p.comment
+                気難しい季節の5月に開催‼<br>
+                プラクティスの段階では余裕で入れ替え可能な場所も当日にはもぬけな殻であったりと観る側としては楽しませて頂きました。<br>
+                選手の喜怒哀楽がはっきり分かれる試合展開ではなかったでしょうか。<br>
+                正午へ向かうにつれ風も強くなり選手の安全が心配されたが皆余裕持っての帰着に安堵しました。<br>
+                <br>
+                表層への反応が高くなる中 底から中層でのイメージ戦略で釣果が分かれるこの時期ならではではなかっただろうか！
+              %p.writer
+                （ハッピーマックスみしま）
+        %table
+          -#%caption 菅野選手はスポット枠
+          %thead
+            %tr
+              %th Rank
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+          %tbody
+            - data.result2017.round4.each do |f|
+              %tr
+                %td= f.rank
+                %td
+                  %span.ruby= f.angler[1]
+                  = f.angler[0]
+                %td= f.angler[2]
+                %td= f.result[0]
+                %td= f.result[1]
+                %td= f.result[2]
+                %td= f.result[3]
+                %td= f.result[4]
+                %td= f.result[0].to_f + f.result[1].to_f + f.result[2].to_f + f.result[3].to_f + f.result[4].to_f
+          %tfoot
+            %tr
+              %th No.
+              %th Name
+              %th boat
+              %th 1st
+              %th 2nd
+              %th 3rd
+              %th 4th
+              %th 5th
+              %th Total
+      %section#interviews
+        %h1
+          %i.fa.fa-trophy
+          上位3名の紹介
+        .interview
+          %h2 優勝：遠藤 正明（アイランドクルーズ）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2017/img_pic-round4-rank1-angler.jpg", alt: "遠藤 正明", width: "600", height: "400")
+            %p
+          .screen.tackles_area
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "", "", target: "_blank"
+        .interview
+          %h2 準優勝：内田 信吾（SEAWOLF）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2017/img_pic-round4-rank2-angler.jpg", alt: "内田 信吾", width: "600", height: "400")
+            %p
+              何故かいつも天候の荒れるBST。今回だけは吹かないで欲しいと願った物のやはり強風でした（笑）前日までのプラで「沖に勝機有り」と読んでは見たものの荒れた沖で釣りに成るかどうかが問題。出発寸前まで近場で無難に5匹揃えるか勝負に出るか悩みましたがスタートの順位は9番手。前の8名は沖に向かう気配も無く近場は混戦の予感･･･風と波を感じながら自然と沖へ舵を切ってました。
+            %p
+              沖へ出ると鳥も多くプラ通り気配ムンムン。流し釣り状態ながら釣りは可能な範囲でやはり魚も高反応でした。しかし、いつもながら問題は魚を生かしてられるかどうか、うねりの中で気が付くと簡易イケスの水はすぐに空っぽで魚は横に成りビタビタと（汗）今回も魚を揃えた後は生かして帰る事に専念と成りました。
+            %p
+              結果、魚を生かして持ち帰ることが出来て2位獲得！沖へ出た判断が良かったんだと思います。魚を釣る事よりも魚への気配りが試されるBST、毎回ヒリヒリした空気の中で勉強させられてます！
+          .screen.tackles_area
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "", "", target: "_blank"
+        .interview
+          %h2 3位：澤村 智之（湾遊7）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            = image_tag("results/2017/img_pic-round4-rank3-angler.jpg", alt: "澤村 智之", width: "600", height: "400")
+            %p
+              スタート後、一箇所目にプラクティスで感触が良かった運河内の小規模なバースに入りビーフリーズ78-Sで１投目から50cmクラスが釣れて30分後には早々に５匹リミットメイク。<br>
+              リミットメイク出来たので沖ストラクチャーでバイブレーションのテンションフォール。<br>
+              このパターンもプラクティス通りにハマって連発したんだがサイズが小さくなり40〜45cm。<br>
+              結局サイズを伸ばすことが出来ずに一箇所目のビーフリーズ78-Sで獲った５匹でウェイイン。
+            %p
+              第3戦では途中棄権しただけに今回はしっかり最後まで参戦出来て結果を出せただけでも良しとします。
+          .screen.tackles_area
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %td 1
+                  %td <a href="//legitdesign.co.jp/" target="_blank">LEGIT DESIGN</a> プロトロッド
+                  %td <a href="//fishing.shimano.co.jp/product/reel/4353" target="_blank">SHIMANO 16 METANIUM MGL XG L(SHALLOW SPOOL)</a> + <a href="//www.studio-oceanmark.com/products/NLAG37Ca.html" target="_blank">SOM AC25RA S</a>
+                  %td <a href="//yoz-ami.jp/265" target="_blank">YGK NASULY N-WALKER DREAD LINE 12LB</a>
+                  %td --
+                %tr
+                  %td 2
+                  %td <a href="//legitdesign.co.jp/" target="_blank">LEGIT DESIGN</a> プロトロッド
+                  %td <a href="//fishing.shimano.co.jp/product/reel/4353" target="_blank">SHIMANO 16 METANIUM MGL XG L(SHALLOW SPOOL)</a> + <a href="//www.studio-oceanmark.com/products/NLAG37Ca.html" target="_blank">SOM AC25RA S</a>
+                  %td <a href="//yoz-ami.jp/265" target="_blank">YGK NASULY N-WALKER DREAD LINE 12LB</a>
+                  %td --
+                %tr
+                  %td 3
+                  %td <a href="//legitdesign.co.jp/" target="_blank">LEGIT DESIGN</a> プロトロッド
+                  %td SHIMANO EXSENCE DC L + <a href="//www.studio-oceanmark.com/products/NLAG37Ca.html" target="_blank">SOM AC25RA S</a>
+                  %td <a href="//yoz-ami.jp/265" target="_blank">YGK NASULY N-WALKER DREAD LINE 14LB</a>
+                  %td --
+                %tr
+                  %td 4
+                  %td <a href="//legitdesign.co.jp/" target="_blank">LEGIT DESIGN</a> プロトロッド
+                  %td <a href="//fishing.shimano.co.jp/product/reel/4349" target="_blank">SHIMANO 16 VANQUISH C3000XG</a> + <a href="//www.studio-oceanmark.com/products/10SL2500.html" target="_blank">SOM 10SL2500RA/S</a>
+                  %td <a href="//yoz-ami.jp/259" target="_blank">YGK G-SOUL X8 UPGRADE 0.8</a>
+                  %td <a href="//yoz-ami.jp/236" target="_blank">YGK DMV NYLON SHOCK LEADER 20LB</a>
+                %tr
+                  %td 5
+                  %td ジグ用プロトロッド
+                  %td SHIMANO OCEA CALCUTTA 200HG L + <a href="//www.studio-oceanmark.com/products/NLAG37Ca.html" target="_blank">SOM AC25RA S</a>
+                  %td <a href="//yoz-ami.jp/259" target="_blank">YGK G-SOUL X8 UPGRADE 1.0
+                  %td <a href="//yoz-ami.jp/236" target="_blank">YGK DMV NYLON SHOCK LEADER 25LB</a>
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "LUCKY CRAFT B'FREEZE 78-S(SAMPLE-COLOR)", "//www.luckycraft.co.jp/lures/minnow/bf/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "FISH ARROW FLASH-J SHAD 3 SW", "//www.fisharrow.co.jp/1592/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "LUCKY CRAFT VALID SUPER SLIM115", "//www.luckycraft.co.jp/product/salt/VaridSlim.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "FISH ARROW FLASH-J SHAD 3 SW", "//www.fisharrow.co.jp/1592/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "LUCKY CRAFT WONDER JIG 80g", "//luckycraft.co.jp/product/salt/WanderJig.html", target: "_blank"
+    #sub_column
+      %section#ranking_summary
+        %h1
+          %i.fa.fa-file-text-o
+          ラウンドサマリー
+        %table
+          %tr
+            %th 開催日
+            %td 2017-05-23
+          %tr
+            %th 天気
+            %td 晴
+          %tr
+            %th 潮
+            %td 中潮
+          %tr
+            %th 参加者数
+            %td
+              - if data.result2017.round4.present? then
+                = weiin.length
+              - else
+                0
+              人
+          %tr
+            %th ウェイイン総数
+            %td
+              - if data.result2017.round4.present? then
+                = fish_size.length
+              - else
+                0
+              本
+          %tr
+            %th リミットメイク率
+            %td
+              - if data.result2017.round4.present? then
+                = (weiin5.to_f / weiin.length.to_f * 100).round(2)
+              - else
+                0
+              ％
+          %tr
+            %th 最大叉長
+            %td 
+              - if data.result2017.round4.present? then
+                = fish_size.sort.last
+              - else
+                0
+              cm
+          %tr
+            %th 最小叉長
+            %td 
+              - if data.result2017.round4.present? then
+                = fish_size.sort.first
+              - else
+                40
+              cm
+          %tr
+            %th 平均叉長
+            %td
+              - if data.result2017.round4.present? then
+                - total_size = fish_size.inject{|sum, n| sum + n }
+                = (total_size.to_f / fish_size.length.to_f).round(1)
+              - else
+                0
+              cm
+      :plain
+        <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['ウェイイン数', '人数'],
+        ['リミットメイク',     #{weiin5}],
+        ['4本',      #{weiin4}],
+        ['3本',  #{weiin3}],
+        ['2本',      #{weiin2}],
+        ['1本',  #{weiin1}],
+        ['ノーフィッシュ', #{weiin0}],
+        ]);
+        var options = {
+        title: 'ウェイイン数内訳',
+        titleTextStyle:{fontSize: 16},
+        legend: 'none',
+        chartArea: {left:0,top:35,width:'90%',height:'90%'},
+        colors: ['#2e6da4', '#4cae4c', '#46b8da', '#563d7c', '#eea236', '#d43f3a']
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+        }
+        </script>
+      #piechart
+      - if false
+        %section#image_gallery
+          %h1
+            %i.fa.fa-picture-o
+            イメージギャラリー
+          %ul
+            - data.result2017.round4[3..9].each_with_index do |f, i|
+              %li
+                = image_tag "results/2015/round1/img_pic-gallery#{i + 4}.jpg", width: "300", height: "225", alt: "#{f.angler[0]}さん"
+                %span
+                  #{f.rank}位：#{f.angler[0]}さん
+      = partial "shared/result_list"

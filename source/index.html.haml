@@ -1,20 +1,20 @@
 ---
-description: 横浜ベイエリアを拠点とし東京湾唯一無二のライブフィッシュ制ボートシーバスゲームルアートーナメント「BST」公式サイト。プロ・アマが年間6ラウンドを個人で戦う本格トーナメントです。参戦して頂けるアングラー・フィッシングガイド、協賛や後援していただけるメーカー様を随時募集しています。
+description: 東京湾横浜ベイエリアを拠点としたライブフィッシュ制ボートシーバスゲームルアートーナメント「BST」公式サイト。プロ・アマが年間5ラウンドを個人で戦う本格トーナメントです。参戦して頂けるアングラー・フィッシングガイド、協賛や後援していただけるメーカー様を随時募集しています。
 ---
 = partial "shared/global_navigation", locals: {val: "top"}
 #imagepanel_top
   #imagepanel_top_inner
     .slider.slider0
       %p
-        有名ガイドやメーカープロスタッフ多数がひしめく総勢14選手で
+        BST2017シリーズ全戦終了しました！
       = partial "shared/sponsors"
     .slider.slider1
       %p
-        東京湾ボートシーバスアングラーNo.1を決める本気のトーナメント！
+        ご協賛企業様、ありがとうございました！！
       = partial "shared/sponsors"
     .slider.slider2
       %p
-        生まれ変わったBST2016シリーズに刮目せよ！！！
+        更にヒートアップ必至の2018シリーズにご期待ください！！！
       = partial "shared/sponsors"
 %article#content
   #content_inner
@@ -26,14 +26,25 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
         %ul
           %li
             %i.fa.fa-caret-right
-            <a href="/results/2016/round5.html">第5戦の大会結果</a>を公開しました。
+            <a href="/results/2017/round5.html">最終戦</a>の結果、<a href="/rankings/2017.html">年間ランキング</a>の一部を公開
             %span
-              (2016-07-30）
-        .message
+              (2017-06-09）
+          %li
+            %i.fa.fa-caret-right
+            エクストララウンドの<a href="/entry">エントリー</a>募集中！締切は18日まで！
+            %span
+              (2017-06-08）
+        -#.message
           %p
-            第6戦のスポット参戦申し込み締め切りは8月21日（日）までです。<br>
-            参戦希望の方は<a href="/entry/">こちら</a>よりお申し込みください。
-      = partial "shared/events2016"
+            2017年度の参加者募集を開始いたします。<br>
+            募集締切は10月15日となっておりますので、それまでに<a href="/entry">こちら</a>よりエントリー手続きお願いいたします。<br>
+            新規参入選手も大募集しておりますので、我こそは！というアングラーさん、奮ってエントリーください。<br>
+            スケジュールなどは<a href="//blog.bst.yokohama/2016/09/07/newentry/" target="_blank">募集要項</a>を確認してください。
+          %p
+            募集上限を超える応募があった場合は年内に入替戦を実施いたします。<br>
+            対象となるのは新規参入選手およびシード権を持たない選手となります。
+      = partial "shared/events2017"
+      = partial "shared/events2017ex"
       %section#timetable
         %h1
           %i.fa.fa-clock-o
@@ -49,41 +60,81 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
               %th イベント
           %tbody
             %tr
-              %td 〜08:10
+              %td 08:10
               %td
-                受付：出船順のくじびきを引いて受付を完了させてください。
+                %h4 集合
+                参加者は時間までに会場入りしてください。
             %tr
-              %td 08:15〜
+              %td 〜08:20
               %td
-                ライブウェルチェック：スタッフが参加艇のライブウェル（生け簀）をチェックします。
+                %h4 ライブウェルチェック
+                会場に到着したことが確認できた選手のライブウェル（生け簀）を
+                スタッフが順次チェックします。
             %tr
               %td 08:20〜
               %td
-                キャプテンミーティング：ルールについての説明や当日の流れなどを説明します。<br>
-                終了後、各艇スタートポイントへ移動してください。
+                %h4 キャプテンミーティング
+                ルールについての説明や当日の流れなどを説明、フライト順のくじ引き実施。<br>
+                スタート地点へ各自移動。
             %tr
-              %td 08:40〜45
+              %td 08:30〜
               %td
-                スタートフィッシング：日清製粉前の水路に集合、スタッフの指示に従い、くじ引きで決定した順に出船してください。<br>
-                ※移動の際、スローエリアは最徐行でお願いします。
-                = image_tag "regulations/img_pic-deadslowarea.gif", alt: "デッドスローエリアとスタートポイント図解", width: "300", height: "224"
+                %h4 スタートフィッシング
+                くじ引きで決定した順番にスタートする。
             %tr
               %td 〜12:50
               %td
-                ストップフィッシング：競技を終了し帰着時間までに帰港してください。
+                %h4 ストップフィッシング
+                時間以降の釣行は失格となります。
+                <a href="/regulations/#return">帰着の定義</a>を理解したうえで帰着してください。
             %tr
               %td 13:30〜
-              %td 検量：帰着順に検量を開始します。
+              %td
+                %h4 検量
+                帰着順に検量を開始します。
             %tr
               %td 14:00〜
-              %td 表彰式：昼食後、表彰式を行います。
+              %td
+                %h4 表彰式
+                昼食後、表彰式を行います。
     #sub_column
       %section#top_ranking
         %h1
           %i.fa.fa-list-ol
           ランキング
         %h2
-          %i.fa.fa-chevron-right 2016シリーズ（5/6戦）
+          %i.fa.fa-chevron-right 2017シリーズ（全4戦）
+        %table
+          %caption
+            = link_to "/rankings/2017.html" do
+              %i.fa.fa-caret-right 詳しくはこちら
+          %thead
+            %tr
+              %th Rank
+              %th Name
+              %th Boat
+              %th Pts
+          %tbody
+            %tr
+              %td
+                %i.fa.fa-trophy
+              %td 内田 信吾
+              %td SEAWOLF
+              %td 69
+            %tr
+              %td
+                %i.fa.fa-trophy
+              %td 早川 昌和
+              %td Striker
+              %td 55
+            %tr
+              %td
+                %i.fa.fa-trophy
+              %td 遠藤 正明
+              %td アイランドクルーズ
+              %td 53
+        %h2
+          %i.fa.fa-chevron-right 2016シリーズ（全6戦）
         %table
           %caption
             = link_to "/rankings/2016.html" do
@@ -97,22 +148,22 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           %tbody
             %tr
               %td
-                1
+                %i.fa.fa-trophy
               %td 池上 日明
               %td D-marina
-              %td 420
+              %td 440
             %tr
               %td
-                2
-              %td 遠藤 正明
-              %td アイランドクルーズ
-              %td 405
-            %tr
-              %td
-                3
+                %i.fa.fa-trophy
               %td 森田 英典
               %td Real
-              %td 350
+              %td 415
+            %tr
+              %td
+                %i.fa.fa-trophy
+              %td 遠藤 正明
+              %td アイランドクルーズ
+              %td 410
         %h2
           %i.fa.fa-chevron-right 2015シリーズ（全3戦）
         %table
@@ -213,69 +264,72 @@ description: 横浜ベイエリアを拠点とし東京湾唯一無二のライ�
           その他トーナメント情報
         %p.section_summary BST以外の横浜周辺で開催されるボートシーバストーナメント情報です。
         .element
-          %h2 第4回 G.O.M. ワーム限定ボートシーバストーナメント
+          %h2 第5回 G.O.M. ワーム限定ボートシーバストーナメント
+          %span.info チーム戦
           %span.danger 終了
           %dl
             %dt 開催日:
-            %dd 2016-02-21
+            %dd 2017-02-18
           %dl
             %dt 問い合せ先：
             %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/g-o-m", target: "_blank"
         .element
-          %h2 第20回 サバロカップ
+          %h2 第21回 サバロカップ
+          %span.info 個人戦
           %span.danger 終了
           %dl
             %dt 開催日:
-            %dd 2016-03-27
+            %dd 2017-04-16
           %dl
-            %dt 大会結果：
-            %dd= link_to "サバロ店長ブログ", "//sabalo.co.jp/shopblog/2788/", target: "_blank"
+            %dt 問い合せ先：
+            %dd= link_to "JGFA", "//www.jgfa.or.jp/", target: "_blank"
         - if false
           .element
             %h2 第9回 東京ベイカップ
             -#%span.danger 終了
             %dl
               %dt 開催日:
-              %dd 2016-05-15
+              %dd 2017-05-15
             %dl
               %dt 問い合せ先：
               %dd= link_to "NPO法人 海塾", "//www.umijuku.net/", target: "_blank"
         .element
-          %h2 第10回 横浜ボートフィッシング大会シーバストーナメント
-          -#%span.danger 終了
+          %h2 第11回 横浜ボートフィッシング大会シーバストーナメント
+          %span.info チーム戦
+          %span.info 準備中
           %dl
             %dt 開催日:
-            %dd 2016-11-03
+            %dd 2017-11-03
           %dl
             %dt 問い合せ先：
             %dd= link_to "アイランドクルーズ", "//www.boatseabass.jp/"
         .element
-          %h2 第31回 東京ベイ・シーバスゲーム・フェスティバル
-          -#%span.danger 終了
+          %h2 第32回 東京ベイ・シーバスゲーム・フェスティバル
+          %span.info チーム戦
+          %span.info 準備中
           %dl
             %dt 開催日:
-            %dd 2015-11-13
+            %dd 2017-11
           %dl
             %dt 問い合せ先：
-            %dd= link_to "JGFA", "//www.jgfa.or.jp/news/event/p000725.html", target: "_blank"
+            %dd= link_to "JGFA", "//www.jgfa.or.jp/", target: "_blank"
         .element
-          %h2 第9回 ハマ海杯
-          -#%span.danger 終了
+          %h2 第11回 ハマ海杯
+          %span.info 個人戦
+          %span.info 準備中
           %dl
             %dt 開催日:
-            %dd 2016-11
+            %dd 2017-11
           %dl
             %dt 問い合せ先：
-            %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/", target: "_blank"
-        - if false
-          .element
-            %h2 第18回 湾！GUN！シーバストーナメント
-            %span.warning JGFA会員限定
-            %span.warning ルアー制限有
-            %span.info チーム戦
-            %dl
-              %dt 開催日:
-              %dd 2015-12-06
-            %dl
-              %dt 問い合せ先：
-              %dd シーバスキャプテン 福永
+            %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/hamaumi-hai", target: "_blank"
+        .element
+          %h2 第18回 湾！GUN！シーバストーナメント
+          %span.info チーム戦
+          %span.info 準備中
+          %dl
+            %dt 開催日:
+            %dd 2017-12
+          %dl
+            %dt 問い合せ先：
+            %dd シーバスキャプテン 福永
