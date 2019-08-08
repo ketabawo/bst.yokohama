@@ -6,12 +6,10 @@ description: 東京湾横浜ベイエリアを拠点としたライブフィッ�
   #imagepanel_top_inner
     .slider.slider0
       %p
-        BST2017シリーズ全戦終了しました！
-      = partial "shared/sponsors"
+        2年の沈黙を破り
     .slider.slider1
       %p
-        ご協賛企業様、ありがとうございました！！
-      = partial "shared/sponsors"
+        2019年にリニューアル再始動！？
 %article#content
   #content_inner
     #main_column.double
@@ -21,15 +19,8 @@ description: 東京湾横浜ベイエリアを拠点としたライブフィッ�
           サイト管理者からのお知らせ
         .message
           %p
-            諸事情により、来季からDマリーナを主会場とする BST開催が不可能となりました。<br>
-            今後、他の会場での開催も検討し、BST存続の道を模索したいとおもっておりますが、現時点ではその見通しがたたないため、2018シリーズはひとまず休止とさせていただきます。<br>
-            再開を目指し、これまでとは違った形でのトーナメント開催も検討しております。<br>
-            参加選手の皆様には大変ご迷惑おかけしますが何卒ご理解ください。
-          %p
-            今後の交渉等で動きがあった場合はその都度ご報告いたします。<br>
-            皆様には、これまで以上のご協力を宜しくお願いします。
+            現在、2020年の本格再始動に向けて動いております。
       = partial "shared/events2017"
-      = partial "shared/events2017ex"
       %section#timetable
         %h1
           %i.fa.fa-clock-o
@@ -45,29 +36,29 @@ description: 東京湾横浜ベイエリアを拠点としたライブフィッ�
               %th イベント
           %tbody
             %tr
-              %td 08:10
+              %td 07:00
               %td
                 %h4 集合
                 参加者は時間までに会場入りしてください。
             %tr
-              %td 〜08:20
+              %td 07:05〜
               %td
                 %h4 ライブウェルチェック
                 会場に到着したことが確認できた選手のライブウェル（生け簀）を
                 スタッフが順次チェックします。
             %tr
-              %td 08:20〜
+              %td 07:15〜
               %td
                 %h4 キャプテンミーティング
                 ルールについての説明や当日の流れなどを説明、フライト順のくじ引き実施。<br>
                 スタート地点へ各自移動。
             %tr
-              %td 08:30〜
+              %td 07:35〜
               %td
                 %h4 スタートフィッシング
                 くじ引きで決定した順番にスタートする。
             %tr
-              %td 〜12:50
+              %td 〜13:00
               %td
                 %h4 ストップフィッシング
                 時間以降の釣行は失格となります。
@@ -78,10 +69,10 @@ description: 東京湾横浜ベイエリアを拠点としたライブフィッ�
                 %h4 検量
                 帰着順に検量を開始します。
             %tr
-              %td 14:00〜
+              %td 14:30〜
               %td
                 %h4 表彰式
-                昼食後、表彰式を行います。
+                表彰式を行います。
     #sub_column
       %section#top_ranking
         %h1
@@ -248,24 +239,25 @@ description: 東京湾横浜ベイエリアを拠点としたライブフィッ�
           %i.fa.fa-check
           その他トーナメント情報
         %p.section_summary BST以外の横浜周辺で開催されるボートシーバストーナメント情報です。
-        .element
-          %h2 第5回 G.O.M. ワーム限定ボートシーバストーナメント
-          %span.danger 終了
-          %dl
-            %dt 開催日:
-            %dd 2017-02-18
-          %dl
-            %dt 問い合せ先：
-            %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/g-o-m", target: "_blank"
-        .element
-          %h2 第21回 サバロカップ
-          %span.danger 終了
-          %dl
-            %dt 開催日:
-            %dd 2017-04-16
-          %dl
-            %dt 問い合せ先：
-            %dd= link_to "JGFA", "//www.jgfa.or.jp/", target: "_blank"
+        - if false
+          .element
+            %h2 第5回 G.O.M. ワーム限定ボートシーバストーナメント
+            %span.danger 終了
+            %dl
+              %dt 開催日:
+              %dd 2017-02-18
+            %dl
+              %dt 問い合せ先：
+              %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/g-o-m", target: "_blank"
+          .element
+            %h2 第21回 サバロカップ
+            %span.danger 終了
+            %dl
+              %dt 開催日:
+              %dd 2017-04-16
+            %dl
+              %dt 問い合せ先：
+              %dd= link_to "JGFA", "//www.jgfa.or.jp/", target: "_blank"
         - if false
           .element
             %h2 第9回 東京ベイカップ
@@ -276,41 +268,41 @@ description: 東京湾横浜ベイエリアを拠点としたライブフィッ�
             %dl
               %dt 問い合せ先：
               %dd= link_to "NPO法人 海塾", "//www.umijuku.net/", target: "_blank"
-        .element
-          %h2 第11回 横浜ボートフィッシング大会シーバストーナメント
-          %span.danger 終了
-          %dl
-            %dt 開催日:
-            %dd 2017-11-03
-          %dl
-            %dt 問い合せ先：
-            %dd= link_to "アイランドクルーズ", "//www.boatseabass.jp/"
-        .element
-          %h2 第32回 東京ベイ・シーバスゲーム・フェスティバル
-          %span.danger 終了
-          %dl
-            %dt 開催日:
-            %dd 2017-11
-          %dl
-            %dt 問い合せ先：
-            %dd= link_to "JGFA", "//www.jgfa.or.jp/", target: "_blank"
-        .element
-          %h2 第11回 ハマ海杯
-          %span.info 個人戦
-          %span.info 募集中
-          %dl
-            %dt 開催日:
-            %dd 2017-11-24,25,26
-          %dl
-            %dt 問い合せ先：
-            %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/hamaumi-hai", target: "_blank"
-        .element
-          %h2 第18回 湾！GUN！シーバストーナメント
-          %span.info チーム戦
-          %span.info 準備中
-          %dl
-            %dt 開催日:
-            %dd 2017-12-03
-          %dl
-            %dt 問い合せ先：
-            %dd シーバスキャプテン 福永
+          .element
+            %h2 第11回 横浜ボートフィッシング大会シーバストーナメント
+            %span.danger 終了
+            %dl
+              %dt 開催日:
+              %dd 2017-11-03
+            %dl
+              %dt 問い合せ先：
+              %dd= link_to "アイランドクルーズ", "//www.boatseabass.jp/"
+          .element
+            %h2 第32回 東京ベイ・シーバスゲーム・フェスティバル
+            %span.danger 終了
+            %dl
+              %dt 開催日:
+              %dd 2017-11
+            %dl
+              %dt 問い合せ先：
+              %dd= link_to "JGFA", "//www.jgfa.or.jp/", target: "_blank"
+          .element
+            %h2 第11回 ハマ海杯
+            %span.info 個人戦
+            %span.info 募集中
+            %dl
+              %dt 開催日:
+              %dd 2017-11-24,25,26
+            %dl
+              %dt 問い合せ先：
+              %dd= link_to "ハマの海を想う会", "//sites.google.com/site/hamaumi/hamaumi-hai", target: "_blank"
+          .element
+            %h2 第18回 湾！GUN！シーバストーナメント
+            %span.info チーム戦
+            %span.info 準備中
+            %dl
+              %dt 開催日:
+              %dd 2017-12-03
+            %dl
+              %dt 問い合せ先：
+              %dd シーバスキャプテン 福永
