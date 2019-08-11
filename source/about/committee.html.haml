@@ -66,24 +66,57 @@ description: BST ボートシーバストーナメントを運営しているメ
               %dd 
                 = link_to "//www.f-dress.jp/", target: "_blank" do
                   DRESS
-                = link_to "//www.megabass.co.jp/site/", target: "_blank" do
-                  Megabass
-                = link_to "//www.favy.jp/", target: "_blank" do
-                  favy
+                = link_to "//www.halcyon.jp/", target: "_blank" do
+                  H.A.L
+                = link_to "//fathom-fishing.com/", target: "_blank" do
+                  fathom
           .column.right
             %h2{itemprop: "name"} 大畠 拓 <span>Taku Obatake</span>
             .works favy フロントエンドエンジニア
             .introduction{itemprop: "description"}
               %p
-                世間では釣れないと言われている湘南で揉まれ育ったシーバストーナメンター（謎）<br>
-                伊勢湾シーバスチャレンジ、浜名湖オープントーナメントへも参戦中。
-              %p
-                HTML/CSS/JQUERYといったフロント部分を得意とする元SEOエンジニア。ライトなPHPくらいなら何とか・・・。<br>
-                Ruby On RailsのVIEW部分(HAML or ERB/SACC or SCSS/COFFEE)やWordpress等のCMS、EC-CUBEなどが守備範囲。
+                HTML/CSS/JavaScriptといったフロント部分を得意とする元SEOエンジニア。ライトなPHPくらいなら何とか・・・。<br>
+                Ruby On RailsのVIEW部分(HAML or ERB/SACC or SCSS/COFFEE)やWordpress等のCMS、middlemanなどが守備範囲。
+              %p F.E.E.を本業とする傍ら、シーバスガイドStrikerで臨時キャプテンを務める。本大会のウェブ運用管理/広報も兼任。
             = link_to "https://www.facebook.com/taku.obatake", title: "Facebook", target: "_blank", itemprop: "sameAs" do
               %i.fa.fa-facebook-square
             = link_to "//ketabawo.asia", title: "人生補完計画 2nd Impact", target: "_blank", itemprop: "url" do
               %i.fa.fa-globe
+        .element
+          .column.left
+            = image_tag "about/img_pic-yuumi-fukunaga.jpg", width: "160", height: "160", alt: "福永 雄海"
+            %dl
+              %dt
+                %i.fa.fa-cog
+                役割
+              %dd{itemprop: "jobTitle"} 競技委員長
+            - if false
+              %dl
+                %dt
+                  %i.fa.fa-heart
+                  好きなメーカー<br>
+                %dd
+                  MARS
+                  = link_to "//www.luckycraft.co.jp/", target: "_blank" do
+                    LuckyCraft
+                  = link_to "//www.jackall.co.jp/", target: "_blank" do
+                    JACKALL
+                  = link_to "//www.gary-yamamoto.com/", target: "_blank" do
+                    GaryYamamoto
+          .column.right
+            %h2 福永 雄海 <span>Yuumi Fukunaga</span>
+            .works JGFA常任理事
+            .introduction
+              %p
+                JGFA常任理事の一人でもあるシーバスキャプテンのフィッシングガイド。シーバスからカジキまでマルチにこなすアングラー。豊富な経験から2019年度より本大会競技委員長を務める。
+            = link_to "//www.facebook.com/cap.yuumi", title: "Facebook", target: "_blank" do
+              %i.fa.fa-facebook-square
+            = link_to "//www.jgfa.or.jp/", title: "Japan Game Fish Association", target: "_blank", itemprop: "url" do
+              %i.fa.fa-globe
+            = link_to "//sites.google.com/site/seabasscaptain/home", title: "シーバスキャプテン", target: "_blank", itemprop: "url" do
+              %i.fa.fa-globe
+
+
         .element
           .column.left
             = image_tag "about/img_pic-hiroshi-kakizawa.jpg", width: "160", height: "160", alt: "柿澤 寛"
@@ -112,6 +145,38 @@ description: BST ボートシーバストーナメントを運営しているメ
               %i.fa.fa-globe
             = link_to "//salt-striker.com/", title: "my website", target: "_blank" do
               %i.fa.fa-globe
+
+        .element
+          .column.left
+            = image_tag "about/img_pic-masakazu-nishihara.jpg", width: "160", height: "160", alt: "西原 政和"
+            %dl
+              %dt
+                %i.fa.fa-cog
+                役割
+              %dd{itemprop: "jobTitle"} 映像作成/広報
+            - if false
+              %dl
+                %dt
+                  %i.fa.fa-heart
+                  好きなメーカー<br>
+                %dd
+                  MARS
+                  = link_to "//www.luckycraft.co.jp/", target: "_blank" do
+                    LuckyCraft
+                  = link_to "//www.jackall.co.jp/", target: "_blank" do
+                    JACKALL
+                  = link_to "//www.gary-yamamoto.com/", target: "_blank" do
+                    GaryYamamoto
+          .column.right
+            %h2 西原 政和 <span>Masakazu Nishihara</span>
+            .works フリービデオグラファー
+            .introduction
+              %p
+                鋭意執筆中。
+            = link_to "//www.facebook.com/masakazu.nishihara", title: "Facebook", target: "_blank" do
+              %i.fa.fa-facebook-square
+
+
         .element
           .column.left
             = image_tag "about/img_pic-takahiro-saito.jpg", width: "160", height: "160", alt: "齋藤 剛宏"
@@ -139,10 +204,6 @@ description: BST ボートシーバストーナメントを運営しているメ
             .introduction
               %p
                 ある時はシーバス、ある時はメバリング、ある時はジギング、ある時はカワハギ釣りと、１年通して釣りをしています。<br>どちらかというと、繊細なアタリを取る釣りが好きな方かな。
-            = link_to "https://www.facebook.com/takahiro.saito.794", title: "Facebook", target: "_blank" do
-              %i.fa.fa-facebook-square
-            = link_to "//www.daruma-marine.com/", title: "my website", target: "_blank" do
-              %i.fa.fa-globe
 
     #sub_column
       = partial "shared/blog_info"

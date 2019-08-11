@@ -2,14 +2,18 @@
 description: 東京湾横浜ベイエリアを拠点としたライブフィッシュ制ボートシーバスゲームルアートーナメント「BST」公式サイト。プロ・アマが年間5ラウンドを個人で戦う本格トーナメントです。参戦して頂けるアングラー・フィッシングガイド、協賛や後援していただけるメーカー様を随時募集しています。
 ---
 = partial "shared/global_navigation", locals: {val: "top"}
-#imagepanel_top
-  #imagepanel_top_inner
-    .slider.slider0
-      %p
-        2年の沈黙を破り
-    .slider.slider1
-      %p
-        2019年にリニューアル再始動！？
+#videopanel
+  .panel
+    %video{src: image_path('BST2019_tiser.mp4'), autoplay: "autoplay", loop: "loop", muted: "muted", playsinline: "playsinline"}
+- if false
+  #imagepanel_top
+    #imagepanel_top_inner
+      .slider.slider0
+        %p
+          2年の沈黙を破り
+      .slider.slider1
+        %p
+          2019年リニューアル再始動！!
 %article#content
   #content_inner
     #main_column.double
@@ -19,7 +23,7 @@ description: 東京湾横浜ベイエリアを拠点としたライブフィッ�
           サイト管理者からのお知らせ
         .message
           %p
-            現在、2020年の本格再始動に向けて動いております。
+            2019年再始動決定！詳細は後日発表します。
       = partial "shared/events2017"
       %section#timetable
         %h1
@@ -36,43 +40,47 @@ description: 東京湾横浜ベイエリアを拠点としたライブフィッ�
               %th イベント
           %tbody
             %tr
-              %td 07:00
+              %td 07:30
               %td
                 %h4 集合
                 参加者は時間までに会場入りしてください。
             %tr
-              %td 07:05〜
+              %td 07:40
               %td
                 %h4 ライブウェルチェック
                 会場に到着したことが確認できた選手のライブウェル（生け簀）を
                 スタッフが順次チェックします。
             %tr
-              %td 07:15〜
+              %td 07:45
               %td
                 %h4 キャプテンミーティング
                 ルールについての説明や当日の流れなどを説明、フライト順のくじ引き実施。<br>
                 スタート地点へ各自移動。
             %tr
-              %td 07:35〜
+              %td 08:00
               %td
                 %h4 スタートフィッシング
-                くじ引きで決定した順番にスタートする。
+                くじ引き（暫定）で決定した順番にスタートする。
             %tr
-              %td 〜13:00
+              %td 13:00
               %td
                 %h4 ストップフィッシング
-                時間以降の釣行は失格となります。
-                <a href="/regulations/#return">帰着の定義</a>を理解したうえで帰着してください。
+                時間以降の釣行は失格となります。帰着の定義を理解したうえで帰着してください。
             %tr
-              %td 13:30〜
+              %td 13:30
               %td
                 %h4 検量
                 帰着順に検量を開始します。
             %tr
-              %td 14:30〜
+              %td 14:30
               %td
                 %h4 表彰式
                 表彰式を行います。
+            %tr
+              %td 15:10
+              %td
+                %h4 解散
+                会場清掃等を済ませ解散。
     #sub_column
       %section#top_ranking
         %h1

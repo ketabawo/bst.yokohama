@@ -28,11 +28,11 @@
     #header_utility
       .socials
         #facebook
-          %a{href: "//www.facebook.com/sharer.php?u=http://bst.yokohama#{current_page.url}&amp;t=#{current_page.data.title || 'BSTボートシーバストーナメント公式サイト'}", onClick: "window.open(encodeURI(decodeURI(this.href)), 'sharewindow', 'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!'); return false;"}
+          %a{href: "https://www.facebook.com/boatseabasstournament/", target: "_blank"}
             %i.fa.fa-facebook-square
         #twitter
           %a{href: "//twitter.com/intent/tweet?text=【#{current_page.data.title || 'BSTボートシーバストーナメント公式サイト'}%20http://bst.yokohama#{current_page.url}】", onClick: "window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!'); return false;"}
             %i.fa.fa-twitter-square
         #google
-          %a{href: "//plus.google.com/share?url=http://bst.yokohama#{current_page.url}", onclick: "window.open(this.href, 'Gwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"}
-            %i.fa.fa-google-plus-square
+          %a{href: "//www.instagram.com/boatseabasstournament/", target: "_blank"}
+            %i.fa.fa-instagram
