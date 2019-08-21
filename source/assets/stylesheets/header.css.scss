@@ -59,7 +59,7 @@ header#header{
       .socials{
         display: table;
         margin: 0 0 0 auto;
-        #facebook, #twitter, #google{
+        #facebook, #twitter, #google, #instagram, #youtube{
           display: inline-block;
           margin-left: 10px;
           i{
@@ -75,6 +75,16 @@ header#header{
         #google{
           i{
             color: #DD4B39;
+          }
+        }
+        #instagram{
+          i{
+            color: #4C64D3;
+          }
+        }
+        #youtube{
+          i{
+            color: #DA1725;
           }
         }
       }
