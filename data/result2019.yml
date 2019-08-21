@@ -1,0 +1,46 @@
+open1:
+  - rank: 1
+    angler: [小尾 えつし, オビ エツシ]
+    boat: [EAC]
+    captain: []
+    result: []
+  - rank: 2
+    angler: [遠藤 正明, エンドウ マサアキ]
+    boat: [アイランドクルーズ]
+    captain: []
+    result: []
+  - rank: 3
+    angler: [澤村 智之, サワムラ トモユキ]
+    boat: [湾奥遊園地]
+    captain: []
+    result: []
+  - rank: 4
+    angler: [内田 信吾, ウチダ シンゴ]
+    boat: [シーウルフ]
+    captain: []
+    result: []
+  - rank: 5
+    angler: [世良 勇樹, セラ ユウキ]
+    boat: [アングラーズスタッフ]
+    captain: [高橋知也]
+    result: []
+  - rank: 6
+    angler: [安井 雄二, ヤスイ ユウジ]
+    boat: [ksp.jack]
+    captain: []
+    result: []
+  - rank: 7
+    angler: [早川 昌和, ハヤカワ マサカズ]
+    boat: [ストライカー]
+    captain: []
+    result: []
+  - rank: 8
+    angler: [福永 雄海, フクナガ ユウミ]
+    boat: [SaebassCaptain]
+    captain: []
+    result: []
+  - rank: 9
+    angler: [大畠 拓, オオバタケ タク]
+    boat: [サカナクラブ]
+    captain: []
+    result: []
