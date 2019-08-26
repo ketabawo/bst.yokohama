@@ -30,16 +30,26 @@ open1:
     captain: []
     result: []
   - rank: 7
+    angler: [岡元 健二, オカモト ケンジ]
+    boat: [なぶらフィッシング]
+    captain: [児玉 仁]
+    result: []
+  - rank: 8
+    angler: [池上 日明, イケガミ アキラ]
+    boat: [ストリミテッド]
+    captain: [水谷純也]
+    result: []
+  - rank: 9
     angler: [早川 昌和, ハヤカワ マサカズ]
     boat: [ストライカー]
     captain: []
     result: []
-  - rank: 8
+  - rank: 10
     angler: [福永 雄海, フクナガ ユウミ]
     boat: [SaebassCaptain]
     captain: []
     result: []
-  - rank: 9
+  - rank: 11
     angler: [大畠 拓, オオバタケ タク]
     boat: [サカナクラブ]
     captain: []
