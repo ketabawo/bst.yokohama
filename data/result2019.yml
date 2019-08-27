@@ -22,7 +22,7 @@ open1:
   - rank: 5
     angler: [世良 勇樹, セラ ユウキ]
     boat: [アングラーズスタッフ]
-    captain: [高橋知也]
+    captain: [高橋 知也]
     result: []
   - rank: 6
     angler: [安井 雄二, ヤスイ ユウジ]
@@ -37,19 +37,34 @@ open1:
   - rank: 8
     angler: [池上 日明, イケガミ アキラ]
     boat: [ストリミテッド]
-    captain: [水谷純也]
+    captain: [水谷 純也]
     result: []
   - rank: 9
+    angler: [数野 達也, カズノ タツヤ]
+    boat: [インパクト]
+    captain: []
+    result: []
+  - rank: 10
+    angler: [泉 勇也, イズミ ユウヤ]
+    boat: [シーバスターズ]
+    captain: [加藤 靖暁]
+    result: []
+  - rank: 11
+    angler: [高橋 義真, タカハシ ヨシマサ]
+    boat: [sunny fishing]
+    captain: [家田 成大]
+    result: []
+  - rank: 12
     angler: [早川 昌和, ハヤカワ マサカズ]
     boat: [ストライカー]
     captain: []
     result: []
-  - rank: 10
+  - rank: 13
     angler: [福永 雄海, フクナガ ユウミ]
-    boat: [SaebassCaptain]
+    boat: [SeabassCaptain]
     captain: []
     result: []
-  - rank: 11
+  - rank: 14
     angler: [大畠 拓, オオバタケ タク]
     boat: [サカナクラブ]
     captain: []
