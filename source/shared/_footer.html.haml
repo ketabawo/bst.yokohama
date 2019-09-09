@@ -1,4 +1,8 @@
-%footer#footer
+%footer.footer
+  .footer__sponsors
+    = link_to image_tag("img_bnr-yamahamarine.gif", alt: "YAMAHAマリン"), "//www.yamaha-motor.co.jp/marine/", target: "_blank"
+    = link_to image_tag("img_bnr-suzukimarine.gif", alt: "SUZUKIマリン"), "//suzukimarine.co.jp/", target: "_blank"
+    = link_to image_tag("img_bnr-marinelicence.gif", alt: "マリンライセンスロイヤル"), "//www.marine-license.com/", target: "_blank"
   #copyright
     %address
       Copyright(C) 2013 - #{Time.now.year}

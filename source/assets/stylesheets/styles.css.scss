@@ -141,6 +141,9 @@
     &.result2017ex_01{
       background-image: image_url("results/2017/bg_pic-toppanel-2017ex_01.jpg");
     }
+    &.result2019open_01{
+      background-image: image_url("results/2019/bg_pic-toppanel-2019open_01.jpg");
+    }
   }
 }
 #events{
@@ -528,7 +531,7 @@
   }
 }
 #ranking_table{
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   .chairmans_comment{
     background-color: #dff0d8;
     border: 1px solid #DDD;
@@ -636,7 +639,7 @@
 #interviews{
   margin-bottom: 20px;
   .interview{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     h2{
       font-size: 20px;
       font-weight: bold;
@@ -713,7 +716,7 @@
           }
         }
       }
-      img{
+      img, iframe{
         display: block;
         width: 600px;
         border: 9px solid #CCC;
@@ -767,6 +770,9 @@
       }
     }
   }
+}
+#movie{
+  margin-bottom: 20px;
 }
 #other_tournament{
   margin-bottom: 20px;

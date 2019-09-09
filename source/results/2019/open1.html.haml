@@ -1,6 +1,7 @@
 ---
-title: BST 2019 再始動記念大会結果
-description: 2019年9月5日（木）に開催予定のBTS 2019 再始動記念大会の選手リストです。
+title: BST2019 再始動記念大会 大会結果
+description: 2019年9月5日（木）に開催されたBTS 2019 再始動記念大会の大会結果です。
+ogp: /assets/images/results/2019/bg_pic-toppanel-2019open_01.jpg
 ---
 - weiin = []
 - fish_size = [] 
@@ -24,11 +25,11 @@ description: 2019年9月5日（木）に開催予定のBTS 2019 再始動記念�
       = link_to "/results/", itemprop: "url" do
         %span{itemprop: "title"} 大会結果
       %i.fa.fa-angle-right
-    %li BST 2019 再始動記念大会 エントリーリスト
+    %li BST 2019 再始動記念大会 大会結果
 #imagepanel_result
   #imagepanel_result_inner.result2019open_01
     .layer
-      %h1 BST 2019 再始動記念大会 エントリーリスト
+      %h1 BST 2019 再始動記念大会 大会結果
 %article#content
   #content_inner
     #main_column.double
@@ -40,10 +41,13 @@ description: 2019年9月5日（木）に開催予定のBTS 2019 再始動記念�
               総評
             %dd
               %p.comment
-                エントリーいただいた選手リストです（申込順8/27現在）<br>
-                参加予定でエントリーされてない方は
-                = link_to 'こちら', 'https://form.run/@boatseabasstournament-8639', target: '_blank'
-                から！！
+                各選手、リミットメイク・サイズが出なくて苦労している中<br>Sunny fishing guide serviceをチャーターし、怒涛のスコアを叩き出した高橋義真選手がぶっちぎりで優勝！！<br>
+                ビッグベイトで釣った魚をウェイインしたのはBST史上初かもしれません。<br>
+                高橋選手、そして家田キャプテン、おめでとうございます！！
+              %p.comment
+                おかげさまで天候に恵まれた記念大会は事故もなく無事に終えることができました。<br>
+                参加選手の皆様、スポンサー企業様のご協力あっての結果です。<br>
+                ありがとうございました！！
               %p.writer
                 （実行委員：大畠）
         %table
@@ -70,9 +74,6 @@ description: 2019年9月5日（木）に開催予定のBTS 2019 再始動記念�
                 %td= f.result[1]
                 %td= f.result[2]
                 %td= f.result[0].to_f + f.result[1].to_f + f.result[2].to_f
-
-
-
           %tfoot
             %tr
               %th No.
@@ -83,7 +84,223 @@ description: 2019年9月5日（木）に開催予定のBTS 2019 再始動記念�
               %th 2nd
               %th 3rd
               %th Total
+      %section#interviews
+        %h1
+          %i.fa.fa-trophy
+          上位3名の紹介
+        .interview
+          %h2 優勝：高橋義真 選手（Sunny fishing 家田成大キャプテン）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            :plain
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/R5yU1w2jHE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            %p
+              プラクティスをして感じた事はストラクチャー周りではサイズが選べない事から、大会当日は船長の判断で富津のオープンエリアをチョイス！<br>10:30までは全くのノーバイト。ローライトからハイライトに変わった直後からベイトの反応！ペンシルでサーチするとチェイスするグッドサイズのシーバス。<br>ここから短時間でビッグベイトで猛チャージ！4バイト4フィッシュ！最後の魚は小さくてリリース。<br>そして、まさかの優勝！Sunny Fishing Guide Service 家田さんに感謝です。<br>BST運営者、参加選手の皆さんありがとうございました！
+            
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "Sunny fishing guide service", "//ameblo.jp/sunny1143/", target: "_blank"
+          .screen.tackles_area
+            = image_tag("results/2019/img_pic-open1-rank1-tackles.jpg", alt: "高橋義真 選手使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td TAPER & SHAPE GNAXS-73LLMS
+                  %td DAIWA CERTATE 2500
+                  %td SHIMANO PITBULL8 1.0
+                  %td VARIVAS SHOCK LEADER NYLON 20LB + Fishing Fighters 鉄腕 #000
+                %tr
+                  %th 2
+                  %td ビッグベイトロッド
+                  %td DAIWA RYOGA 2020H
+                  %td Fishing Fighters AIR BRAID WILD EIGHT 3.0
+                  %td VARIVAS SHOCK LEADER NYLON 40LB + Fishing Fighters 鉄腕 #00
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "Lucky Craft Sammy", "//www.luckycraft.co.jp/product/bass/Sammy.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "Lucky Craft Each-One", "//www.luckycraft.co.jp/product/salt/EachOne.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "JACKALL DOWZ SWIMMER 220SF", "//www.jackall.co.jp/bass/products/lure/joint-big-bait/dowz-swimmer220sf/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "GAN CRAFT JOINTED CLAW 178", "//gancraft.com/lures/jointedclaw178.html", target: "_blank"
+        .interview
+          %h2 準優勝：早川昌和 選手（Striker）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            :plain
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/hiFF0w8kNcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            %p
+              根岸、南本牧エリアで釣りをしようと思ったが、殆どの船がベイブリッジ方面へ行くの見て、あえて根岸方面を捨て京浜運河方面へ船首を向けました。
+            %p
+              思っていたよりも水温が下がっており、水色も良くベイトもしっかり入っていたので魚を釣りながらこの時期このエリアの最大スコアと考えられる180㎝を目指す釣りをしました。<br>
+            %p
+              直近ガイドの状況から、サイズは選べないもののコアマンVJ-16への魚の反応が無双状態でした。
+              深いレンジから浅いレンジまで魚を満遍なく拾えるため、このルアーでの釣果を大会当日までの約1か月シークレットにしていました。
+              また、エアディープやバクラチオン、ビーフリーズでも魚の反応は良かったが、晴れてしまうと途端にこれらへの反応が無くなってしまいました。<br>
+              序盤、ビーフリーズとバクラチオンで良型をキープ。フォローでVJ-16を投入してリミットメイク。
+              60㎝クラスはランディング直前にバラしてしまったが20匹ほどの魚をキャッチすることが出来ました。<br>
+              終盤は晴れてしまい入れ替えは出来ませんでしたが、大会会場近くのエリア（京浜運河、鶴見川等）で自分が出せるスコアは取れたと確信し釣りを終了しました。
+            %p
+              終わってみて、優勝したスコアは想定外ではありましたが、9月序盤における自分の思い描く試合ができ準優勝という結果は本当にうれしく思っています。
+              また、今大会でこの時期独特の浅いバイトをしっかり乗せてバラしにくいAbuGarcia Salty Stage PRM FENICE SPBS-622M-TZのポテンシャルの高さを改めて実感することが出来ました。
+            %p
+              BST2019再始動記念大会より実行委員長を務めさせていただくことになりました。<br>
+              ご参加いただいた皆様や運営スタッフ、そしてBSTをご覧いただいているすべての皆様あっての成立するこの大会、至らない部分は多々あったかとは思いますが今後ともよろしくお願いいたします。
+              そして全ての皆様に感謝の気持ちでいっぱいです。<br>
+              ありがとうございました！
+
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "Striker", "//salt-striker.com/", target: "_blank"
+          .screen.tackles_area
+            = image_tag("results/2019/img_pic-open1-rank2-tackles.jpg", alt: "早川昌和 選手使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td AbuGarcia Salty Stage PRM FENICE SPBS-622M-TZ
+                  %td DAIWA EXIST 2508PE
+                  %td{rowspan: 2} YGK G-soul X8 UPGRADE 1.0
+                  %td{rowspan: 5} VARIVAS SHOCK LEADER NYLON 20LB
+                %tr
+                  %th 2
+                  %td AbuGarcia Salty Stage PRM FENICE SPBS-702M-TZ
+                  %td SHIMANO STELLA 3000M
+                %tr
+                  %th 3
+                  %td AbuGarcia Salty Stage PRM FENICE PROTO 610M+
+                  %td{rowspan: 2} AbuGarcia Revo ALC-IB 7Ｌ
+                  %td{rowspan: 3} Berkley Super FireLine 2.0
+                %tr
+                  %th 4
+                  %td{rowspan: 2} AbuGarcia Salty Stage PRM FENICE SPBC-662M-TZ
+                %tr
+                  %th 5
+                  %td AbuGarcia Revo ALC-IB 6Ｌ
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "Lucky Craft BFreeze 78S", "//www.luckycraft.co.jp/product/salt/Bfreeze78.html", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "VALLEY HILL AIR DEEP 80S", "//valleyhill.taniyamashoji.co.jp/988", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "APIA BAGRATION", "//www.apiajapan.com/product/lure/bagration/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "COREMAN VJ-16", "//www.coreman.jp/product/vj16/", target: "_blank"
+
+        .interview
+          %h2 3位：福永雄海 選手（Seabass Captain）
+          %nav
+            %ul
+              %li#comment.active コメント
+              %li#tackles タックル
+          .screen.comment_area.active
+            :plain
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/XRCQyMGcxpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            %p
+              トーナメント開催数日前にプラを開始。<br>
+              横浜・根岸・横須賀各エリアの様子を見に行くが、どこもシーバスはいるものの、セイゴクラスが多く、ポイントを絞り込むことが難しそうだったので、千葉袖ヶ浦エリアの様子を見に行くことに。<br>
+              セイゴクラスも多いいが、良型のサイズも交じり、ベイトについたシーバスであるため活性も高い。結果として、同様なポイントを数か所抑えることができた。
+            %p
+              そして、当日。<br>
+              開催前々日夜に大雨が降り、抑えているポイントに悪い影響が出なければいいが…と思いながら千葉袖ヶ浦エリアに直行。水温は雨の影響もあり少し下がり◎。水色も影響なく問題なし。<br>
+              釣行開始からヒットが続く。水深18～15m程のストラクチャーポイント。ベイトはボトムから5mのあたりに点在し、魚探にはよく動いている反応が映し出されていた。潮が流れているポイントはやはり魚も多く教科書通りに釣れる。
+              良型も交じり、開始早々30分程から魚の入替が始まった。
+              70～90㎜サイズのルアーにはやはり小型のサイズが多く、大きめの鉄板系のバイブレーションにここからシフトチェンジ。
+              しっかりボトムを取りストラクチャーの際をリトリーブするといったイメージで時間まで魚のケアをしながら入替ができるサイズを狙うといった釣行となりました。
+            %p
+              私にとって一番苦手な時期。何とか結果が残せてよかったです。
+              次回も入賞目指していきたいと思います。<br>
+              ありがとうございました。
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "Seabass Captain", "//sites.google.com/site/seabasscaptain/home", target: "_blank"
+          .screen.tackles_area
+            = image_tag("results/2019/img_pic-open1-rank3-tackles.jpg", alt: "福永雄海 選手使用タックル", width: "600", height: "400")
+            %table
+              %thead
+                %tr
+                  %th No.
+                  %th Rod
+                  %th Reel
+                  %th Line
+                  %th Leader
+              %tbody
+                %tr
+                  %th 1
+                  %td SHIMANO WORLD SHAULA 1652R
+                  %td SHIMANO ANTARES DCMD
+                  %td{rowspan: 2} YGK G-soul X8 1.5
+                  %td{rowspan: 3} NYLON LEADER 20LB
+                %tr
+                  %th 2
+                  %td SHIMANO WORLD SHAULA 1701FF
+                  %td SHIMANO METANIUM MGL
+                %tr
+                  %th 3
+                  %td SAURUS FUKKO CUSTOM 610
+                  %td SHIMANO STELLA 4000
+                  %td VARIVAS SALTWATER VEP NYLON 8LB
+            %ul
+              %li
+                %i.fa.fa-caret-right
+                = link_to "JACKALL BIG BACKER 128", "//www.jackall.co.jp/saltwater/products/lure/sea-bass/big-backer-128/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "JACKALL BIG BACKER 107 H.W", "//www.jackall.co.jp/saltwater/products/lure/sea-bass/big-backer107h-w/", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "BASSDAY RANGE VIB 90ES", "//www.bassday.co.jp/catalog2019/?page=30", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "BASSDAY RANGE VIB 70 IRON", "//www.bassday.co.jp/catalog2019/?page=33", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "BASSDAY RANGE MINNOW II", "//www.bassday.co.jp/catalog2019/?page=34", target: "_blank"
+              %li
+                %i.fa.fa-caret-right
+                = link_to "DUEL HARDCORE SOLID SPIN 32g", "//www.duel.co.jp/products/hc_solidspin", target: "_blank"
+
+
     #sub_column
+      %section#movie
+        %h1
+          %i.fa.fa-youtube
+          当日の様子
+        :plain
+          <iframe width="300" height="225" src="https://www.youtube.com/embed/WyPrRraxgUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       %section#ranking_summary
         %h1
           %i.fa.fa-file-text-o
@@ -94,7 +311,7 @@ description: 2019年9月5日（木）に開催予定のBTS 2019 再始動記念�
             %td 2019-09-05
           %tr
             %th 天気
-            %td --
+            %td 曇り時々晴れ
           %tr
             %th 潮汐
             %td 小潮

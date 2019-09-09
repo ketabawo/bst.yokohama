@@ -1,0 +1,22 @@
+%section#events
+  %h1
+    %i.fa.fa-calendar
+    BST2019 年間競技日程
+  .element{itemscope: "itemscope", itemtype: "http://schema.org/Event"}
+    .eye_catch
+      .pic2017.round2
+    .this_content
+      %span.danger 終了
+      %h2{itemprop: "name"} BST2019 再始動記念大会
+      %dl
+        %dt 開催日:
+        %dd{itemprop: "startDate", content: "2019-09-05"} 2019-09-05
+        %dt
+          %span 集合場所:
+        %dd{itemprop: "location", itemscope: "itemscope", itemtype: "http://schema.org/Place"}
+          %span{itemprop: "name"} THE CLUB HOUSE YOKOHAMA BAY(旧Tycoon)
+          %span{itemprop: "address"} 神奈川県横浜市中区新山下4 Unnamed Road, 3丁目-4
+      %p{itemprop: "description"}
+        = link_to "/results/2019/open1.html" do
+          %i.fa.fa-caret-right
+          詳しくはこちら

@@ -1,84 +1,13 @@
 @import "settings";
 
-#footer{
+.footer{
   width: 100%;
   background-color: $theme_color02;
   border-top: 1px solid #D4B572;
-  #footer_inner{
+  &__sponsors{
     width: $content_width;
-    padding: 25px 0 10px 0;
+    padding: 20px 0;
     margin: 0 auto;
-    #footer_contents{
-      width: 100%;
-      overflow: hidden;
-      margin-bottom: 20px;
-      .content_column{
-        &:first-child{
-          width: 420px;
-          float: left;
-        }
-        &:last-child{
-          width: 420px;
-          float: right;
-        }
-        #comittee_info{
-          dl{
-            width: 200px;
-            font-size: 12px;
-            color: #FFF;
-            line-height: 130%;
-            margin: 0 0 0 auto;
-            dt{
-              font-weight: bold;
-              text-align: right;
-              margin-bottom: 5px;
-            }
-            dd{
-              text-align: right;
-            }
-          }
-        }
-        #pro_guides, #support_makers{
-          width: 420px;
-          dt{
-            font-size: 14px;
-            font-weight: bold;
-            color: #FFF;
-            margin-bottom: 10px;
-          }
-          ul{
-            width: 100%;
-            overflow: hidden;
-            li{
-              width: 200px;
-              height: 50px;
-              background-repeat: no-repeat;
-              margin: 0 20px 10px 0;
-              float: left;
-              &:nth-child(even){
-                margin-right: 0;
-              }
-              @for $i from 0 through 11{
-                &:nth-child(#{$i + 1}){
-                  background-position: 0 #{$i*-50}px;
-                }
-              }
-              a{
-                display: block;
-                width: 100%;
-                height: 100%;
-              }
-            }
-          }
-        }
-        #pro_guides li{
-          background-image: image_url('bg_bnr-guides.gif');
-        }
-        #support_makers li{
-          background-image: image_url('bg_bnr-makers.gif');
-        }
-      }
-    }
   }
   #copyright{
     width: 100%;

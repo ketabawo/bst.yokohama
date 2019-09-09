@@ -21,9 +21,9 @@ description: BST ボートシーバストーナメントを運営しているメ
         %h1
           %i.fa.fa-users
           実行委員の紹介
-        .element
+        .element{itemscope: "itemscope", itemtype: "http://schema.org/Person"}
           .column.left
-            = image_tag "about/img_pic-masakazu-hayakawa.jpg", width: "160", height: "160", alt: "早川 昌和"
+            = image_tag "about/img_pic-masakazu-hayakawa.jpg", width: "160", height: "160", alt: "早川 昌和", itemprop: "image"
             %dl
               %dt
                 %i.fa.fa-cog
@@ -40,7 +40,7 @@ description: BST ボートシーバストーナメントを運営しているメ
           .column.right
             %h2 早川 昌和 <span>Masakazu Hayakawa</span>
             .works ストライカー キャプテン
-            .introduction
+            .introduction{itemprop: "description"}
               %p
                 幼少の頃より様々な釣りに親しみ、ルアーフィッシングの道へ。
                 %br
@@ -49,8 +49,9 @@ description: BST ボートシーバストーナメントを運営しているメ
                 好きなスタイルは穴撃ち。
                 %br
                 シーバスガイドStrikerキャプテン。
-            = link_to "https://www.facebook.com/masa.mazu.1", title: "Facebook", target: "_blank" do
+            = link_to "https://www.facebook.com/masa.mazu.1", title: "Facebook", target: "_blank", itemprop: "sameAs" do
               %i.fa.fa-facebook-square
+
         .element{itemscope: "itemscope", itemtype: "http://schema.org/Person"}
           .column.left
             = image_tag "about/img_pic-taku-obatake.jpg", width: "160", height: "160", alt: "大畠 拓", itemprop: "image"
@@ -76,15 +77,16 @@ description: BST ボートシーバストーナメントを運営しているメ
             .introduction{itemprop: "description"}
               %p
                 HTML/CSS/JavaScriptといったフロント部分を得意とする元SEOエンジニア。ライトなPHPくらいなら何とか・・・。<br>
-                Ruby On RailsのVIEW部分(HAML or ERB/SACC or SCSS/COFFEE)やWordpress等のCMS、middlemanなどが守備範囲。
+                Ruby On RailsのVIEW部分(HAML or ERB/SASS or SCSS/COFFEE)やWordpress等のCMS、middlemanなどが守備範囲。
               %p F.E.E.を本業とする傍ら、シーバスガイドStrikerで臨時キャプテンを務める。本大会のウェブ運用管理/広報も兼任。
             = link_to "https://www.facebook.com/taku.obatake", title: "Facebook", target: "_blank", itemprop: "sameAs" do
               %i.fa.fa-facebook-square
             = link_to "//ketabawo.asia", title: "人生補完計画 2nd Impact", target: "_blank", itemprop: "url" do
               %i.fa.fa-globe
-        .element
+
+        .element{itemscope: "itemscope", itemtype: "http://schema.org/Person"}
           .column.left
-            = image_tag "about/img_pic-yuumi-fukunaga.jpg", width: "160", height: "160", alt: "福永 雄海"
+            = image_tag "about/img_pic-yuumi-fukunaga.jpg", width: "160", height: "160", alt: "福永 雄海", itemprop: "image"
             %dl
               %dt
                 %i.fa.fa-cog
@@ -104,51 +106,21 @@ description: BST ボートシーバストーナメントを運営しているメ
                   = link_to "//www.gary-yamamoto.com/", target: "_blank" do
                     GaryYamamoto
           .column.right
-            %h2 福永 雄海 <span>Yuumi Fukunaga</span>
+            %h2{itemprop: "name"}  福永 雄海 <span>Yuumi Fukunaga</span>
             .works JGFA常任理事
             .introduction
               %p
                 JGFA常任理事の一人でもあるシーバスキャプテンのフィッシングガイド。シーバスからカジキまでマルチにこなすアングラー。豊富な経験から2019年度より本大会競技委員長を務める。
-            = link_to "//www.facebook.com/cap.yuumi", title: "Facebook", target: "_blank" do
+            = link_to "//www.facebook.com/cap.yuumi", title: "Facebook", target: "_blank", itemprop: "sameAs" do
               %i.fa.fa-facebook-square
-            = link_to "//www.jgfa.or.jp/", title: "Japan Game Fish Association", target: "_blank", itemprop: "url" do
+            = link_to "//www.jgfa.or.jp/", title: "Japan Game Fish Association", target: "_blank" do
               %i.fa.fa-globe
             = link_to "//sites.google.com/site/seabasscaptain/home", title: "シーバスキャプテン", target: "_blank", itemprop: "url" do
               %i.fa.fa-globe
 
-
-        .element
+        .element{itemscope: "itemscope", itemtype: "http://schema.org/Person"}
           .column.left
-            = image_tag "about/img_pic-hiroshi-kakizawa.jpg", width: "160", height: "160", alt: "柿澤 寛"
-            %dl
-              %dt
-                %i.fa.fa-cog
-                役割
-              %dd{itemprop: "jobTitle"} アドバイザー
-            %dl
-              %dt
-                %i.fa.fa-heart
-                好きなメーカー<br>
-              %dd
-                MARS
-                = link_to "//www.ecogear.jp/game_fishing/", target: "_blank" do
-                  ECOGEAR
-          .column.right
-            %h2 柿澤 寛 <span>Hiroshi Kakizawa</span>
-            .works ストライカー・横浜SUP倶楽部 代表
-            .introduction
-              %p
-                鋭意執筆中。
-            = link_to "https://www.facebook.com/hirosi.kakizawa", title: "Facebook", target: "_blank" do
-              %i.fa.fa-facebook-square
-            = link_to "//yokohamasup-club.com/", title: "my website", target: "_blank" do
-              %i.fa.fa-globe
-            = link_to "//salt-striker.com/", title: "my website", target: "_blank" do
-              %i.fa.fa-globe
-
-        .element
-          .column.left
-            = image_tag "about/img_pic-masakazu-nishihara.jpg", width: "160", height: "160", alt: "西原 政和"
+            = image_tag "about/img_pic-masakazu-nishihara.jpg", width: "160", height: "160", alt: "西原 政和", itemprop: "image"
             %dl
               %dt
                 %i.fa.fa-cog
@@ -166,14 +138,73 @@ description: BST ボートシーバストーナメントを運営しているメ
                 = link_to "//woodream.net/", target: "_blank" do
                   WooDream
           .column.right
-            %h2 西原 政和 <span>Masakazu Nishihara</span>
+            %h2{itemprop: "name"}  西原 政和 <span>Masakazu Nishihara</span>
             .works フリービデオグラファー
-            .introduction
+            .introduction{itemprop: "description"}
               %p
                 アジングからマグロまでルアーフィッシング全般を愛するアングラー。<br>
                 シーバスでは1年を通してジョイクロフィッシュを狙う。
-            = link_to "//www.facebook.com/masakazu.nishihara", title: "Facebook", target: "_blank" do
+            = link_to "//www.facebook.com/masakazu.nishihara", title: "Facebook", target: "_blank", itemprop: "sameAs" do
               %i.fa.fa-facebook-square
+
+        .element{itemscope: "itemscope", itemtype: "http://schema.org/Person"}
+          .column.left
+            = image_tag "about/img_pic-hiroshi-shoji.jpg", width: "160", height: "160", alt: "東海林 博", itemprop: "image"
+            %dl
+              %dt
+                %i.fa.fa-cog
+                役割
+              %dd{itemprop: "jobTitle"} 検量/広報
+            %dl
+              %dt
+                %i.fa.fa-heart
+                好きなメーカー<br>
+              %dd
+                = link_to "Tackle House", "//www.tacklehouse.co.jp/", target: "_blank"
+                = link_to "YAMAHA", "//www.yamaha-motor.co.jp/marine/", target: "_blank"
+                = link_to "SUZUKI", "//suzukimarine.co.jp/", target: "_blank"
+                = link_to "YANMER", "//www.yanmar.com/jp/marinepleasure/", target: "_blank"
+          .column.right
+            %h2{itemprop: "name"}  東海林 博 <span>Hiroshi Shoji</span>
+            .works 自由人
+            .introduction{itemprop: "description"}
+              %p
+                某ボート販売店に10年以上務めた後自由人へ。体重100kgの巨体…。否、巨乳を揺らし皆さんのキャッチしてきたシーバス様を1年を通して汗をかきながら計測する任務に就きました。嫌いな釣りは特に無し！釣りは全部好き。
+            = link_to "//www.facebook.com/hiroshi.shoji.7", title: "Facebook", target: "_blank", itemprop: "sameAs" do
+              %i.fa.fa-facebook-square
+
+        .element{itemscope: "itemscope", itemtype: "http://schema.org/Person"}
+          .column.left
+            = image_tag "about/img_pic-yuichi-mishima.jpg", width: "160", height: "160", alt: "ハッピーマックスみしま", itemprop: "image"
+            %dl
+              %dt
+                %i.fa.fa-cog
+                役割
+              %dd{itemprop: "jobTitle"} MC/広報
+            %dl
+              %dt
+                %i.fa.fa-heart
+                好きなメーカー<br>
+              %dd
+                = link_to "Chowonpa", "//chowonpa.fish/", target: "_blank"
+          .column.right
+            %h2{itemprop: "name"} ハッピーマックスみしま <span>Yuichi Mishima</span>
+            .works お笑い芸人
+            .introduction{itemprop: "description"}
+              %p
+                SHUプロモーション所属の釣り好き芸人ハッピーマックスみしま。<br>
+                ギャグと釣りが得意中の得意！司会業も多く、フィッシングショー東北、バスフェスタ2019にアウトドア系のイベントMCから婚活パーティー、披露宴，二次会司会など賑やかなイベント進行ならお任せ下さい<br>釣り好きのハートにがっつりフッキング中の「プロも絶賛！東京エアーフィッシング」もオススメ！<br>
+                釣り好き同好会サカナクラブ主催 好きなメーカーは釣れるメーカー あなたのオススメお待ちしてます！
+            = link_to "//www.facebook.com/yuichi.mishima.1", title: "Facebook", target: "_blank", itemprop: "sameAs" do
+              %i.fa.fa-facebook-square
+            = link_to "//ameblo.jp/miracle-powers/", title: "毎日スーパーハッピー！", target: "_blank", itemprop: "url" do
+              %i.fa.fa-globe
+            = link_to "//www.youtube.com/channel/UCeeuOWVzLq0HKjrQXtHSWXA", title: "みしまチャンネル", target: "_blank" do
+              %i.fa.fa-youtube-square
+            = link_to "https://twitter.com/mishima1983", title: "twitter", target: "_blank" do
+              %i.fa.fa-twitter-square
+            = link_to "//www.instagram.com/happymaxmishima/?hl=ja", title: "instagram", target: "_blank" do
+              %i.fa.fa-instagram
 
 
         .element
@@ -203,6 +234,35 @@ description: BST ボートシーバストーナメントを運営しているメ
             .introduction
               %p
                 ある時はシーバス、ある時はメバリング、ある時はジギング、ある時はカワハギ釣りと、１年通して釣りをしています。<br>どちらかというと、繊細なアタリを取る釣りが好きな方かな。
+
+        .element
+          .column.left
+            = image_tag "about/img_pic-hiroshi-kakizawa.jpg", width: "160", height: "160", alt: "柿澤 寛"
+            %dl
+              %dt
+                %i.fa.fa-cog
+                役割
+              %dd{itemprop: "jobTitle"} アドバイザー
+            %dl
+              %dt
+                %i.fa.fa-heart
+                好きなメーカー<br>
+              %dd
+                MARS
+                = link_to "//www.ecogear.jp/game_fishing/", target: "_blank" do
+                  ECOGEAR
+          .column.right
+            %h2 柿澤 寛 <span>Hiroshi Kakizawa</span>
+            .works ストライカー・横浜SUP倶楽部 代表
+            .introduction
+              %p
+                鋭意執筆中。
+            = link_to "https://www.facebook.com/hirosi.kakizawa", title: "Facebook", target: "_blank" do
+              %i.fa.fa-facebook-square
+            = link_to "//yokohamasup-club.com/", title: "my website", target: "_blank" do
+              %i.fa.fa-globe
+            = link_to "//salt-striker.com/", title: "my website", target: "_blank" do
+              %i.fa.fa-globe
 
     #sub_column
       = partial "shared/blog_info"
